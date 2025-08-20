@@ -1,0 +1,741 @@
+[
+  {
+    "query": "What companies are leading in bridging AI and blockchain technology",
+    "links": [
+      {
+        "domain": "dev.to",
+        "count": 9
+      },
+      {
+        "domain": "onchain.org",
+        "count": 8
+      },
+      {
+        "domain": "medium.com",
+        "count": 8
+      },
+      {
+        "domain": "rareconnections.io",
+        "count": 7
+      },
+      {
+        "domain": "github.com",
+        "count": 5
+      },
+      {
+        "domain": "golden.com",
+        "count": 5
+      },
+      {
+        "domain": "flagship.fyi",
+        "count": 3
+      },
+      {
+        "domain": "cryptopolitan.com",
+        "count": 3
+      },
+      {
+        "domain": "blockchaintechs.io",
+        "count": 3
+      },
+      {
+        "domain": "precedenceresearch.com",
+        "count": 1
+      },
+      {
+        "domain": "forbes.com",
+        "count": 1
+      }
+    ],
+    "complete_result": {
+      "query": "What companies are leading in bridging AI and blockchain technology",
+      "response_text": "Companies leading in bridging AI and blockchain technology are primarily focused on creating decentralized AI marketplaces, AI-powered decentralized networks, and platforms for secure data sharing and computation. Here are some of the key players:\n\n**Decentralized AI Marketplaces and Development Platforms:**\n\n*   **SingularityNET** is a prominent decentralized platform that aims to revolutionize AI and blockchain integration. It enables developers to launch, interoperate, and monetize AI tools and projects, fostering a collaborative and open AI ecosystem where users can access diverse AI services using its native token, AGIX.\n*   **Cortex** is a public blockchain that supports on-chain execution of AI models. It offers an AI-powered smart contract platform allowing developers to build dApps with AI reasoning capabilities and to upload, share, and execute AI models across a distributed network.\n\n**AI-Powered Decentralized Networks and Protocols:**\n\n*   **Fetch.ai** is a decentralized machine learning platform built on a distributed ledger that enables secure sharing, connection, and transactions based on data globally. It focuses on a decentralized digital economy where AI-powered agents interact and transact autonomously using blockchain, performing tasks like optimizing supply chains or trading tokens.\n*   **Bittensor** is a decentralized artificial intelligence company that utilizes a blockchain framework to create a network of interlinked digital markets. It leverages computational power and data to generate intelligence through machine learning models, democratizing AI development.\n*   **Oraichain** is a data oracle platform and a Layer 1 blockchain that integrates AI APIs with smart contracts. It focuses on powering the data economy and decentralized oracle services, enabling intelligent, next-generation smart contracts and dApps by integrating AI directly into its core infrastructure.\n*   **The Graph** is a decentralized system that allows users to index and query blockchain data. It uses AI to enhance data queries and automate decision-making.\n*   **Numerai** is a pioneering hedge fund that leverages the collective intelligence of data scientists globally through encrypted data science competitions. It uses AI and blockchain to ensure transparency, data privacy, and incentive alignment across a decentralized research network, rewarding top-performing models with its NMR token.\n*   **Ocean Protocol** empowers individuals and businesses to share and monetize data securely using blockchain technology, making it available for AI models. It provides on-chain metadata and off-chain encrypted data, with access controlled via data tokens, allowing AI developers to access datasets while ensuring data privacy.\n*   **Gensyn** is a decentralized compute protocol that connects machine learning engineers with idle GPU hardware globally. It facilitates the remote execution and cryptographic verification of machine learning tasks across distributed hardware, supporting scalable AI model training with transparency and cost-efficiency.\n*   **Akash Network** provides a decentralized cloud computing marketplace, offering an alternative for AI and machine learning workloads by utilizing underutilized computing resources.\n\n**Companies Providing AI-Infused Blockchain Solutions and Services:**\n\n*   **PixelCrayons** is known for helping startups and enterprises build secure, AI-powered blockchain applications, focusing on smart contracts, dApps, and analytics tools.\n*   **Appinventiv** integrates AI capabilities with blockchain to support secure, scalable dApps and real-time data analytics across various sectors like finance and healthcare.\n*   **Antier Solutions** offers AI-led automation, tokenization, blockchain consultancy, and AI-infused smart contracts.\n*   **ValueCoders** has extensive experience in building AI-infused blockchain systems.\n*   **LeewayHertz** combines AI with blockchain to create high-tech solutions for industries such as healthcare, supply chain, and finance.\n*   **SoluLab** specializes in building custom dApps that merge AI and blockchain.\n*   **ScienceSoft** is recognized for building secure and intelligent blockchain solutions using AI.\n*   **Debut Infotech** builds advanced applications using both AI and blockchain, designed for businesses needing to scale rapidly in sectors like fintech, healthtech, and logistics.\n*   **Sparx IT Solutions** delivers AI-enabled blockchain solutions for task automation, data security, and scalability across industries.\n*   **VAIOT** merges AI with blockchain to create AI-driven services and on-chain Intelligent Contracts, aiming to automate services and transactions in industries like insurance and finance.\n\nThese companies and projects are at the forefront of combining the intelligence of AI with the security and decentralization of blockchain, addressing challenges like data monopolies, AI bias, and data manipulation to create more efficient, trustworthy, and scalable decentralized ecosystems.",
+      "web_search_queries": [
+        "companies leading AI blockchain convergence",
+        "leading AI blockchain projects",
+        "companies integrating AI and blockchain"
+      ],
+      "grounding_metadata": [
+        {
+          "text": "It enables developers to launch, interoperate, and monetize AI tools and projects, fostering a collaborative and open AI ecosystem where users can access diverse AI services using its native token, AGIX.",
+          "links": [
+            {
+              "title": "rareconnections.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExEbaucJaoVTo42pdzBH_EoKQ0MhNwOSSfSBEwFixsSrvo3uCsdT4KtjBsYX_kn5A2rC8NsYiVumh6VYNuH0A0sowQeBExXpJJEAG37WhOAZsy01AzZaqXzctpQ5vrji3hqGfmDiJraORREUA9wPlw",
+              "actual_url": "https://www.rareconnections.io/best-ai-crypto-projects"
+            },
+            {
+              "title": "onchain.org",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOYVDdxktU6qHEEmEAk2-OVcENY8ryzH1gJjNkDHqCxBpZv-MIzAxKdc2mC_GdvybLVnvP2Akt72-njvjBOhYySsLtXSJtLkUyqAsoJoKN0z-6qhs2xWhaNt0S8WlYs5BkbYmbOKIUOVfClW8=",
+              "actual_url": "https://onchain.org/magazine/top-web3-ai-projects/"
+            },
+            {
+              "title": "github.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVm5GtVZj50v7-5qOW1YXjT-DRzAywczY1LuNsObe8UWc3dNzDKqnkXXfv-z5MPsBQru575uOIdaoCGL_Py6lh2EsN_SFcUdwvD1t2JRjKEoKUje7Widfr5BHo74SC1UdPedxyCojwX-wo5WNo",
+              "actual_url": "https://github.com/steven2358/awesome-blockchain-ai"
+            },
+            {
+              "title": "golden.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSqlboLbTGIA8QxqlgmeHfnCJqk6U1DX7-dl3JUPxUVeeICXTCTZkm8sCHzpS2W-yFez-2b6RwmxbYGwaljF02frsOuZjqh2LVzUoUWesPlhqY_Ozgs9HL6Wsem1WRn2NHjH41mA9J47RZN_J9Hwt2gGHBv0fBR0k=",
+              "actual_url": "https://golden.com/query/list-of-ai-blockchain-companies-6JM5A"
+            },
+            {
+              "title": "flagship.fyi",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpIBkDUtTlv9G-K0gTbWxs7us8BG8PsgE82-59pXIyPEeAUILwEY5B2mCTBZAfNbQ5utlAOXJLAIwXi1pQrsEa8p-7Q9LQOfkUVYs9hK9UXojGo1P7xydsW6Y6rSOuUrFhYf_KPmbUAmjXe7YkrdU1VaZbnENI_lNI5clEYo5iQ8H96cRo1bkYai2rgWduced5fW9IZS-5a99kog==",
+              "actual_url": "https://flagship.fyi/outposts/ai-crypto/the-top-10-ai-crypto-projects-merging-ai-with-blockchain/"
+            }
+          ],
+          "start_index": 430,
+          "end_index": 633
+        },
+        {
+          "text": "It offers an AI-powered smart contract platform allowing developers to build dApps with AI reasoning capabilities and to upload, share, and execute AI models across a distributed network.",
+          "links": [
+            {
+              "title": "onchain.org",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOYVDdxktU6qHEEmEAk2-OVcENY8ryzH1gJjNkDHqCxBpZv-MIzAxKdc2mC_GdvybLVnvP2Akt72-njvjBOhYySsLtXSJtLkUyqAsoJoKN0z-6qhs2xWhaNt0S8WlYs5BkbYmbOKIUOVfClW8=",
+              "actual_url": "https://onchain.org/magazine/top-web3-ai-projects/"
+            },
+            {
+              "title": "github.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVm5GtVZj50v7-5qOW1YXjT-DRzAywczY1LuNsObe8UWc3dNzDKqnkXXfv-z5MPsBQru575uOIdaoCGL_Py6lh2EsN_SFcUdwvD1t2JRjKEoKUje7Widfr5BHo74SC1UdPedxyCojwX-wo5WNo",
+              "actual_url": "https://github.com/steven2358/awesome-blockchain-ai"
+            },
+            {
+              "title": "cryptopolitan.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNQXe7CTurIUk1CN7nwqay8vgCHn2iGuRIdyFhQyWIOmZoe7G1QIh59u9dxaVR0XIB1xRLGkQAE1jzFSfE01bXkDxvTkPa0BeDqcfc8l_nJTBcsjeGM__EB6uO-c0gKkFKfC-oFPdnZtAaOPP4HuPlwJdjbAoyACNtbvfCZzIzoSjA_WGY",
+              "actual_url": "https://www.cryptopolitan.com/ai-blockchain-projects-technology-intertwine/"
+            }
+          ],
+          "start_index": 719,
+          "end_index": 906
+        },
+        {
+          "text": "It focuses on a decentralized digital economy where AI-powered agents interact and transact autonomously using blockchain, performing tasks like optimizing supply chains or trading tokens.",
+          "links": [
+            {
+              "title": "rareconnections.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExEbaucJaoVTo42pdzBH_EoKQ0MhNwOSSfSBEwFixsSrvo3uCsdT4KtjBsYX_kn5A2rC8NsYiVumh6VYNuH0A0sowQeBExXpJJEAG37WhOAZsy01AzZaqXzctpQ5vrji3hqGfmDiJraORREUA9wPlw",
+              "actual_url": "https://www.rareconnections.io/best-ai-crypto-projects"
+            },
+            {
+              "title": "onchain.org",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOYVDdxktU6qHEEmEAk2-OVcENY8ryzH1gJjNkDHqCxBpZv-MIzAxKdc2mC_GdvybLVnvP2Akt72-njvjBOhYySsLtXSJtLkUyqAsoJoKN0z-6qhs2xWhaNt0S8WlYs5BkbYmbOKIUOVfClW8=",
+              "actual_url": "https://onchain.org/magazine/top-web3-ai-projects/"
+            },
+            {
+              "title": "precedenceresearch.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlhjQx_8D7Vk0gV9KV8eZ9ssGUkBYA50cLW-i6thSe3K0O1pNdhrBpBujtB_EvK0lOKWuTudkqLCIH8jUfnaTn4EEqXVJYANJ50BmbsucB8Y2CoL_eEdYHwd_dnhYXPRxoZORNeB94x47Y2VGQCNk2iR0XSocVsIo=",
+              "actual_url": "https://www.precedenceresearch.com/top-companies/blockchain-ai"
+            },
+            {
+              "title": "github.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVm5GtVZj50v7-5qOW1YXjT-DRzAywczY1LuNsObe8UWc3dNzDKqnkXXfv-z5MPsBQru575uOIdaoCGL_Py6lh2EsN_SFcUdwvD1t2JRjKEoKUje7Widfr5BHo74SC1UdPedxyCojwX-wo5WNo",
+              "actual_url": "https://github.com/steven2358/awesome-blockchain-ai"
+            },
+            {
+              "title": "golden.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSqlboLbTGIA8QxqlgmeHfnCJqk6U1DX7-dl3JUPxUVeeICXTCTZkm8sCHzpS2W-yFez-2b6RwmxbYGwaljF02frsOuZjqh2LVzUoUWesPlhqY_Ozgs9HL6Wsem1WRn2NHjH41mA9J47RZN_J9Hwt2gGHBv0fBR0k=",
+              "actual_url": "https://golden.com/query/list-of-ai-blockchain-companies-6JM5A"
+            },
+            {
+              "title": "cryptopolitan.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNQXe7CTurIUk1CN7nwqay8vgCHn2iGuRIdyFhQyWIOmZoe7G1QIh59u9dxaVR0XIB1xRLGkQAE1jzFSfE01bXkDxvTkPa0BeDqcfc8l_nJTBcsjeGM__EB6uO-c0gKkFKfC-oFPdnZtAaOPP4HuPlwJdjbAoyACNtbvfCZzIzoSjA_WGY",
+              "actual_url": "https://www.cryptopolitan.com/ai-blockchain-projects-technology-intertwine/"
+            },
+            {
+              "title": "blockchaintechs.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2H7sKmKsyeVi5kj6VM5nSzfmlGrV2gkGbAvLIKf_s2FmH8d0Z9bnEdBue-qSeWvC3I3JVid7DjUkiGBFDbW4h346Huy_R9y2bNXRnSsrNIWtZ95h4XnMEzxfGGEF2c1oW6pERk5A53aQ2uVKaMbTaLm_eJ9gefirpYzhwr0m8qSkXyfHT4ToOEE7BwwYtLODc",
+              "actual_url": "https://blockchaintechs.io/convergence-of-ai-blockchain-for-decentralized-technologies/"
+            }
+          ],
+          "start_index": 1136,
+          "end_index": 1324
+        },
+        {
+          "text": "It leverages computational power and data to generate intelligence through machine learning models, democratizing AI development.",
+          "links": [
+            {
+              "title": "rareconnections.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExEbaucJaoVTo42pdzBH_EoKQ0MhNwOSSfSBEwFixsSrvo3uCsdT4KtjBsYX_kn5A2rC8NsYiVumh6VYNuH0A0sowQeBExXpJJEAG37WhOAZsy01AzZaqXzctpQ5vrji3hqGfmDiJraORREUA9wPlw",
+              "actual_url": "https://www.rareconnections.io/best-ai-crypto-projects"
+            },
+            {
+              "title": "github.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVm5GtVZj50v7-5qOW1YXjT-DRzAywczY1LuNsObe8UWc3dNzDKqnkXXfv-z5MPsBQru575uOIdaoCGL_Py6lh2EsN_SFcUdwvD1t2JRjKEoKUje7Widfr5BHo74SC1UdPedxyCojwX-wo5WNo",
+              "actual_url": "https://github.com/steven2358/awesome-blockchain-ai"
+            }
+          ],
+          "start_index": 1483,
+          "end_index": 1612
+        },
+        {
+          "text": "It focuses on powering the data economy and decentralized oracle services, enabling intelligent, next-generation smart contracts and dApps by integrating AI directly into its core infrastructure.",
+          "links": [
+            {
+              "title": "onchain.org",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOYVDdxktU6qHEEmEAk2-OVcENY8ryzH1gJjNkDHqCxBpZv-MIzAxKdc2mC_GdvybLVnvP2Akt72-njvjBOhYySsLtXSJtLkUyqAsoJoKN0z-6qhs2xWhaNt0S8WlYs5BkbYmbOKIUOVfClW8=",
+              "actual_url": "https://onchain.org/magazine/top-web3-ai-projects/"
+            },
+            {
+              "title": "github.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVm5GtVZj50v7-5qOW1YXjT-DRzAywczY1LuNsObe8UWc3dNzDKqnkXXfv-z5MPsBQru575uOIdaoCGL_Py6lh2EsN_SFcUdwvD1t2JRjKEoKUje7Widfr5BHo74SC1UdPedxyCojwX-wo5WNo",
+              "actual_url": "https://github.com/steven2358/awesome-blockchain-ai"
+            }
+          ],
+          "start_index": 1728,
+          "end_index": 1923
+        },
+        {
+          "text": "It uses AI to enhance data queries and automate decision-making.",
+          "links": [
+            {
+              "title": "rareconnections.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExEbaucJaoVTo42pdzBH_EoKQ0MhNwOSSfSBEwFixsSrvo3uCsdT4KtjBsYX_kn5A2rC8NsYiVumh6VYNuH0A0sowQeBExXpJJEAG37WhOAZsy01AzZaqXzctpQ5vrji3hqGfmDiJraORREUA9wPlw",
+              "actual_url": "https://www.rareconnections.io/best-ai-crypto-projects"
+            },
+            {
+              "title": "forbes.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEibDwfiwRpdcdJoTUtQGrM0MxXAHUFOuPHo6sc7TEh4ME1f12Y64THy5N5heWtuh_iZzGAk6CsryC4sGZu5MiAXJoVnW5IlUdMANJ2FV-75IzIWWvkouqM2JNYCgjl4q3FttpL95OiXF4yizu9lBkoZQZqV2vTZm3Fgbub95fOt3v1VFGK6ijrcvPzZ1hCBoBBkcvicVy8kM-HL057TMIRT_azZIgyjL08A7ZhOn8AL9tC0NwGfBqw5OuCEAiiAg=",
+              "actual_url": "https://www.forbes.com/councils/forbesbusinesscouncil/2025/01/16/where-blockchain-meets-ai-exploring-the-convergence-of-technologies/"
+            }
+          ],
+          "start_index": 2022,
+          "end_index": 2086
+        },
+        {
+          "text": "It uses AI and blockchain to ensure transparency, data privacy, and incentive alignment across a decentralized research network, rewarding top-performing models with its NMR token.",
+          "links": [
+            {
+              "title": "rareconnections.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExEbaucJaoVTo42pdzBH_EoKQ0MhNwOSSfSBEwFixsSrvo3uCsdT4KtjBsYX_kn5A2rC8NsYiVumh6VYNuH0A0sowQeBExXpJJEAG37WhOAZsy01AzZaqXzctpQ5vrji3hqGfmDiJraORREUA9wPlw",
+              "actual_url": "https://www.rareconnections.io/best-ai-crypto-projects"
+            },
+            {
+              "title": "onchain.org",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOYVDdxktU6qHEEmEAk2-OVcENY8ryzH1gJjNkDHqCxBpZv-MIzAxKdc2mC_GdvybLVnvP2Akt72-njvjBOhYySsLtXSJtLkUyqAsoJoKN0z-6qhs2xWhaNt0S8WlYs5BkbYmbOKIUOVfClW8=",
+              "actual_url": "https://onchain.org/magazine/top-web3-ai-projects/"
+            },
+            {
+              "title": "golden.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSqlboLbTGIA8QxqlgmeHfnCJqk6U1DX7-dl3JUPxUVeeICXTCTZkm8sCHzpS2W-yFez-2b6RwmxbYGwaljF02frsOuZjqh2LVzUoUWesPlhqY_Ozgs9HL6Wsem1WRn2NHjH41mA9J47RZN_J9Hwt2gGHBv0fBR0k=",
+              "actual_url": "https://golden.com/query/list-of-ai-blockchain-companies-6JM5A"
+            },
+            {
+              "title": "cryptopolitan.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNQXe7CTurIUk1CN7nwqay8vgCHn2iGuRIdyFhQyWIOmZoe7G1QIh59u9dxaVR0XIB1xRLGkQAE1jzFSfE01bXkDxvTkPa0BeDqcfc8l_nJTBcsjeGM__EB6uO-c0gKkFKfC-oFPdnZtAaOPP4HuPlwJdjbAoyACNtbvfCZzIzoSjA_WGY",
+              "actual_url": "https://www.cryptopolitan.com/ai-blockchain-projects-technology-intertwine/"
+            },
+            {
+              "title": "flagship.fyi",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpIBkDUtTlv9G-K0gTbWxs7us8BG8PsgE82-59pXIyPEeAUILwEY5B2mCTBZAfNbQ5utlAOXJLAIwXi1pQrsEa8p-7Q9LQOfkUVYs9hK9UXojGo1P7xydsW6Y6rSOuUrFhYf_KPmbUAmjXe7YkrdU1VaZbnENI_lNI5clEYo5iQ8H96cRo1bkYai2rgWduced5fW9IZS-5a99kog==",
+              "actual_url": "https://flagship.fyi/outposts/ai-crypto/the-top-10-ai-crypto-projects-merging-ai-with-blockchain/"
+            }
+          ],
+          "start_index": 2246,
+          "end_index": 2426
+        },
+        {
+          "text": "It provides on-chain metadata and off-chain encrypted data, with access controlled via data tokens, allowing AI developers to access datasets while ensuring data privacy.",
+          "links": [
+            {
+              "title": "rareconnections.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExEbaucJaoVTo42pdzBH_EoKQ0MhNwOSSfSBEwFixsSrvo3uCsdT4KtjBsYX_kn5A2rC8NsYiVumh6VYNuH0A0sowQeBExXpJJEAG37WhOAZsy01AzZaqXzctpQ5vrji3hqGfmDiJraORREUA9wPlw",
+              "actual_url": "https://www.rareconnections.io/best-ai-crypto-projects"
+            },
+            {
+              "title": "onchain.org",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOYVDdxktU6qHEEmEAk2-OVcENY8ryzH1gJjNkDHqCxBpZv-MIzAxKdc2mC_GdvybLVnvP2Akt72-njvjBOhYySsLtXSJtLkUyqAsoJoKN0z-6qhs2xWhaNt0S8WlYs5BkbYmbOKIUOVfClW8=",
+              "actual_url": "https://onchain.org/magazine/top-web3-ai-projects/"
+            },
+            {
+              "title": "golden.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSqlboLbTGIA8QxqlgmeHfnCJqk6U1DX7-dl3JUPxUVeeICXTCTZkm8sCHzpS2W-yFez-2b6RwmxbYGwaljF02frsOuZjqh2LVzUoUWesPlhqY_Ozgs9HL6Wsem1WRn2NHjH41mA9J47RZN_J9Hwt2gGHBv0fBR0k=",
+              "actual_url": "https://golden.com/query/list-of-ai-blockchain-companies-6JM5A"
+            },
+            {
+              "title": "blockchaintechs.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2H7sKmKsyeVi5kj6VM5nSzfmlGrV2gkGbAvLIKf_s2FmH8d0Z9bnEdBue-qSeWvC3I3JVid7DjUkiGBFDbW4h346Huy_R9y2bNXRnSsrNIWtZ95h4XnMEzxfGGEF2c1oW6pERk5A53aQ2uVKaMbTaLm_eJ9gefirpYzhwr0m8qSkXyfHT4ToOEE7BwwYtLODc",
+              "actual_url": "https://blockchaintechs.io/convergence-of-ai-blockchain-for-decentralized-technologies/"
+            }
+          ],
+          "start_index": 2586,
+          "end_index": 2756
+        },
+        {
+          "text": "It facilitates the remote execution and cryptographic verification of machine learning tasks across distributed hardware, supporting scalable AI model training with transparency and cost-efficiency.",
+          "links": [
+            {
+              "title": "onchain.org",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOYVDdxktU6qHEEmEAk2-OVcENY8ryzH1gJjNkDHqCxBpZv-MIzAxKdc2mC_GdvybLVnvP2Akt72-njvjBOhYySsLtXSJtLkUyqAsoJoKN0z-6qhs2xWhaNt0S8WlYs5BkbYmbOKIUOVfClW8=",
+              "actual_url": "https://onchain.org/magazine/top-web3-ai-projects/"
+            }
+          ],
+          "start_index": 2882,
+          "end_index": 3080
+        },
+        {
+          "text": "*   **Akash Network** provides a decentralized cloud computing marketplace, offering an alternative for AI and machine learning workloads by utilizing underutilized computing resources.",
+          "links": [
+            {
+              "title": "rareconnections.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExEbaucJaoVTo42pdzBH_EoKQ0MhNwOSSfSBEwFixsSrvo3uCsdT4KtjBsYX_kn5A2rC8NsYiVumh6VYNuH0A0sowQeBExXpJJEAG37WhOAZsy01AzZaqXzctpQ5vrji3hqGfmDiJraORREUA9wPlw",
+              "actual_url": "https://www.rareconnections.io/best-ai-crypto-projects"
+            }
+          ],
+          "start_index": 3081,
+          "end_index": 3266
+        },
+        {
+          "text": "*   **PixelCrayons** is known for helping startups and enterprises build secure, AI-powered blockchain applications, focusing on smart contracts, dApps, and analytics tools.",
+          "links": [
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHl_TCEjdnIp19khpG1_2JtgR0QKdatLT-2J8rXen5bGd8ELRUQPffVZWLEgN-gQp-2vJPfqpB50j6VuV5LIFO7RikgPLAp5GtlSwurxrifokWD1TRwCoXt2Y3pgm_VVKuo1azAfKPyxPzB9WDe8F-8UVtcvSofKIO_Vqj2uhisqr8nw5nhmC7EzTwWBDoAUn3Aj8sOm6LtOs1Mtbqb1tf8x-O7mGq5T0g=",
+              "actual_url": "https://ankitakapoor23.medium.com/top-companies-delivering-ai-driven-blockchain-solutions-in-2025-523fc36fd187"
+            },
+            {
+              "title": "dev.to",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG68J0_2SnlkfRtVSX94ZHcUMhanBzfZwaycEJSyETMgsQykxpbRS2CLVeeJ-hsOaofS6GED18GlruWBKgUo5Mccc5bF_-il9Rsag7TbMegOsiNdMpP3zfKzJ6WJ5DlSdz8PhLPmpHRTUWXn3K_-JdqD9ZdliN4TokwhlJsk_hRsUeroC-OYuKCVtcUrvyQgd64jYNmdE9r",
+              "actual_url": "https://dev.to/angelinajasper/ai-meets-blockchain-top-companies-making-it-happen-in-2025-5ajg"
+            }
+          ],
+          "start_index": 3339,
+          "end_index": 3512
+        },
+        {
+          "text": "*   **Appinventiv** integrates AI capabilities with blockchain to support secure, scalable dApps and real-time data analytics across various sectors like finance and healthcare.",
+          "links": [
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHl_TCEjdnIp19khpG1_2JtgR0QKdatLT-2J8rXen5bGd8ELRUQPffVZWLEgN-gQp-2vJPfqpB50j6VuV5LIFO7RikgPLAp5GtlSwurxrifokWD1TRwCoXt2Y3pgm_VVKuo1azAfKPyxPzB9WDe8F-8UVtcvSofKIO_Vqj2uhisqr8nw5nhmC7EzTwWBDoAUn3Aj8sOm6LtOs1Mtbqb1tf8x-O7mGq5T0g=",
+              "actual_url": "https://ankitakapoor23.medium.com/top-companies-delivering-ai-driven-blockchain-solutions-in-2025-523fc36fd187"
+            },
+            {
+              "title": "dev.to",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG68J0_2SnlkfRtVSX94ZHcUMhanBzfZwaycEJSyETMgsQykxpbRS2CLVeeJ-hsOaofS6GED18GlruWBKgUo5Mccc5bF_-il9Rsag7TbMegOsiNdMpP3zfKzJ6WJ5DlSdz8PhLPmpHRTUWXn3K_-JdqD9ZdliN4TokwhlJsk_hRsUeroC-OYuKCVtcUrvyQgd64jYNmdE9r",
+              "actual_url": "https://dev.to/angelinajasper/ai-meets-blockchain-top-companies-making-it-happen-in-2025-5ajg"
+            }
+          ],
+          "start_index": 3513,
+          "end_index": 3690
+        },
+        {
+          "text": "*   **Antier Solutions** offers AI-led automation, tokenization, blockchain consultancy, and AI-infused smart contracts.",
+          "links": [
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHl_TCEjdnIp19khpG1_2JtgR0QKdatLT-2J8rXen5bGd8ELRUQPffVZWLEgN-gQp-2vJPfqpB50j6VuV5LIFO7RikgPLAp5GtlSwurxrifokWD1TRwCoXt2Y3pgm_VVKuo1azAfKPyxPzB9WDe8F-8UVtcvSofKIO_Vqj2uhisqr8nw5nhmC7EzTwWBDoAUn3Aj8sOm6LtOs1Mtbqb1tf8x-O7mGq5T0g=",
+              "actual_url": "https://ankitakapoor23.medium.com/top-companies-delivering-ai-driven-blockchain-solutions-in-2025-523fc36fd187"
+            },
+            {
+              "title": "dev.to",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG68J0_2SnlkfRtVSX94ZHcUMhanBzfZwaycEJSyETMgsQykxpbRS2CLVeeJ-hsOaofS6GED18GlruWBKgUo5Mccc5bF_-il9Rsag7TbMegOsiNdMpP3zfKzJ6WJ5DlSdz8PhLPmpHRTUWXn3K_-JdqD9ZdliN4TokwhlJsk_hRsUeroC-OYuKCVtcUrvyQgd64jYNmdE9r",
+              "actual_url": "https://dev.to/angelinajasper/ai-meets-blockchain-top-companies-making-it-happen-in-2025-5ajg"
+            }
+          ],
+          "start_index": 3691,
+          "end_index": 3811
+        },
+        {
+          "text": "*   **ValueCoders** has extensive experience in building AI-infused blockchain systems.",
+          "links": [
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHl_TCEjdnIp19khpG1_2JtgR0QKdatLT-2J8rXen5bGd8ELRUQPffVZWLEgN-gQp-2vJPfqpB50j6VuV5LIFO7RikgPLAp5GtlSwurxrifokWD1TRwCoXt2Y3pgm_VVKuo1azAfKPyxPzB9WDe8F-8UVtcvSofKIO_Vqj2uhisqr8nw5nhmC7EzTwWBDoAUn3Aj8sOm6LtOs1Mtbqb1tf8x-O7mGq5T0g=",
+              "actual_url": "https://ankitakapoor23.medium.com/top-companies-delivering-ai-driven-blockchain-solutions-in-2025-523fc36fd187"
+            },
+            {
+              "title": "dev.to",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG68J0_2SnlkfRtVSX94ZHcUMhanBzfZwaycEJSyETMgsQykxpbRS2CLVeeJ-hsOaofS6GED18GlruWBKgUo5Mccc5bF_-il9Rsag7TbMegOsiNdMpP3zfKzJ6WJ5DlSdz8PhLPmpHRTUWXn3K_-JdqD9ZdliN4TokwhlJsk_hRsUeroC-OYuKCVtcUrvyQgd64jYNmdE9r",
+              "actual_url": "https://dev.to/angelinajasper/ai-meets-blockchain-top-companies-making-it-happen-in-2025-5ajg"
+            }
+          ],
+          "start_index": 3812,
+          "end_index": 3899
+        },
+        {
+          "text": "*   **LeewayHertz** combines AI with blockchain to create high-tech solutions for industries such as healthcare, supply chain, and finance.",
+          "links": [
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHl_TCEjdnIp19khpG1_2JtgR0QKdatLT-2J8rXen5bGd8ELRUQPffVZWLEgN-gQp-2vJPfqpB50j6VuV5LIFO7RikgPLAp5GtlSwurxrifokWD1TRwCoXt2Y3pgm_VVKuo1azAfKPyxPzB9WDe8F-8UVtcvSofKIO_Vqj2uhisqr8nw5nhmC7EzTwWBDoAUn3Aj8sOm6LtOs1Mtbqb1tf8x-O7mGq5T0g=",
+              "actual_url": "https://ankitakapoor23.medium.com/top-companies-delivering-ai-driven-blockchain-solutions-in-2025-523fc36fd187"
+            },
+            {
+              "title": "dev.to",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG68J0_2SnlkfRtVSX94ZHcUMhanBzfZwaycEJSyETMgsQykxpbRS2CLVeeJ-hsOaofS6GED18GlruWBKgUo5Mccc5bF_-il9Rsag7TbMegOsiNdMpP3zfKzJ6WJ5DlSdz8PhLPmpHRTUWXn3K_-JdqD9ZdliN4TokwhlJsk_hRsUeroC-OYuKCVtcUrvyQgd64jYNmdE9r",
+              "actual_url": "https://dev.to/angelinajasper/ai-meets-blockchain-top-companies-making-it-happen-in-2025-5ajg"
+            }
+          ],
+          "start_index": 3900,
+          "end_index": 4039
+        },
+        {
+          "text": "*   **SoluLab** specializes in building custom dApps that merge AI and blockchain.",
+          "links": [
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHl_TCEjdnIp19khpG1_2JtgR0QKdatLT-2J8rXen5bGd8ELRUQPffVZWLEgN-gQp-2vJPfqpB50j6VuV5LIFO7RikgPLAp5GtlSwurxrifokWD1TRwCoXt2Y3pgm_VVKuo1azAfKPyxPzB9WDe8F-8UVtcvSofKIO_Vqj2uhisqr8nw5nhmC7EzTwWBDoAUn3Aj8sOm6LtOs1Mtbqb1tf8x-O7mGq5T0g=",
+              "actual_url": "https://ankitakapoor23.medium.com/top-companies-delivering-ai-driven-blockchain-solutions-in-2025-523fc36fd187"
+            },
+            {
+              "title": "dev.to",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG68J0_2SnlkfRtVSX94ZHcUMhanBzfZwaycEJSyETMgsQykxpbRS2CLVeeJ-hsOaofS6GED18GlruWBKgUo5Mccc5bF_-il9Rsag7TbMegOsiNdMpP3zfKzJ6WJ5DlSdz8PhLPmpHRTUWXn3K_-JdqD9ZdliN4TokwhlJsk_hRsUeroC-OYuKCVtcUrvyQgd64jYNmdE9r",
+              "actual_url": "https://dev.to/angelinajasper/ai-meets-blockchain-top-companies-making-it-happen-in-2025-5ajg"
+            }
+          ],
+          "start_index": 4040,
+          "end_index": 4122
+        },
+        {
+          "text": "*   **ScienceSoft** is recognized for building secure and intelligent blockchain solutions using AI.",
+          "links": [
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHl_TCEjdnIp19khpG1_2JtgR0QKdatLT-2J8rXen5bGd8ELRUQPffVZWLEgN-gQp-2vJPfqpB50j6VuV5LIFO7RikgPLAp5GtlSwurxrifokWD1TRwCoXt2Y3pgm_VVKuo1azAfKPyxPzB9WDe8F-8UVtcvSofKIO_Vqj2uhisqr8nw5nhmC7EzTwWBDoAUn3Aj8sOm6LtOs1Mtbqb1tf8x-O7mGq5T0g=",
+              "actual_url": "https://ankitakapoor23.medium.com/top-companies-delivering-ai-driven-blockchain-solutions-in-2025-523fc36fd187"
+            },
+            {
+              "title": "dev.to",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG68J0_2SnlkfRtVSX94ZHcUMhanBzfZwaycEJSyETMgsQykxpbRS2CLVeeJ-hsOaofS6GED18GlruWBKgUo5Mccc5bF_-il9Rsag7TbMegOsiNdMpP3zfKzJ6WJ5DlSdz8PhLPmpHRTUWXn3K_-JdqD9ZdliN4TokwhlJsk_hRsUeroC-OYuKCVtcUrvyQgd64jYNmdE9r",
+              "actual_url": "https://dev.to/angelinajasper/ai-meets-blockchain-top-companies-making-it-happen-in-2025-5ajg"
+            }
+          ],
+          "start_index": 4123,
+          "end_index": 4223
+        },
+        {
+          "text": "*   **Debut Infotech** builds advanced applications using both AI and blockchain, designed for businesses needing to scale rapidly in sectors like fintech, healthtech, and logistics.",
+          "links": [
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHl_TCEjdnIp19khpG1_2JtgR0QKdatLT-2J8rXen5bGd8ELRUQPffVZWLEgN-gQp-2vJPfqpB50j6VuV5LIFO7RikgPLAp5GtlSwurxrifokWD1TRwCoXt2Y3pgm_VVKuo1azAfKPyxPzB9WDe8F-8UVtcvSofKIO_Vqj2uhisqr8nw5nhmC7EzTwWBDoAUn3Aj8sOm6LtOs1Mtbqb1tf8x-O7mGq5T0g=",
+              "actual_url": "https://ankitakapoor23.medium.com/top-companies-delivering-ai-driven-blockchain-solutions-in-2025-523fc36fd187"
+            },
+            {
+              "title": "dev.to",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG68J0_2SnlkfRtVSX94ZHcUMhanBzfZwaycEJSyETMgsQykxpbRS2CLVeeJ-hsOaofS6GED18GlruWBKgUo5Mccc5bF_-il9Rsag7TbMegOsiNdMpP3zfKzJ6WJ5DlSdz8PhLPmpHRTUWXn3K_-JdqD9ZdliN4TokwhlJsk_hRsUeroC-OYuKCVtcUrvyQgd64jYNmdE9r",
+              "actual_url": "https://dev.to/angelinajasper/ai-meets-blockchain-top-companies-making-it-happen-in-2025-5ajg"
+            }
+          ],
+          "start_index": 4224,
+          "end_index": 4406
+        },
+        {
+          "text": "*   **Sparx IT Solutions** delivers AI-enabled blockchain solutions for task automation, data security, and scalability across industries.",
+          "links": [
+            {
+              "title": "dev.to",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG68J0_2SnlkfRtVSX94ZHcUMhanBzfZwaycEJSyETMgsQykxpbRS2CLVeeJ-hsOaofS6GED18GlruWBKgUo5Mccc5bF_-il9Rsag7TbMegOsiNdMpP3zfKzJ6WJ5DlSdz8PhLPmpHRTUWXn3K_-JdqD9ZdliN4TokwhlJsk_hRsUeroC-OYuKCVtcUrvyQgd64jYNmdE9r",
+              "actual_url": "https://dev.to/angelinajasper/ai-meets-blockchain-top-companies-making-it-happen-in-2025-5ajg"
+            }
+          ],
+          "start_index": 4407,
+          "end_index": 4545
+        },
+        {
+          "text": "*   **VAIOT** merges AI with blockchain to create AI-driven services and on-chain Intelligent Contracts, aiming to automate services and transactions in industries like insurance and finance.",
+          "links": [
+            {
+              "title": "golden.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSqlboLbTGIA8QxqlgmeHfnCJqk6U1DX7-dl3JUPxUVeeICXTCTZkm8sCHzpS2W-yFez-2b6RwmxbYGwaljF02frsOuZjqh2LVzUoUWesPlhqY_Ozgs9HL6Wsem1WRn2NHjH41mA9J47RZN_J9Hwt2gGHBv0fBR0k=",
+              "actual_url": "https://golden.com/query/list-of-ai-blockchain-companies-6JM5A"
+            },
+            {
+              "title": "flagship.fyi",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpIBkDUtTlv9G-K0gTbWxs7us8BG8PsgE82-59pXIyPEeAUILwEY5B2mCTBZAfNbQ5utlAOXJLAIwXi1pQrsEa8p-7Q9LQOfkUVYs9hK9UXojGo1P7xydsW6Y6rSOuUrFhYf_KPmbUAmjXe7YkrdU1VaZbnENI_lNI5clEYo5iQ8H96cRo1bkYai2rgWduced5fW9IZS-5a99kog==",
+              "actual_url": "https://flagship.fyi/outposts/ai-crypto/the-top-10-ai-crypto-projects-merging-ai-with-blockchain/"
+            }
+          ],
+          "start_index": 4546,
+          "end_index": 4737
+        },
+        {
+          "text": "These companies and projects are at the forefront of combining the intelligence of AI with the security and decentralization of blockchain, addressing challenges like data monopolies, AI bias, and data manipulation to create more efficient, trustworthy, and scalable decentralized ecosystems.",
+          "links": [
+            {
+              "title": "onchain.org",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOYVDdxktU6qHEEmEAk2-OVcENY8ryzH1gJjNkDHqCxBpZv-MIzAxKdc2mC_GdvybLVnvP2Akt72-njvjBOhYySsLtXSJtLkUyqAsoJoKN0z-6qhs2xWhaNt0S8WlYs5BkbYmbOKIUOVfClW8=",
+              "actual_url": "https://onchain.org/magazine/top-web3-ai-projects/"
+            },
+            {
+              "title": "blockchaintechs.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2H7sKmKsyeVi5kj6VM5nSzfmlGrV2gkGbAvLIKf_s2FmH8d0Z9bnEdBue-qSeWvC3I3JVid7DjUkiGBFDbW4h346Huy_R9y2bNXRnSsrNIWtZ95h4XnMEzxfGGEF2c1oW6pERk5A53aQ2uVKaMbTaLm_eJ9gefirpYzhwr0m8qSkXyfHT4ToOEE7BwwYtLODc",
+              "actual_url": "https://blockchaintechs.io/convergence-of-ai-blockchain-for-decentralized-technologies/"
+            }
+          ],
+          "start_index": 4739,
+          "end_index": 5031
+        }
+      ],
+      "has_grounding": true
+    }
+  },
+  {
+    "query": "Tell me about iBriz.ai",
+    "links": [
+      {
+        "domain": "ibriz.ai",
+        "count": 6
+      },
+      {
+        "domain": "tracxn.com",
+        "count": 3
+      },
+      {
+        "domain": "theorg.com",
+        "count": 1
+      },
+      {
+        "domain": "ietp.com",
+        "count": 1
+      }
+    ],
+    "complete_result": {
+      "query": "Tell me about iBriz.ai",
+      "response_text": "iBriz.ai is a Santa Clara, California-based company founded in 2017, operating as a consulting firm specializing in Blockchain and Artificial Intelligence (AI).\n\nKey aspects of iBriz.ai include:\n*   **Core Business** iBriz.ai primarily functions as a consulting firm focused on Blockchain and AI. They also provide financial software solutions. Their work involves bridging knowledge, services, and individuals with Blockchain technology and Fintech.\n*   **Services Offered** In addition to their core consulting, iBriz.ai offers services such as startup investment sourcing, product-market fit consulting, talent recruitment, and facilitating access to Bay Area technology and funding for international startups.\n*   **AI and Blockchain Focus** The company emphasizes the integration of AI models, providing tools for data labeling, model training, and evaluation to help users fine-tune AI algorithms to their specific business needs. They are actively involved in exploring the convergence of blockchain and AI, evidenced by events co-hosted with organizations like the Sui Foundation.\n*   **Non-Profit Initiative** iBriz.ai has a non-profit arm named HW Halchowk, an after-school tuition center located in a community in Kathmandu, Nepal. This initiative aims to support local children by providing free academic assistance and guidance in life skills, with the goal of reducing dropout rates and fostering holistic development.\n*   **Company Status** As of the latest information, iBriz.ai is an unfunded company and operates among a significant number of competitors in the blockchain and AI consulting space.\n\nIt is important to note that iBriz.ai should not be confused with \"IBRIZ,\" which is a separate company founded in 2020 that operates in the renewable energy sector, specifically AgriTech, in Sub-Saharan Africa.",
+      "web_search_queries": [
+        "iBriz.ai",
+        "what is iBriz.ai"
+      ],
+      "grounding_metadata": [
+        {
+          "text": "iBriz.ai is a Santa Clara, California-based company founded in 2017, operating as a consulting firm specializing in Blockchain and Artificial Intelligence (AI)",
+          "links": [
+            {
+              "title": "tracxn.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJ4StMDIGAP4VclHzo2OYIjLzDZOj_zw72VkDVFKcLKoZUUMNaGoCvxj6KXsX9iaLBX5IZHVGZuDnFzwAIRMnfLb_gCmSMtXluIQEdAFaJu6bEi6xTKUc9ZK1JhPGixhZBehAs6wJM9Vtwq6jrIq4N1QQT9XcxollzJZek6G7aaZ1xLOq5w9P2zYm41VhSLi4=",
+              "actual_url": "https://tracxn.com/d/companies/ibriz.ai/__3zy30oAR2AKvH0r2NOdtB7TXBeP9Yqqi9tQ0tv7W7Bc"
+            }
+          ],
+          "start_index": null,
+          "end_index": 159
+        },
+        {
+          "text": "They also provide financial software solutions",
+          "links": [
+            {
+              "title": "tracxn.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJ4StMDIGAP4VclHzo2OYIjLzDZOj_zw72VkDVFKcLKoZUUMNaGoCvxj6KXsX9iaLBX5IZHVGZuDnFzwAIRMnfLb_gCmSMtXluIQEdAFaJu6bEi6xTKUc9ZK1JhPGixhZBehAs6wJM9Vtwq6jrIq4N1QQT9XcxollzJZek6G7aaZ1xLOq5w9P2zYm41VhSLi4=",
+              "actual_url": "https://tracxn.com/d/companies/ibriz.ai/__3zy30oAR2AKvH0r2NOdtB7TXBeP9Yqqi9tQ0tv7W7Bc"
+            },
+            {
+              "title": "theorg.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6357LtnJ1G6xSYE402mMq8GwTaNzG8zVCA24i7UjkCHbfOjFv4-cynysDipRFtQ4etnE4Rxd19rVvuvccN1hhML61xS7m8EVl-Y6p11sFUmT3_0Vfhn4TU6s=",
+              "actual_url": "https://theorg.com/org/ibriz-ai"
+            }
+          ],
+          "start_index": 297,
+          "end_index": 343
+        },
+        {
+          "text": "Their work involves bridging knowledge, services, and individuals with Blockchain technology and Fintech",
+          "links": [
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0WzgCXpVI3PdhJiW3OZqtL4t8-g5Ec5gH7FF27r0OvKu-hPMjGqcrrLAzyGkjIZmk_4iSLr0-i2zKtNfOe_eysvOYzX2_hE8r8DtA",
+              "actual_url": "https://ibriz.ai/"
+            }
+          ],
+          "start_index": 345,
+          "end_index": 449
+        },
+        {
+          "text": "*   **Services Offered** In addition to their core consulting, iBriz.ai offers services such as startup investment sourcing, product-market fit consulting, talent recruitment, and facilitating access to Bay Area technology and funding for international startups",
+          "links": [
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0WzgCXpVI3PdhJiW3OZqtL4t8-g5Ec5gH7FF27r0OvKu-hPMjGqcrrLAzyGkjIZmk_4iSLr0-i2zKtNfOe_eysvOYzX2_hE8r8DtA",
+              "actual_url": "https://ibriz.ai/"
+            }
+          ],
+          "start_index": 451,
+          "end_index": 712
+        },
+        {
+          "text": "*   **AI and Blockchain Focus** The company emphasizes the integration of AI models, providing tools for data labeling, model training, and evaluation to help users fine-tune AI algorithms to their specific business needs",
+          "links": [
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0WzgCXpVI3PdhJiW3OZqtL4t8-g5Ec5gH7FF27r0OvKu-hPMjGqcrrLAzyGkjIZmk_4iSLr0-i2zKtNfOe_eysvOYzX2_hE8r8DtA",
+              "actual_url": "https://ibriz.ai/"
+            }
+          ],
+          "start_index": 714,
+          "end_index": 935
+        },
+        {
+          "text": "They are actively involved in exploring the convergence of blockchain and AI, evidenced by events co-hosted with organizations like the Sui Foundation",
+          "links": [
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEacAoFHBZWs7YjKPmbLm-ReCw3gzTTx6U9KziMes25tr4HdzNC6wcS6sztZ7Wdi8TDWJhh9SPbIm85VfER10nGerCUWDZszZOoix6N5AM8OoIFdcnMcUaFCD6TcL0=",
+              "actual_url": "https://blog.ibriz.ai/tag/ibrizai/"
+            }
+          ],
+          "start_index": 937,
+          "end_index": 1087
+        },
+        {
+          "text": "This initiative aims to support local children by providing free academic assistance and guidance in life skills, with the goal of reducing dropout rates and fostering holistic development",
+          "links": [
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCQOhpz6n7k7nXJZMKfhF-hNoFHp6yQKWv1l5BEnJlJDkkEew8ZUpGVZ-iCeTCAqZKAH7fdsDi6RCFMuZKkw2nILmIwbLdb0ivsN5aBmLHM8laruE1AJ_kZ4rcHYUh8--d7cd7og==",
+              "actual_url": "https://blog.ibriz.ai/category/non-profit/"
+            },
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8OZTYROkmtDdySdZCrvli9wFcvkQBymuo7Pw1s8uBv8UXbVTUrjy5pPPvU23WJv4nQiucX5dvLA47DFRK88SmWwJZHIuIT5XqCDAR6UaQAaGFUQ0mRFQH1Y48ajCyotzXR2i12TJm8jYXCbTGQRoqNdGyGyVC2uUiZHzSI_-BTl7Gwjr1nTW0u24DdDMOOqXa",
+              "actual_url": "https://blog.ibriz.ai/nurturing-futures-beyond-the-code-the-nonprofit-spirit-of-ibriz/"
+            }
+          ],
+          "start_index": 1243,
+          "end_index": 1431
+        },
+        {
+          "text": "*   **Company Status** As of the latest information, iBriz.ai is an unfunded company and operates among a significant number of competitors in the blockchain and AI consulting space",
+          "links": [
+            {
+              "title": "tracxn.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJ4StMDIGAP4VclHzo2OYIjLzDZOj_zw72VkDVFKcLKoZUUMNaGoCvxj6KXsX9iaLBX5IZHVGZuDnFzwAIRMnfLb_gCmSMtXluIQEdAFaJu6bEi6xTKUc9ZK1JhPGixhZBehAs6wJM9Vtwq6jrIq4N1QQT9XcxollzJZek6G7aaZ1xLOq5w9P2zYm41VhSLi4=",
+              "actual_url": "https://tracxn.com/d/companies/ibriz.ai/__3zy30oAR2AKvH0r2NOdtB7TXBeP9Yqqi9tQ0tv7W7Bc"
+            }
+          ],
+          "start_index": 1433,
+          "end_index": 1614
+        },
+        {
+          "text": "It is important to note that iBriz.ai should not be confused with \"IBRIZ,\" which is a separate company founded in 2020 that operates in the renewable energy sector, specifically AgriTech, in Sub-Saharan Africa",
+          "links": [
+            {
+              "title": "ietp.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUPTR4LpPY5a1aTLgOpoMekjLrZs_lDcKQ2wNEAoDhV_WzsYANE-X3aHuoREPM8tZLqtEa65y_TkPVI6jwrjkq_zeEvaNza7Hb5dKLouRgiclDXZD6iMITCK2An_yOKd4=",
+              "actual_url": "https://www.ietp.com/en/company/ibriz"
+            }
+          ],
+          "start_index": 1617,
+          "end_index": 1826
+        }
+      ],
+      "has_grounding": true
+    }
+  },
+  {
+    "query": "What kind of markets does iBriz.ai operate in?",
+    "links": [
+      {
+        "domain": "ibriz.ai",
+        "count": 9
+      },
+      {
+        "domain": "tracxn.com",
+        "count": 1
+      }
+    ],
+    "complete_result": {
+      "query": "What kind of markets does iBriz.ai operate in?",
+      "response_text": "iBriz.ai operates as a consulting firm primarily focused on Blockchain and artificial intelligence (AI) technologies. The company is actively involved in the Fintech and Web3 ecosystems.\n\nBeyond consulting, iBriz.ai also provides a range of services including:\n*   Startup investment sourcing.\n*   Product-market fit consulting.\n*   Talent recruitment.\n*   Facilitating access to Bay Area technology and funding for international startups.\n\niBriz.ai is particularly engaged with the Sui blockchain, participating in events and projects within its ecosystem.",
+      "web_search_queries": [
+        "iBriz.ai markets",
+        "iBriz.ai industry focus"
+      ],
+      "grounding_metadata": [
+        {
+          "text": "The company is actively involved in the Fintech and Web3 ecosystems.",
+          "links": [
+            {
+              "title": "tracxn.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEer6XxD8gmTLV8fzwxMFBjNq6bYY54XZOSc7vBX6RpuZJuz9nW5j4WAVIYTu7cY-Xq5y2vh1vv74TFWy83jjzkmRgz2syr3URLA7mF8UCT4etr0rzdTkcy69BFcfRnLb5zA3437aCjmXgkJQC2uTa5r0QEhwWnkWyhgpI-GCiwMUMFWBI-B11N_ak2KbMa3GU=",
+              "actual_url": "https://tracxn.com/d/companies/ibriz.ai/__3zy30oAR2AKvH0r2NOdtB7TXBeP9Yqqi9tQ0tv7W7Bc"
+            },
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGV6iE7qn4UVsAYmIXNvKufHRFdFg9689BcfntDg92b2l5M7XyZP2U_3rbfmZEGezraOFI89cxmHYfgZ4koSZjgDWKmAJ9-vO71UXjn",
+              "actual_url": "https://ibriz.ai/"
+            },
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcAnEOYlOH6T2yyELMTfktQCky4KJRjrjqO-s84tj8DgB7b28tBkBMRHAv_V4so6_rfH9fs46bhqalLSRnyp5In1Maej8GNK4aLeF2wDHlLI1S7fITEo9aswI1fF6gmpkU4-3g-w==",
+              "actual_url": "https://blog.ibriz.ai/category/non-profit/"
+            }
+          ],
+          "start_index": 118,
+          "end_index": 186
+        },
+        {
+          "text": "Beyond consulting, iBriz.ai also provides a range of services including:\n*   Startup investment sourcing.",
+          "links": [
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGV6iE7qn4UVsAYmIXNvKufHRFdFg9689BcfntDg92b2l5M7XyZP2U_3rbfmZEGezraOFI89cxmHYfgZ4koSZjgDWKmAJ9-vO71UXjn",
+              "actual_url": "https://ibriz.ai/"
+            }
+          ],
+          "start_index": 188,
+          "end_index": 293
+        },
+        {
+          "text": "*   Product-market fit consulting.",
+          "links": [
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGV6iE7qn4UVsAYmIXNvKufHRFdFg9689BcfntDg92b2l5M7XyZP2U_3rbfmZEGezraOFI89cxmHYfgZ4koSZjgDWKmAJ9-vO71UXjn",
+              "actual_url": "https://ibriz.ai/"
+            }
+          ],
+          "start_index": 294,
+          "end_index": 328
+        },
+        {
+          "text": "*   Talent recruitment.",
+          "links": [
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGV6iE7qn4UVsAYmIXNvKufHRFdFg9689BcfntDg92b2l5M7XyZP2U_3rbfmZEGezraOFI89cxmHYfgZ4koSZjgDWKmAJ9-vO71UXjn",
+              "actual_url": "https://ibriz.ai/"
+            }
+          ],
+          "start_index": 329,
+          "end_index": 352
+        },
+        {
+          "text": "*   Facilitating access to Bay Area technology and funding for international startups.",
+          "links": [
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGV6iE7qn4UVsAYmIXNvKufHRFdFg9689BcfntDg92b2l5M7XyZP2U_3rbfmZEGezraOFI89cxmHYfgZ4koSZjgDWKmAJ9-vO71UXjn",
+              "actual_url": "https://ibriz.ai/"
+            }
+          ],
+          "start_index": 353,
+          "end_index": 439
+        },
+        {
+          "text": "iBriz.ai is particularly engaged with the Sui blockchain, participating in events and projects within its ecosystem.",
+          "links": [
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGV6iE7qn4UVsAYmIXNvKufHRFdFg9689BcfntDg92b2l5M7XyZP2U_3rbfmZEGezraOFI89cxmHYfgZ4koSZjgDWKmAJ9-vO71UXjn",
+              "actual_url": "https://ibriz.ai/"
+            },
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeu7FrGzrzpPdya4vwbuLHE9Z84ueEkAQLSX_NskQ5aSu0SoWqndMUtxsnuI9Du7we0D2oHBj8k0P7b42hmTPXHGTLuA3YwBdBFmLkxKCDy2c=",
+              "actual_url": "https://blog.ibriz.ai/"
+            },
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGb9DIlop6wikVO4VnA3X-IIeW1AhxeJr36jFR8mCOTx-ZSVq2FrZUjxpp-o-e_A3oNaCaekotDA3uc6k5EH_FBzH7-rLYB2KWTanHJLvwPtUcXg6G51eZb6_ne-f3upQ4=",
+              "actual_url": "https://blog.ibriz.ai/tag/blockchain/"
+            }
+          ],
+          "start_index": 441,
+          "end_index": 557
+        }
+      ],
+      "has_grounding": true
+    }
+  }
+]

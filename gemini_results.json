@@ -1,0 +1,25 @@
+[
+  {
+    "query": "What's the latest price of Apple stock?",
+    "response_text": "The latest price of Apple (AAPL) stock is $230.99 USD.",
+    "web_search_queries": [
+      "Apple stock price",
+      "AAPL stock price"
+    ],
+    "grounding_metadata": [
+      {
+        "text": "The latest price of Apple (AAPL) stock is $230.99 USD.",
+        "links": [
+          {
+            "title": "tradingview.com",
+            "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXmiBasDs1XoHzHY8VIJya_1rSx5kt6huynn1xRt8eO7LrKn94z7BicHezlPN-fmKiGEi2fVgADApcu7AWYktdAGK6vXAOpWBIUAAdh7H3IFqeFjq5Z6Z7GUfYag8244S1MmD7aqfrMkKYxw==",
+            "actual_url": "https://www.tradingview.com/symbols/NASDAQ-AAPL/"
+          }
+        ],
+        "start_index": null,
+        "end_index": 54
+      }
+    ],
+    "has_grounding": true
+  }
+]
