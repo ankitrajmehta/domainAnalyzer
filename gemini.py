@@ -212,8 +212,8 @@ class GeminiGroundedClient:
         }
         
         # Print results
-        print(f"Query: {prompt}")
-        print(f"Response: {response_text}")
+        # print(f"Query: {prompt}")
+        # print(f"Response: {response_text}")
         
         if parsed_metadata:
             print("\nParsed Grounding Metadata:")

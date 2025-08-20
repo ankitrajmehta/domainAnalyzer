@@ -1,2 +1,5 @@
 requests
 google-genai
+aiohttp
+beautifulsoup4
+crawl4ai
