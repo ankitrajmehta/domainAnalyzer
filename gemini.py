@@ -126,35 +126,37 @@ class GeminiGroundedClient:
         if not grounding_supports:
             return {}
         
+        # Pre-process all grounding chunks to resolve URLs only once
+        resolved_chunks = {}  # Cache for resolved chunk data
+        url_resolution_cache = {}  # Cache for URL resolutions
+        
+        for chunk_index, chunk in enumerate(grounding_chunks):
+            if hasattr(chunk, 'web') and chunk.web:
+                redirect_url = chunk.web.uri
+                
+                link_info = {
+                    "title": chunk.web.title,        # Website domain/title (e.g., "tradingview.com")
+                    "redirect_url": redirect_url      # Google's redirect URL
+                }
+                
+                if resolve_urls:
+                    if redirect_url not in url_resolution_cache:
+                        url_resolution_cache[redirect_url] = self.resolve_actual_url(redirect_url)
+                    link_info["actual_url"] = url_resolution_cache[redirect_url]
+                
+                resolved_chunks[chunk_index] = link_info
+        
         result = []
 
-        # Note: Following section needs optimization. 
-        #   Different supports may have same supporting links (same grounding_chunks element supports multiple grounded text segments).
-        #   In the following code, the links are resolved and reevaluated for every support, causing inefficiency.
-        #   In future versions, resolve grounding_chunks before processing supports.
-
+        # Process supports
         for i, support in enumerate(grounding_supports, 1):
             segment = support.segment
             
             # Get the supporting links for this segment
             links = []
             for chunk_index in support.grounding_chunk_indices:
-                if chunk_index < len(grounding_chunks):
-                    chunk = grounding_chunks[chunk_index]
-                    if hasattr(chunk, 'web') and chunk.web:
-                        redirect_url = chunk.web.uri
-                        
-                        link_info = {
-                            "title": chunk.web.title,        # Website domain/title (e.g., "tradingview.com")
-                            "redirect_url": redirect_url      # Google's compliance redirect URL
-                        }
-                        
-                        if resolve_urls:
-                            actual_url = self.resolve_actual_url(redirect_url)
-                            link_info["actual_url"] = actual_url  # Resolved destination URL (where user actually goes)
-                            
-                        
-                        links.append(link_info)
+                if chunk_index in resolved_chunks:
+                    links.append(resolved_chunks[chunk_index])
             
             result.append({
                 "text": segment.text,                                    # The text segment that was grounded
