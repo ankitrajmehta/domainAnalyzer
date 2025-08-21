@@ -13,7 +13,8 @@ Output Format:
             {"domain": "cnn.com", "count": 5},
             {"domain": "bbc.com", "count": 3},
             {"domain": "reuters.com", "count": 2}
-        ]
+        ],
+        "complete_result": {...} (Full response by gemini.py)    
     },
     ...
 ]
@@ -24,7 +25,7 @@ import re
 from collections import defaultdict
 from typing import Dict, List, Any
 from urllib.parse import urlparse
-from gemini import GeminiGroundedClient
+from geminiClient.gemini import GeminiGroundedClient
 
 
 
@@ -206,7 +207,7 @@ class DomainAnalyzer:
         
         return results
     
-    def save_analysis(self, results: List[Dict[str, Any]], filename: str = "domain_analysis.json"):
+    def save_analysis(self, results: List[Dict[str, Any]], filename: str = r"analysisReports\domain_analysis_prompted.json"):
         """
         Save the analysis results to a JSON file.
         """

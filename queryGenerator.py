@@ -3,11 +3,12 @@ import asyncio
 import json
 import re
 from typing import List, Optional
-from gemini import GeminiGroundedClient
-from domain_analyzer import DomainAnalyzer
+from geminiClient.gemini import GeminiGroundedClient
+from domainAnalyzer.domain_analyzer import DomainAnalyzer
 
 # Configuration
-DEFAULT_URL = "https://www.reddoor.life/" #content is extracted and queries are generated based on this
+DEFAULT_URL = "https://ibriz.ai/" #content is extracted and queries are generated based on this
+NUM_OF_QUERIES = 8
 
 async def crawl_website(url: str) -> Optional[dict]:
     """
@@ -32,12 +33,13 @@ async def crawl_website(url: str) -> Optional[dict]:
         print(f"Error: Crawling failed - {e}")
         return None
 
-def get_prompt(clean_text: str) -> str:
+def get_prompt(clean_text: str, num_queries: int = NUM_OF_QUERIES) -> str:
     """
     Generate a prompt for query generation.
     
     Args:
         clean_text: The cleaned text content from the website
+        num_queries: Number of queries to generate
         
     Returns:
         The formatted prompt string
@@ -53,7 +55,7 @@ def get_prompt(clean_text: str) -> str:
         ```
 
         QUERY GENERATION REQUIREMENTS:
-        1. Generate 5-10 diverse queries covering different aspects of the content
+        1. Generate {num_queries} diverse queries covering different aspects of the content
         2. Include queries about:
         - Main topics and themes mentioned
         - Specific services, products, or offerings
@@ -158,12 +160,13 @@ def extract_queries_from_response(response_text: str) -> List[str]:
     
     return queries
 
-async def generate_queries_from_url(url: str) -> List[str]:
+async def generate_queries_from_url(url: str, num_queries: int = NUM_OF_QUERIES) -> List[str]:
     """
     Main function to crawl a URL and generate queries from its content.
     
     Args:
         url: The URL to crawl and analyze
+        num_queries: Number of queries to generate
         
     Returns:
         List of generated queries
@@ -182,11 +185,49 @@ async def generate_queries_from_url(url: str) -> List[str]:
         return []
     
 
-    prompt = get_prompt(crawled_data["clean_text"])
+    prompt = get_prompt(crawled_data["clean_text"], num_queries)
     
     try:
-        response = client.process_query(prompt, resolve_urls=False)
+        response = client.process_query(prompt, resolve_urls=False, use_grounding=False)
+
+    except Exception as e:
+        print(f"Error: Failed to get AI response - {e}")
+        return []
+    
+    
+    queries = extract_queries_from_response(response["response_text"])
+    
+    return queries
+
+async def generate_queries_from_crawledData(crawled_data: dict, num_queries: int = NUM_OF_QUERIES) -> List[str]:
+    """
+    Main function to crawl a URL and generate queries from its content.
+    
+    Args:
+        crawled_data: The crawled data dictionary
+        num_queries: Number of queries to generate
         
+    Returns:
+        List of generated queries
+    """
+    # Crawl the website
+    if not crawled_data:
+        print("Error: Cannot generate queries - website crawling failed")
+        return []
+    
+    # Initialize Gemini client
+    try:
+        client = GeminiGroundedClient()
+    except Exception as e:
+        print(f"Error: Failed to initialize Gemini client - {e}")
+        return []
+    
+
+    prompt = get_prompt(crawled_data["clean_text"], num_queries)
+    
+    try:
+        response = client.process_query(prompt, resolve_urls=False, use_grounding=False)
+
     except Exception as e:
         print(f"Error: Failed to get AI response - {e}")
         return []
@@ -212,5 +253,5 @@ if __name__ == "__main__":
     # Analyze domain
     analyzer = DomainAnalyzer()
     results = analyzer.analyze_queries(queries, resolve_urls=True)
-    analyzer.save_analysis(results, "domain_analysis_prompted.json")
+    analyzer.save_analysis(results, r"analysisReports\domain_analysis_prompted.json")
 

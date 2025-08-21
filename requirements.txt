@@ -3,3 +3,6 @@ google-genai
 aiohttp
 beautifulsoup4
 crawl4ai
+flask
+flask-cors
+python-dotenv

@@ -166,15 +166,16 @@ class GeminiGroundedClient:
             })
         
         return result
-    
-    def process_query(self, prompt: str, resolve_urls: bool = True) -> Dict[str, Any]:
+
+    def process_query(self, prompt: str, resolve_urls: bool = True, use_grounding: bool = True) -> Dict[str, Any]:
         """
         Process a query end-to-end: generate response and parse grounding metadata.
         
         Args:
             prompt: The input question/prompt.
             resolve_urls: Whether to resolve actual URLs from redirect URLs.
-            
+            use_grounding: Whether to use grounding for the response.
+
         Returns:
             Complete result structure:
             {
@@ -193,7 +194,7 @@ class GeminiGroundedClient:
             }
         """
         # Generate response
-        response = self.generate_response(prompt)
+        response = self.generate_response(prompt, use_grounding)
         
         # Extract text
         response_text = response.text
