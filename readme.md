@@ -23,7 +23,7 @@ Results are saved to domain_analysis.json
 
 
 # TO-DO:
-1. Improve resolve url functions (Currently quite slow)
+1. Run all queries first, only then resolve urls. currently urls are resolved after and for every query
 2. Get proper prompt (Currently simple prompt)
 3. Use gemini structed data config to get robust list of queries (Currently mannually verified to be in structure, little error handling present)
 4. Multiple head requests to same site by same IP gets blocked by the site. ALso, there seems to be some SSL issues, need to user proper headers with a get request instead. Potentially use proxies.

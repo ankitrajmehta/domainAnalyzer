@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBRIZ Domain Analysis Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Page 1: URL Input -->
+    <div id="page1" class="page active">
+        <div class="container">
+            <div class="header">
+                <h1>GEO Analysis For Gemini</h1>
+                <p>Enter a URL to analyze domain authority and search presence</p>
+            </div>
+            
+            <div class="url-input-section">
+                <div class="input-group">
+                    <label for="urlInput">Website URL</label>
+                    <input type="url" id="urlInput" placeholder="https://example.com" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="queryCount">Number of Queries (1-50)</label>
+                    <input type="number" id="queryCount" min="1" max="50" value="8">
+                </div>
+                
+                <button id="startAnalysisBtn" class="primary-btn">
+                    Start Analysis
+                </button>
+            </div>
+            
+            <div id="errorMessage" class="error-message hidden"></div>
+        </div>
+    </div>
+
+    <!-- Page 2: Loading -->
+    <div id="page2" class="page">
+        <div class="container">
+            <div class="loading-section">
+                <div class="loading-spinner"></div>
+                <h2>Analyzing...</h2>
+                <p id="loadingStatus">Starting analysis...</p>
+                <div class="progress-info">
+                    <span id="progressText">Preparing queries...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: Aggregate Results -->
+    <div id="page3" class="page">
+        <div class="container">
+            <div class="header">
+                <h1>Analysis Results</h1>
+                <div class="url-info">
+                    <span id="analyzedUrl"></span>
+                    <button id="newAnalysisBtn" class="secondary-btn">New Analysis</button>
+                </div>
+            </div>
+            
+            <div class="results-layout">
+                <div class="queries-panel">
+                    <h3>Generated Queries</h3>
+                    <div id="queriesList" class="queries-list"></div>
+                </div>
+                
+                <div class="chart-panel">
+                    <h3>Domain Frequency Analysis</h3>
+                    <p class="chart-subtitle">Percentage of queries each domain appeared in</p>
+                    <div class="chart-container">
+                        <canvas id="aggregateChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 4: Individual Query Details -->
+    <div id="page4" class="page">
+        <div class="container">
+            <div class="header">
+                <button id="backToResultsBtn" class="secondary-btn">← Back to Results</button>
+                <h2 id="queryTitle">Query Details</h2>
+            </div>
+            
+            <div class="query-details-layout">
+                <div class="response-panel">
+                    <h3>Gemini Response</h3>
+                    <div id="geminiResponse" class="response-content"></div>
+                </div>
+                
+                <div class="chart-panel">
+                    <h3>Domains Mentioned</h3>
+                    <p class="chart-subtitle">Sites referenced in this response</p>
+                    <div class="chart-container">
+                        <canvas id="queryChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

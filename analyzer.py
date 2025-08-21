@@ -27,7 +27,7 @@ class Analyzer:
         self.analysis_results: List[Dict[str, Any]] = []
         self.analysis_status: str = "idle"  # idle, analyzing, complete, error
 
-    def run_analysis(self, url: Optional[str] = None, saveResults: bool = False) -> List[Dict[str, Any]]:
+    def run_analysis(self, url: Optional[str] = None, saveResults: bool = False, queriesToRun: int = None) -> List[Dict[str, Any]]:
         """
         Runs the analysis pipeline.
 
@@ -45,9 +45,12 @@ class Analyzer:
             if url is None:
                 url = self.url
             self.url = url
-            
+
+            if queriesToRun is None:
+                queriesToRun = self.queriesToRun
+
             # Run the async function synchronously with the specified number of queries
-            generated_queries = asyncio.run(self.generate_queries(url, self.queriesToRun))
+            generated_queries = asyncio.run(self.generate_queries(url, queriesToRun))
             self.generated_queries = generated_queries
 
             # analyze domains

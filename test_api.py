@@ -1,5 +1,5 @@
 """
-Test script for IBRIZ Analysis API
+Test script for Analysis API
 ==================================
 
 This script tests all the API endpoints to ensure they work correctly.
@@ -143,7 +143,7 @@ def test_reset():
 
 def main():
     """Run all tests."""
-    print("🧪 IBRIZ API Test Suite")
+    print("🧪  API Test Suite")
     print("=" * 50)
     
     # Test 1: Health check

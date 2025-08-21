@@ -1,5 +1,5 @@
 """
-Flask API for the IBRIZ Analysis Frontend
+Flask API for the Analysis Frontend
 ========================================
 
 This API provides endpoints for the 4-page frontend:
