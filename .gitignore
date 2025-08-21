@@ -1,3 +1,11 @@
 .env
 __pycache__/
 output_json/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.coverage
+domain_analysis_with_structure_*.json
+test_*.py
