@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IBRIZ Domain Analysis Tool</title>
+    <title>Domain Analysis Tool</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -32,6 +32,10 @@
                 
                 <button id="startAnalysisBtn" class="primary-btn">
                     Start Analysis
+                </button>
+                
+                <button id="analyzeStructureBtn" class="secondary-btn">
+                    Analyze Structure
                 </button>
             </div>
             
@@ -101,6 +105,28 @@
                     <div class="chart-container">
                         <canvas id="queryChart"></canvas>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 5: Structure Analysis Results -->
+    <div id="page5" class="page">
+        <div class="container">
+            <div class="header">
+                <button id="backToHomeBtn" class="secondary-btn">← Back to Home</button>
+                <h2 id="structureAnalysisTitle">Structure Analysis Results</h2>
+            </div>
+            
+            <div class="structure-analysis-layout">
+                <div class="structure-overview">
+                    <h3>Website Overview</h3>
+                    <div id="structureOverview" class="overview-cards"></div>
+                </div>
+                
+                <div class="structure-recommendations">
+                    <h3>Structure Recommendations</h3>
+                    <div id="structureRecommendations" class="recommendations-container"></div>
                 </div>
             </div>
         </div>

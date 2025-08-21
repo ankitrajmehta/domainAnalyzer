@@ -324,44 +324,6 @@ async def generate_queries_from_url(url: str, num_queries: int = NUM_OF_QUERIES)
     
     return queries
 
-async def generate_queries_from_crawledData(crawled_data: dict, num_queries: int = NUM_OF_QUERIES) -> List[str]:
-    """
-    Main function to crawl a URL and generate queries from its content.
-    
-    Args:
-        crawled_data: The crawled data dictionary
-        num_queries: Number of queries to generate
-        
-    Returns:
-        List of generated queries
-    """
-    # Crawl the website
-    if not crawled_data:
-        print("Error: Cannot generate queries - website crawling failed")
-        return []
-    
-    # Initialize Gemini client
-    try:
-        client = GeminiGroundedClient()
-    except Exception as e:
-        print(f"Error: Failed to initialize Gemini client - {e}")
-        return []
-    
-
-    prompt = get_prompt(crawled_data["clean_text"], num_queries)
-    
-    try:
-        response = client.process_query(prompt, resolve_urls=False, use_grounding=False)
-
-    except Exception as e:
-        print(f"Error: Failed to get AI response - {e}")
-        return []
-    
-    
-    queries = extract_queries_from_response(response["response_text"])
-    
-    return queries
-
 async def analyze_with_structure_recommendations(url: str) -> dict:
     """
     Complete analysis including queries, domain analysis, and structure recommendations.

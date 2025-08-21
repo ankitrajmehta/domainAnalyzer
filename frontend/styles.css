@@ -534,3 +534,218 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
     color: #065f46;
 }
+
+/* Structure Analysis Styles */
+.structure-analysis-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.structure-overview {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
+}
+
+.overview-cards {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.overview-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.overview-card h4 {
+    color: #1e293b;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.overview-card .metric {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.25rem;
+}
+
+.overview-card .label {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+.structure-recommendations {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
+}
+
+.recommendations-container {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.recommendation-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+    border-color: #3b82f6;
+}
+
+.recommendation-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+}
+
+.recommendation-card.priority-high::before {
+    background: linear-gradient(90deg, #ef4444, #dc2626);
+}
+
+.recommendation-card.priority-medium::before {
+    background: linear-gradient(90deg, #f59e0b, #d97706);
+}
+
+.recommendation-card.priority-low::before {
+    background: linear-gradient(90deg, #10b981, #059669);
+}
+
+.recommendation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.recommendation-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+    flex: 1;
+}
+
+.priority-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-left: 1rem;
+}
+
+.priority-badge.high {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.priority-badge.medium {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.priority-badge.low {
+    background: #d1fae5;
+    color: #059669;
+}
+
+.recommendation-description {
+    color: #64748b;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.recommendation-reason {
+    background: #f1f5f9;
+    border-radius: 6px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid #3b82f6;
+}
+
+.recommendation-reason strong {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+.recommendation-implementation {
+    background: #f8fafc;
+    border-radius: 6px;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.8rem;
+    color: #374151;
+}
+
+.structure-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    text-align: center;
+}
+
+.structure-loading .loading-spinner {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.structure-error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: #dc2626;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .structure-analysis-layout {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .recommendation-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .priority-badge {
+        margin-left: 0;
+    }
+}

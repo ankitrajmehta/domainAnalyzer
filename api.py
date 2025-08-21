@@ -7,15 +7,20 @@ This API provides endpoints for the 4-page frontend:
 2. Loading/status check
 3. Aggregate results view
 4. Individual query details view
+5. Structure analysis results
 """
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import threading
 import time
+import asyncio
 from typing import Dict, Any
 
 from analyzer import Analyzer
+import crawler.modular_geo_crawler as modular_geo_crawler
+from structure_recommendation.structure_analyzer import StructureAnalyzer
+from geminiClient.gemini import GeminiGroundedClient
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend communication
@@ -222,6 +227,200 @@ def reset_analysis():
         
     except Exception as e:
         return jsonify({'error': f'Failed to reset analyzer: {str(e)}'}), 500
+
+@app.route('/api/analyze-structure', methods=['POST'])
+def analyze_structure():
+    """
+    Analyze website structure and get recommendations.
+    
+    Expected JSON payload:
+    {
+        "url": "https://example.com"
+    }
+    
+    Returns:
+    {
+        "status": "success",
+        "url": "https://example.com",
+        "structure_analysis": {...},
+        "structure_recommendations": [...]
+    }
+    """
+    try:
+        data = request.get_json()
+        if not data or 'url' not in data:
+            return jsonify({'error': 'URL is required in request body'}), 400
+        
+        url = data['url'].strip()
+        if not url:
+            return jsonify({'error': 'URL cannot be empty'}), 400
+        
+        # Run the structure analysis
+        result = asyncio.run(perform_structure_analysis(url))
+        
+        if result.get('error'):
+            return jsonify({'error': result['error']}), 400
+        
+        return jsonify({
+            'status': 'success',
+            'url': url,
+            'structure_analysis': result['structure_analysis'],
+            'structure_recommendations': result['structure_recommendations']
+        }), 200
+        
+    except Exception as e:
+        return jsonify({'error': f'Failed to analyze structure: {str(e)}'}), 500
+
+async def perform_structure_analysis(url: str) -> Dict[str, Any]:
+    """
+    Perform structure analysis for a given URL.
+    
+    Args:
+        url: The URL to analyze
+        
+    Returns:
+        Dictionary containing analysis results or error
+    """
+    try:
+        # Step 1: Crawl website
+        crawled_data = await modular_geo_crawler.crawl_url(url)
+        
+        if not crawled_data or "clean_text" not in crawled_data:
+            return {'error': 'Failed to crawl website - no content found'}
+        
+        # Step 2: Analyze website structure
+        structure_analyzer = StructureAnalyzer()
+        structure_analysis = structure_analyzer.analyze_for_recommendations(crawled_data)
+        
+        # Step 3: Get AI-powered structure recommendations
+        structure_recommendations = []
+        try:
+            client = GeminiGroundedClient()
+            rec_prompt = get_structure_recommendations_prompt(structure_analysis, crawled_data)
+            rec_response = client.process_query(rec_prompt, resolve_urls=False)
+            structure_recommendations = extract_recommendations_from_response(rec_response["response_text"])
+        except Exception as e:
+            print(f"Warning: Could not generate AI recommendations - {e}")
+            # Continue without AI recommendations
+        
+        return {
+            'structure_analysis': structure_analysis,
+            'structure_recommendations': structure_recommendations
+        }
+        
+    except Exception as e:
+        return {'error': f'Structure analysis failed: {str(e)}'}
+
+def get_structure_recommendations_prompt(structure_analysis: dict, crawled_data: dict) -> str:
+    """
+    Generate a prompt for getting structure recommendations from Gemini.
+    """
+    content_sample = crawled_data.get("clean_text", "")[:1000]  # First 1000 chars
+    
+    prompt = f"""You are a GEO (Generative Engine Optimization) expert. Analyze this website's structure and provide specific recommendations to improve its chances of being cited by AI systems like ChatGPT, Gemini, and Claude.
+
+WEBSITE CONTENT SAMPLE:
+{content_sample}
+
+CURRENT STRUCTURE ANALYSIS:
+- Word count: {structure_analysis['content_metrics']['word_count']}
+- Heading structure: {structure_analysis['heading_structure']['distribution']}
+- Semantic elements present: {structure_analysis['semantic_elements']['elements']}
+- Missing semantic elements: {structure_analysis['semantic_elements']['missing_elements']}
+- Meta tag issues: Missing {structure_analysis['meta_completeness']['missing_critical']}
+- Structural issues found: {structure_analysis['structural_issues']}
+
+FOCUS AREAS:
+1. HTML Structure improvements for better AI parsing
+2. Content organization for enhanced citability  
+3. Meta tag optimization for AI understanding
+4. Semantic markup enhancements
+
+REQUIREMENTS:
+- Provide 4-5 specific, actionable structure recommendations
+- Focus only on technical structure improvements
+- Each recommendation should explain WHY it helps with AI citations
+- Be concise and implementation-focused
+
+CRITICAL: You MUST respond with ONLY a valid JSON array. No explanations, no markdown, no additional text.
+
+OUTPUT FORMAT - Return EXACTLY this structure:
+[
+  {{
+    "title": "Add Semantic Article Tags",
+    "description": "Implement proper article and section semantic HTML5 tags",
+    "reason": "AI systems parse semantic HTML better for content understanding",
+    "implementation": "Wrap main content in <article> tags and use <section> for subsections",
+    "priority": "high"
+  }}
+]
+
+Generate structure recommendations now:"""
+    
+    return prompt
+
+def extract_recommendations_from_response(response_text: str) -> list:
+    """
+    Extract structure recommendations from Gemini response.
+    """
+    import json
+    import re
+    
+    recommendations = []
+    
+    try:
+        # First, try to find JSON array in response
+        json_pattern = r'\[[\s\S]*?\]'
+        json_match = re.search(json_pattern, response_text, re.DOTALL)
+        
+        if json_match:
+            json_str = json_match.group()
+            try:
+                # Clean up the JSON string
+                json_str = json_str.strip()
+                # Remove any markdown code block markers
+                json_str = re.sub(r'^```json\s*', '', json_str)
+                json_str = re.sub(r'\s*```$', '', json_str)
+                
+                parsed_recs = json.loads(json_str)
+                if isinstance(parsed_recs, list):
+                    for rec in parsed_recs:
+                        if isinstance(rec, dict) and "title" in rec:
+                            recommendations.append({
+                                "title": rec.get("title", ""),
+                                "description": rec.get("description", ""),
+                                "reason": rec.get("reason", ""),
+                                "implementation": rec.get("implementation", ""),
+                                "priority": rec.get("priority", "medium")
+                            })
+                return recommendations
+            except json.JSONDecodeError as e:
+                print(f"JSON decode error: {e}")
+        
+        # Fallback: Create default recommendations if AI response failed
+        if not recommendations:
+            recommendations = [
+                {
+                    "title": "Add Semantic HTML Structure",
+                    "description": "Implement proper semantic HTML5 tags for better content organization",
+                    "reason": "AI systems parse semantic HTML more effectively for content understanding",
+                    "implementation": "Use <article>, <section>, <header>, and <main> tags appropriately",
+                    "priority": "high"
+                },
+                {
+                    "title": "Optimize Meta Tags",
+                    "description": "Add missing critical meta tags for better AI comprehension",
+                    "reason": "Meta tags provide structured information that AI systems rely on",
+                    "implementation": "Add meta description, title, and Open Graph tags",
+                    "priority": "high"
+                }
+            ]
+        
+        return recommendations
+        
+    except Exception as e:
+        print(f"Error extracting recommendations: {e}")
+        return []
 
 @app.errorhandler(404)
 def not_found(error):

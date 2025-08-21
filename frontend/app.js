@@ -22,6 +22,11 @@ class FrontendAPP {
             this.startAnalysis();
         });
 
+        // Page 1: Analyze Structure
+        document.getElementById('analyzeStructureBtn').addEventListener('click', () => {
+            this.startStructureAnalysis();
+        });
+
         // Page 1: Enter key on URL input
         document.getElementById('urlInput').addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
@@ -37,6 +42,11 @@ class FrontendAPP {
         // Page 4: Back to Results
         document.getElementById('backToResultsBtn').addEventListener('click', () => {
             this.showPage('page3');
+        });
+
+        // Page 5: Back to Home
+        document.getElementById('backToHomeBtn').addEventListener('click', () => {
+            this.showPage('page1');
         });
     }
 
@@ -98,6 +108,12 @@ class FrontendAPP {
             return;
         }
 
+        // Validate URL format
+        if (!this.isValidURL(url)) {
+            this.showError('Please enter a valid URL (e.g., https://example.com)');
+            return;
+        }
+
         if (!queryCount || queryCount < 1 || queryCount > 50) {
             this.showError('Please enter a valid number of queries (1-50)');
             return;
@@ -124,6 +140,56 @@ class FrontendAPP {
             // Re-enable button
             startBtn.disabled = false;
             startBtn.textContent = 'Start Analysis';
+        }
+    }
+
+    // Page 1: Structure Analysis
+    async startStructureAnalysis() {
+        const urlInput = document.getElementById('urlInput');
+        const structureBtn = document.getElementById('analyzeStructureBtn');
+        const errorDiv = document.getElementById('errorMessage');
+
+        // Clear previous errors
+        errorDiv.classList.add('hidden');
+
+        // Validate URL
+        const url = urlInput.value.trim();
+
+        if (!url) {
+            this.showError('Please enter a valid URL');
+            return;
+        }
+
+        // Validate URL format
+        if (!this.isValidURL(url)) {
+            this.showError('Please enter a valid URL (e.g., https://example.com)');
+            return;
+        }
+
+        // Disable button and show loading state
+        structureBtn.disabled = true;
+        structureBtn.textContent = 'Analyzing...';
+
+        try {
+            // Show loading state
+            this.showStructureLoading();
+            this.showPage('page5');
+
+            // Start structure analysis
+            const result = await this.makeRequest('/analyze-structure', 'POST', {
+                url: url
+            });
+
+            // Display results
+            this.displayStructureResults(result);
+
+        } catch (error) {
+            this.showError(error.message);
+            this.showPage('page1');
+        } finally {
+            // Re-enable button
+            structureBtn.disabled = false;
+            structureBtn.textContent = 'Analyze Structure';
         }
     }
 
@@ -447,6 +513,138 @@ class FrontendAPP {
         const errorDiv = document.getElementById('errorMessage');
         errorDiv.textContent = message;
         errorDiv.classList.remove('hidden');
+    }
+
+    isValidURL(string) {
+        try {
+            // Try to create a URL object
+            const url = new URL(string);
+            // Check if it has a valid protocol
+            return url.protocol === 'http:' || url.protocol === 'https:';
+        } catch (e) {
+            // If URL constructor fails, try to fix common issues
+            let fixedUrl = string;
+            
+            // Add protocol if missing
+            if (!string.match(/^https?:\/\//)) {
+                fixedUrl = 'https://' + string;
+            }
+            
+            try {
+                const url = new URL(fixedUrl);
+                // Update the input field with the corrected URL
+                document.getElementById('urlInput').value = fixedUrl;
+                return url.protocol === 'http:' || url.protocol === 'https:';
+            } catch (e2) {
+                return false;
+            }
+        }
+    }
+
+    // Page 5: Structure Analysis Methods
+    showStructureLoading() {
+        const overviewDiv = document.getElementById('structureOverview');
+        const recommendationsDiv = document.getElementById('structureRecommendations');
+        
+        overviewDiv.innerHTML = '<div class="structure-loading"><div class="loading-spinner"></div><p>Analyzing website structure...</p></div>';
+        recommendationsDiv.innerHTML = '<div class="structure-loading"><div class="loading-spinner"></div><p>Generating recommendations...</p></div>';
+        
+        document.getElementById('structureAnalysisTitle').textContent = 'Analyzing Structure...';
+    }
+
+    displayStructureResults(result) {
+        const { url, structure_analysis, structure_recommendations } = result;
+        
+        // Update title with safe URL parsing
+        let hostname = url;
+        try {
+            hostname = new URL(url).hostname;
+        } catch (e) {
+            // If URL parsing fails, use the original URL or extract domain manually
+            hostname = url.replace(/^https?:\/\//, '').split('/')[0];
+        }
+        document.getElementById('structureAnalysisTitle').textContent = `Structure Analysis: ${hostname}`;
+        
+        // Display overview
+        this.displayStructureOverview(structure_analysis);
+        
+        // Display recommendations
+        this.displayStructureRecommendations(structure_recommendations);
+    }
+
+    displayStructureOverview(analysis) {
+        const overviewDiv = document.getElementById('structureOverview');
+        
+        const metrics = analysis.content_metrics;
+        const headings = analysis.heading_structure;
+        const semantic = analysis.semantic_elements;
+        const meta = analysis.meta_completeness;
+        
+        overviewDiv.innerHTML = `
+            <div class="overview-card">
+                <h4>Content Metrics</h4>
+                <div class="metric">${metrics.word_count.toLocaleString()}</div>
+                <div class="label">Words</div>
+            </div>
+            
+            <div class="overview-card">
+                <h4>Heading Structure</h4>
+                <div class="metric">${headings.total}</div>
+                <div class="label">Total Headings</div>
+            </div>
+            
+            <div class="overview-card">
+                <h4>Semantic Score</h4>
+                <div class="metric">${Math.round(semantic.semantic_score * 100)}%</div>
+                <div class="label">Semantic Elements</div>
+            </div>
+            
+            <div class="overview-card">
+                <h4>Meta Completeness</h4>
+                <div class="metric">${Math.round(meta.critical_completeness * 100)}%</div>
+                <div class="label">Critical Meta Tags</div>
+            </div>
+            
+            <div class="overview-card">
+                <h4>Structure Issues</h4>
+                <div class="metric">${analysis.structural_issues.length}</div>
+                <div class="label">Issues Found</div>
+            </div>
+        `;
+    }
+
+    displayStructureRecommendations(recommendations) {
+        const recommendationsDiv = document.getElementById('structureRecommendations');
+        
+        if (!recommendations || recommendations.length === 0) {
+            recommendationsDiv.innerHTML = `
+                <div class="structure-error">
+                    <p>No recommendations available. The AI analysis may have failed or the website structure is already optimal.</p>
+                </div>
+            `;
+            return;
+        }
+        
+        const recommendationsHTML = recommendations.map(rec => `
+            <div class="recommendation-card priority-${rec.priority}">
+                <div class="recommendation-header">
+                    <h4 class="recommendation-title">${rec.title}</h4>
+                    <span class="priority-badge ${rec.priority}">${rec.priority}</span>
+                </div>
+                
+                <p class="recommendation-description">${rec.description}</p>
+                
+                <div class="recommendation-reason">
+                    <strong>Why this helps:</strong> ${rec.reason}
+                </div>
+                
+                <div class="recommendation-implementation">
+                    ${rec.implementation}
+                </div>
+            </div>
+        `).join('');
+        
+        recommendationsDiv.innerHTML = recommendationsHTML;
     }
 
     async resetAnalysis() {
