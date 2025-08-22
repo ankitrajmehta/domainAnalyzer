@@ -580,35 +580,60 @@ class FrontendAPP {
         const semantic = analysis.semantic_elements;
         const meta = analysis.meta_completeness;
         
+        // GEO-focused metrics calculation
+        const wordCount = metrics.word_count;
+        const headingCount = headings.total;
+        const h1Count = headings.distribution?.h1 || 0;
+        const h2Count = headings.distribution?.h2 || 0;
+        
+        // AI Citation Readiness Score
+        const aiReadiness = Math.round(
+            (wordCount >= 500 ? 25 : (wordCount / 500) * 25) +  // Content depth
+            (h1Count === 1 ? 25 : 0) +                           // Clear topic identification
+            (h2Count >= 2 ? 25 : (h2Count / 2) * 25) +          // Content structure
+            (meta.critical_completeness * 25)                    // Metadata completeness
+        );
+        
+        // Check for schema markup using structure analyzer results
+        const schemaData = analysis.schema_markup || {};
+        const hasSchema = schemaData.has_structured_data || false;
+        
+        // Check for FAQ section using structure analyzer results
+        const faqData = analysis.faq_structure || {};
+        const hasFAQ = faqData.has_faq || false;
+        
+        // Semantic structure score for AI understanding
+        const semanticScore = Math.round(semantic.semantic_score * 100);
+        
         overviewDiv.innerHTML = `
             <div class="overview-card">
-                <h4>Content Metrics</h4>
-                <div class="metric">${metrics.word_count.toLocaleString()}</div>
-                <div class="label">Words</div>
+                <h4>Content Depth</h4>
+                <div class="metric">${wordCount.toLocaleString()}</div>
+                <div class="label">${wordCount >= 500 ? 'AI-Friendly' : wordCount >= 200 ? 'Basic' : 'Too Thin'}</div>
             </div>
             
             <div class="overview-card">
-                <h4>Heading Structure</h4>
-                <div class="metric">${headings.total}</div>
-                <div class="label">Total Headings</div>
+                <h4>Structure Quality</h4>
+                <div class="metric">${headingCount}</div>
+                <div class="label">H1: ${h1Count} | H2: ${h2Count}</div>
             </div>
             
             <div class="overview-card">
-                <h4>Semantic Score</h4>
-                <div class="metric">${Math.round(semantic.semantic_score * 100)}%</div>
-                <div class="label">Semantic Elements</div>
+                <h4>AI Citation Score</h4>
+                <div class="metric">${aiReadiness}%</div>
+                <div class="label">${aiReadiness >= 80 ? 'Excellent' : aiReadiness >= 60 ? 'Good' : aiReadiness >= 40 ? 'Fair' : 'Needs Work'}</div>
             </div>
             
             <div class="overview-card">
-                <h4>Meta Completeness</h4>
-                <div class="metric">${Math.round(meta.critical_completeness * 100)}%</div>
-                <div class="label">Critical Meta Tags</div>
+                <h4>Schema Markup</h4>
+                <div class="metric">${hasSchema ? '✓' : '✗'}</div>
+                <div class="label">${hasSchema ? 'Implemented' : 'Missing'}</div>
             </div>
             
             <div class="overview-card">
-                <h4>Structure Issues</h4>
-                <div class="metric">${analysis.structural_issues.length}</div>
-                <div class="label">Issues Found</div>
+                <h4>FAQ Section</h4>
+                <div class="metric">${hasFAQ ? '✓' : '✗'}</div>
+                <div class="label">${hasFAQ ? 'Present' : 'Missing'}</div>
             </div>
         `;
     }
@@ -626,21 +651,13 @@ class FrontendAPP {
         }
         
         const recommendationsHTML = recommendations.map(rec => `
-            <div class="recommendation-card priority-${rec.priority}">
+            <div class="recommendation-card priority-${rec.priority.toLowerCase()}">
                 <div class="recommendation-header">
                     <h4 class="recommendation-title">${rec.title}</h4>
-                    <span class="priority-badge ${rec.priority}">${rec.priority}</span>
+                    <span class="priority-badge ${rec.priority.toLowerCase()}">${rec.priority.toUpperCase()}</span>
                 </div>
                 
                 <p class="recommendation-description">${rec.description}</p>
-                
-                <div class="recommendation-reason">
-                    <strong>Why this helps:</strong> ${rec.reason}
-                </div>
-                
-                <div class="recommendation-implementation">
-                    ${rec.implementation}
-                </div>
             </div>
         `).join('');
         
