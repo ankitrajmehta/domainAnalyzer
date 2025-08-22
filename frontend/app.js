@@ -650,18 +650,37 @@ class FrontendAPP {
             return;
         }
         
-        const recommendationsHTML = recommendations.map(rec => `
-            <div class="recommendation-card priority-${rec.priority.toLowerCase()}">
-                <div class="recommendation-header">
-                    <h4 class="recommendation-title">${rec.title}</h4>
-                    <span class="priority-badge ${rec.priority.toLowerCase()}">${rec.priority.toUpperCase()}</span>
-                </div>
-                
-                <p class="recommendation-description">${rec.description}</p>
-            </div>
-        `).join('');
+        // Clear existing content
+        recommendationsDiv.innerHTML = '';
         
-        recommendationsDiv.innerHTML = recommendationsHTML;
+        // Create each recommendation card to properly handle HTML content
+        recommendations.forEach(rec => {
+            const card = document.createElement('div');
+            card.className = `recommendation-card priority-${rec.priority.toLowerCase()}`;
+            
+            const header = document.createElement('div');
+            header.className = 'recommendation-header';
+            
+            const title = document.createElement('h4');
+            title.className = 'recommendation-title';
+            title.textContent = rec.title;
+            
+            const badge = document.createElement('span');
+            badge.className = `priority-badge ${rec.priority.toLowerCase()}`;
+            badge.textContent = rec.priority.toUpperCase();
+            
+            header.appendChild(title);
+            header.appendChild(badge);
+            
+            const description = document.createElement('p');
+            description.className = 'recommendation-description';
+            description.textContent = rec.description; // Use textContent to prevent HTML interpretation
+            
+            card.appendChild(header);
+            card.appendChild(description);
+            
+            recommendationsDiv.appendChild(card);
+        });
     }
 
     async resetAnalysis() {

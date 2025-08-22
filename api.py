@@ -300,7 +300,7 @@ async def perform_structure_analysis(url: str) -> Dict[str, Any]:
             
             print(f"Sending prompt to AI: {rec_prompt[:200]}...")
             rec_response = client.process_query(rec_prompt, resolve_urls=False)
-            print(f"AI response received: {rec_response['response_text'][:200]}...")
+            print(f"AI response received: {rec_response['response_text']}")
             
             structure_recommendations = extract_recommendations_from_response(rec_response["response_text"])
             
@@ -496,7 +496,7 @@ def extract_recommendations_from_response(response_text: str) -> list:
     
     try:
         print(f"AI Response length: {len(response_text)} characters")
-        print(f"First 200 chars: {response_text[:200]}")
+        # print(f"First 200 chars: {response_text[:200]}")
         
         # Clean the response more thoroughly
         cleaned_response = response_text.strip()
@@ -525,7 +525,7 @@ def extract_recommendations_from_response(response_text: str) -> list:
             json_lines = lines[start_idx:end_idx + 1]
             cleaned_response = '\n'.join(json_lines)
         
-        print(f"Cleaned response: {cleaned_response[:300]}")
+        print(f"Cleaned response: {cleaned_response}")
         
         # Try to parse as JSON directly
         try:

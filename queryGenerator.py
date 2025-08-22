@@ -316,6 +316,8 @@ async def generate_queries_from_url(url: str, num_queries: int = NUM_OF_QUERIES)
     
     return queries
 
+
+#Function has not been used:
 async def analyze_with_structure_recommendations(url: str) -> dict:
     """
     Complete analysis including queries, domain analysis, and structure recommendations.
