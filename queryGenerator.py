@@ -9,7 +9,7 @@ from structure_recommendation.structure_analyzer import StructureAnalyzer
 
 # Configuration
 DEFAULT_URL = "https://ibriz.ai/" #content is extracted and queries are generated based on this
-NUM_OF_QUERIES = 8
+NUM_OF_QUERIES = 3
 
 async def crawl_website(url: str) -> Optional[dict]:
     """
@@ -36,7 +36,7 @@ async def crawl_website(url: str) -> Optional[dict]:
 
 def get_structure_recommendations_prompt(structure_analysis: dict, crawled_data: dict) -> str:
     """
-    Generate a prompt for getting structure recommendations from Gemini.
+    Generate a prompt for getting comprehensive GEO recommendations from Gemini.
     
     Args:
         structure_analysis: Analysis results from StructureAnalyzer
@@ -46,47 +46,41 @@ def get_structure_recommendations_prompt(structure_analysis: dict, crawled_data:
         The formatted prompt string for structure recommendations
     """
     
-    content_sample = crawled_data.get("clean_text", "")[:1000]  # First 1000 chars
+    content_sample = crawled_data.get("clean_text", "")[:800]  # First 800 chars
+    missing_elements = structure_analysis.get('semantic_elements', {}).get('missing_elements', [])
+    missing_meta = structure_analysis.get('meta_completeness', {}).get('missing_critical', [])
+    structural_issues = structure_analysis.get('structural_issues', [])
     
-    prompt = f"""You are a GEO (Generative Engine Optimization) expert. Analyze this website's structure and provide specific recommendations to improve its chances of being cited by AI systems like ChatGPT, Gemini, and Claude.
+    prompt = f"""You are a professional website optimization consultant. Analyze this specific website and provide 4 customized recommendations based on the actual content and issues found.
 
 WEBSITE CONTENT SAMPLE:
-{content_sample}
+"{content_sample}"
 
-CURRENT STRUCTURE ANALYSIS:
-- Word count: {structure_analysis['content_metrics']['word_count']}
-- Heading structure: {structure_analysis['heading_structure']['distribution']}
-- Semantic elements present: {structure_analysis['semantic_elements']['elements']}
-- Missing semantic elements: {structure_analysis['semantic_elements']['missing_elements']}
-- Meta tag issues: Missing {structure_analysis['meta_completeness']['missing_critical']}
-- Structural issues found: {structure_analysis['structural_issues']}
+SPECIFIC ISSUES IDENTIFIED:
+- Missing semantic elements: {missing_elements}
+- Missing critical meta tags: {missing_meta}  
+- Structural problems found: {len(structural_issues)}
+- Content length: {structure_analysis.get('content_metrics', {}).get('word_count', 0)} words
+- H1 headings: {structure_analysis.get('heading_structure', {}).get('h1_count', 0)}
+- Total headings: {structure_analysis.get('heading_structure', {}).get('total', 0)}
 
-FOCUS AREAS:
-1. HTML Structure improvements for better AI parsing
-2. Content organization for enhanced citability  
-3. Meta tag optimization for AI understanding
-4. Semantic markup enhancements
+Based on this SPECIFIC analysis, create 4 targeted recommendations. DO NOT use generic examples. Analyze the actual content and issues.
 
-REQUIREMENTS:
-- Provide 4-5 specific, actionable structure recommendations
-- Focus only on technical structure improvements
-- Each recommendation should explain WHY it helps with AI citations
-- Be concise and implementation-focused
-
-CRITICAL: You MUST respond with ONLY a valid JSON array. No explanations, no markdown, no additional text.
-
-OUTPUT FORMAT - Return EXACTLY this structure:
+Return ONLY a JSON array with this structure:
 [
   {{
-    "title": "Add Semantic Article Tags",
-    "description": "Implement proper article and section semantic HTML5 tags",
-    "reason": "AI systems parse semantic HTML better for content understanding",
-    "implementation": "Wrap main content in <article> tags and use <section> for subsections",
-    "priority": "high"
+    "title": "Specific recommendation based on analysis",
+    "description": "Detailed explanation of the specific issue found and why fixing it will help this particular website",
+    "solution": "Concrete steps to fix this specific issue",
+    "priority": "High or Medium"
   }}
 ]
 
-Generate structure recommendations now:"""
+IMPORTANT: 
+- Base recommendations on the actual content sample provided
+- Address the specific missing elements and meta tags listed
+- Don't use generic placeholder text
+- Focus on the most impactful improvements for THIS website"""
     
     return prompt
 
@@ -123,9 +117,8 @@ def extract_recommendations_from_response(response_text: str) -> List[dict]:
                             recommendations.append({
                                 "title": rec.get("title", ""),
                                 "description": rec.get("description", ""),
-                                "reason": rec.get("reason", ""),
-                                "implementation": rec.get("implementation", ""),
-                                "priority": rec.get("priority", "medium")
+                                "solution": rec.get("solution", rec.get("code", "")),  # Support both new and old format
+                                "priority": rec.get("priority", "Medium")
                             })
                 return recommendations
             except json.JSONDecodeError as e:
@@ -139,13 +132,12 @@ def extract_recommendations_from_response(response_text: str) -> List[dict]:
         
         if titles:
             print(f"Found {len(titles)} recommendations in text format, converting to structured format")
-            for i, title in enumerate(titles[:5]):  # Limit to 5 recommendations
+            for i, title in enumerate(titles[:4]):  # Limit to 4 recommendations
                 recommendations.append({
                     "title": title.strip(),
-                    "description": f"Recommendation {i+1} from AI analysis",
-                    "reason": "Improves GEO optimization for AI citations",
-                    "implementation": "Follow AI-generated guidance",
-                    "priority": "medium"
+                    "description": f"Implementation recommendation {i+1}",
+                    "solution": "Follow implementation guidelines",
+                    "priority": "Medium"
                 })
             return recommendations
         

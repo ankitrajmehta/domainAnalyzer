@@ -684,27 +684,64 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.6;
 }
 
-.recommendation-reason {
-    background: #f1f5f9;
-    border-radius: 6px;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border-left: 3px solid #3b82f6;
+.recommendation-solution {
+    background: #f0f9ff;
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid #0ea5e9;
+    border-left: 4px solid #0ea5e9;
+    margin-top: 1rem;
 }
 
-.recommendation-reason strong {
+.recommendation-solution strong {
+    color: #0c4a6e;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.recommendation-solution code {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.85rem;
+    color: #0c4a6e;
+    background: #e0f2fe;
+    padding: 0.5rem;
+    border-radius: 4px;
+    display: block;
+    line-height: 1.4;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.recommendation-code {
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    margin-top: 1rem;
+}
+
+.recommendation-code strong {
     color: #1e293b;
     font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
-.recommendation-implementation {
-    background: #f8fafc;
+.recommendation-code pre {
+    margin: 0;
+    background: #1e293b;
     border-radius: 6px;
     padding: 0.75rem;
-    border: 1px solid #e2e8f0;
+    overflow-x: auto;
+}
+
+.recommendation-code code {
     font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
     font-size: 0.8rem;
-    color: #374151;
+    color: #e2e8f0;
+    line-height: 1.4;
 }
 
 .structure-loading {

@@ -37,6 +37,8 @@ class StructureAnalyzer:
             "heading_structure": self._analyze_headings(rendered_html),
             "semantic_elements": self._analyze_semantic_elements(rendered_html),
             "meta_completeness": self._analyze_meta_tags(meta_data),
+            "faq_structure": self._analyze_faq(rendered_html),
+            "schema_markup": self._analyze_schema(rendered_html),
             "structural_issues": self._identify_issues(rendered_html, meta_data, clean_text)
         }
         
@@ -84,6 +86,59 @@ class StructureAnalyzer:
             "missing_elements": [k for k, v in elements.items() if v == 0]
         }
     
+    def _analyze_faq(self, html: str) -> Dict[str, Any]:
+        """Analyze FAQ structure for AI optimization."""
+        faq_patterns = [
+            r'<div[^>]*class="[^"]*faq[^"]*"[^>]*>',
+            r'<section[^>]*class="[^"]*faq[^"]*"[^>]*>',
+            r'<h[1-6][^>]*>[^<]*\?[^<]*</h[1-6]>',  # Question headings
+            r'<dt[^>]*>[^<]*\?[^<]*</dt>',  # Definition term questions
+            r'<p[^>]*class="[^"]*question[^"]*"[^>]*>',
+            r'<div[^>]*class="[^"]*question[^"]*"[^>]*>'
+        ]
+        
+        faq_count = 0
+        question_count = 0
+        
+        for pattern in faq_patterns:
+            matches = re.findall(pattern, html, re.IGNORECASE | re.DOTALL)
+            faq_count += len(matches)
+            if '?' in pattern:
+                question_count += len(matches)
+        
+        # Look for Q&A patterns
+        qa_pattern = r'Q:|A:|Question:|Answer:'
+        qa_matches = len(re.findall(qa_pattern, html, re.IGNORECASE))
+        
+        return {
+            "faq_sections": faq_count,
+            "question_patterns": question_count,
+            "qa_indicators": qa_matches,
+            "has_faq": faq_count > 0 or question_count > 3 or qa_matches > 6
+        }
+    
+    def _analyze_schema(self, html: str) -> Dict[str, Any]:
+        """Analyze structured data markup for AI systems."""
+        schema_types = {
+            "json_ld": len(re.findall(r'<script[^>]*type="application/ld\+json"[^>]*>', html, re.IGNORECASE)),
+            "microdata": len(re.findall(r'itemscope|itemtype|itemprop', html, re.IGNORECASE)),
+            "rdfa": len(re.findall(r'property=|typeof=|vocab=', html, re.IGNORECASE)),
+            "faq_schema": len(re.findall(r'"@type":\s*"FAQ', html, re.IGNORECASE)),
+            "article_schema": len(re.findall(r'"@type":\s*"Article', html, re.IGNORECASE)),
+            "organization_schema": len(re.findall(r'"@type":\s*"Organization', html, re.IGNORECASE)),
+            "breadcrumb_schema": len(re.findall(r'"@type":\s*"BreadcrumbList', html, re.IGNORECASE))
+        }
+        
+        total_schema = sum(v for k, v in schema_types.items() if k not in ['faq_schema', 'article_schema', 'organization_schema', 'breadcrumb_schema'])
+        specific_schemas = sum(v for k, v in schema_types.items() if k in ['faq_schema', 'article_schema', 'organization_schema', 'breadcrumb_schema'])
+        
+        return {
+            "types": schema_types,
+            "total_markup": total_schema,
+            "specific_schemas": specific_schemas,
+            "has_structured_data": schema_types["json_ld"] > 0 or specific_schemas > 0
+        }
+
     def _analyze_meta_tags(self, meta_data: Dict[str, Any]) -> Dict[str, Any]:
         """Analyze meta tag completeness."""
         critical_tags = ["title", "description"]
@@ -119,5 +174,17 @@ class StructureAnalyzer:
             issues.append("missing_article_tags")
         if not re.search(r'<main[^>]*>', html, re.IGNORECASE):
             issues.append("missing_main_tag")
+        
+        # FAQ issues
+        faq_patterns = [r'faq', r'frequently.*asked', r'common.*questions']
+        has_faq_content = any(re.search(pattern, clean_text, re.IGNORECASE) for pattern in faq_patterns)
+        has_faq_markup = re.search(r'<[^>]*class="[^"]*faq[^"]*"[^>]*>', html, re.IGNORECASE)
+        if has_faq_content and not has_faq_markup:
+            issues.append("missing_faq_structure")
+        
+        # Schema issues
+        has_json_ld = re.search(r'<script[^>]*type="application/ld\+json"[^>]*>', html, re.IGNORECASE)
+        if not has_json_ld:
+            issues.append("missing_schema_markup")
         
         return issues

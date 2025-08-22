@@ -292,16 +292,26 @@ async def perform_structure_analysis(url: str) -> Dict[str, Any]:
         structure_analyzer = StructureAnalyzer()
         structure_analysis = structure_analyzer.analyze_for_recommendations(crawled_data)
         
-        # Step 3: Get AI-powered structure recommendations
+        # Step 3: Get AI-powered structure recommendations  
         structure_recommendations = []
         try:
             client = GeminiGroundedClient()
             rec_prompt = get_structure_recommendations_prompt(structure_analysis, crawled_data)
+            
+            print(f"Sending prompt to AI: {rec_prompt[:200]}...")
             rec_response = client.process_query(rec_prompt, resolve_urls=False)
+            print(f"AI response received: {rec_response['response_text'][:200]}...")
+            
             structure_recommendations = extract_recommendations_from_response(rec_response["response_text"])
+            
+            # If AI failed, ensure we have fallback
+            if not structure_recommendations:
+                print("Warning: AI returned no recommendations, using intelligent fallback")
+                structure_recommendations = generate_fallback_recommendations(structure_analysis)
+                
         except Exception as e:
-            print(f"Warning: Could not generate AI recommendations - {e}")
-            # Continue without AI recommendations
+            print(f"Error: AI recommendation generation failed - {e}")
+            structure_recommendations = generate_fallback_recommendations(structure_analysis)
         
         return {
             'structure_analysis': structure_analysis,
@@ -311,57 +321,173 @@ async def perform_structure_analysis(url: str) -> Dict[str, Any]:
     except Exception as e:
         return {'error': f'Structure analysis failed: {str(e)}'}
 
+def generate_fallback_recommendations(structure_analysis: dict) -> list:
+    """
+    Generate simple, direct GEO recommendations.
+    """
+    recommendations = []
+    
+    missing_meta = structure_analysis.get('meta_completeness', {}).get('missing_critical', [])
+    headings = structure_analysis.get('heading_structure', {})
+    word_count = structure_analysis.get('content_metrics', {}).get('word_count', 0)
+    h1_count = headings.get('distribution', {}).get('h1', 0)
+    h2_count = headings.get('distribution', {}).get('h2', 0)
+    total_headings = headings.get('total', 0)
+    missing_elements = structure_analysis.get('semantic_elements', {}).get('missing_elements', [])
+    faq_data = structure_analysis.get('faq_structure', {})
+    schema_data = structure_analysis.get('schema_markup', {})
+    
+    # 1. Meta tags
+    if missing_meta:
+        recommendations.append({
+            "title": "Add Missing Meta Tags",
+            "description": f"Add these missing meta tags: {', '.join(missing_meta)}. Include title, description, and Open Graph tags.",
+            "priority": "High"
+        })
+    
+    # 2. Heading structure
+    if h1_count == 0:
+        recommendations.append({
+            "title": "Add H1 Heading",
+            "description": "Add one clear H1 heading that describes your main topic.",
+            "priority": "High"
+        })
+    elif h1_count > 1:
+        recommendations.append({
+            "title": "Fix Multiple H1 Tags",
+            "description": f"Use only one H1 tag. Convert the other {h1_count-1} H1 tags to H2 or H3.",
+            "priority": "High"
+        })
+    elif total_headings < 3:
+        recommendations.append({
+            "title": "Add More Headings",
+            "description": f"Add more H2 and H3 headings to organize your content better (currently {total_headings}).",
+            "priority": "Medium"
+        })
+    
+    # 3. Content length
+    if word_count < 300:
+        recommendations.append({
+            "title": "Expand Content",
+            "description": f"Increase content from {word_count} to at least 300-500 words for better authority.",
+            "priority": "Medium"
+        })
+    
+    # 4. Semantic structure
+    if 'article' in missing_elements or 'section' in missing_elements:
+        recommendations.append({
+            "title": "Add Semantic HTML",
+            "description": "Use semantic HTML5 tags like <article>, <section>, <header>, and <main>.",
+            "priority": "Medium"
+        })
+    
+    # 5. Schema markup - prioritize JSON-LD for AI systems
+    json_ld_count = schema_data.get('types', {}).get('json_ld', 0)
+    if json_ld_count == 0:
+        recommendations.append({
+            "title": "Add JSON-LD Schema",
+            "description": "Implement JSON-LD structured data markup for optimal AI understanding and citation.",
+            "priority": "High"
+        })
+    
+    # 6. FAQ structure
+    if not faq_data.get('has_faq', False) and word_count > 500:
+        recommendations.append({
+            "title": "Add FAQ Section",
+            "description": "Create a FAQ section with structured Q&A format for common questions.",
+            "priority": "Low"
+        })
+    
+    # Fill to exactly 4 recommendations
+    while len(recommendations) < 4:
+        if len(recommendations) == 0:
+            recommendations.append({
+                "title": "Add Meta Description",
+                "description": "Create a 150-160 character meta description for this page.",
+                "priority": "High"
+            })
+        elif len(recommendations) == 1:
+            recommendations.append({
+                "title": "Improve Page Structure",
+                "description": "Organize content with proper headings and semantic HTML elements.",
+                "priority": "Medium"
+            })
+        elif len(recommendations) == 2:
+            recommendations.append({
+                "title": "Add Schema Markup",
+                "description": "Implement JSON-LD structured data for AI citation optimization.",
+                "priority": "Medium"
+            })
+        else:
+            recommendations.append({
+                "title": "Enhance Content Structure",
+                "description": "Add FAQ sections and improve content organization for better AI understanding.",
+                "priority": "Low"
+            })
+    
+    return recommendations[:4]
+
 def get_structure_recommendations_prompt(structure_analysis: dict, crawled_data: dict) -> str:
     """
-    Generate a prompt for getting structure recommendations from Gemini.
+    Generate a simple, direct prompt for GEO() recommendations.
     """
-    content_sample = crawled_data.get("clean_text", "")[:1000]  # First 1000 chars
+    # Get key issues
+    missing_meta = structure_analysis.get('meta_completeness', {}).get('missing_critical', [])
+    word_count = structure_analysis.get('content_metrics', {}).get('word_count', 0)
+    headings = structure_analysis.get('heading_structure', {})
+    h1_count = headings.get('distribution', {}).get('h1', 0)
+    h2_count = headings.get('distribution', {}).get('h2', 0)
+    total_headings = headings.get('total', 0)
+    missing_elements = structure_analysis.get('semantic_elements', {}).get('missing_elements', [])
+    faq_data = structure_analysis.get('faq_structure', {})
+    schema_data = structure_analysis.get('schema_markup', {})
     
-    prompt = f"""You are a GEO (Generative Engine Optimization) expert. Analyze this website's structure and provide specific recommendations to improve its chances of being cited by AI systems like ChatGPT, Gemini, and Claude.
+    prompt = f"""Analyze this website for GEO (Generative Engine Optimization) and give 4 direct recommendations.
 
-WEBSITE CONTENT SAMPLE:
-{content_sample}
+GEO is about optimizing content for AI systems Gemini that cite and reference web content. Not about geographic or local SEO.
 
-CURRENT STRUCTURE ANALYSIS:
-- Word count: {structure_analysis['content_metrics']['word_count']}
-- Heading structure: {structure_analysis['heading_structure']['distribution']}
-- Semantic elements present: {structure_analysis['semantic_elements']['elements']}
-- Missing semantic elements: {structure_analysis['semantic_elements']['missing_elements']}
-- Meta tag issues: Missing {structure_analysis['meta_completeness']['missing_critical']}
-- Structural issues found: {structure_analysis['structural_issues']}
+ISSUES FOUND:
+- Missing meta tags: {missing_meta}
+- Word count: {word_count}
+- H1 tags: {h1_count}
+- Total headings: {total_headings}
+- Missing elements: {missing_elements}
+- FAQ structure: {faq_data.get('has_faq', False)}
+- Schema markup: {schema_data.get('has_structured_data', False)}
 
-FOCUS AREAS:
-1. HTML Structure improvements for better AI parsing
-2. Content organization for enhanced citability  
-3. Meta tag optimization for AI understanding
-4. Semantic markup enhancements
+Give 4 short, direct recommendations for AI citation optimization. Focus on what AI systems need to understand and cite your content.
 
-REQUIREMENTS:
-- Provide 4-5 specific, actionable structure recommendations
-- Focus only on technical structure improvements
-- Each recommendation should explain WHY it helps with AI citations
-- Be concise and implementation-focused
-
-CRITICAL: You MUST respond with ONLY a valid JSON array. No explanations, no markdown, no additional text.
-
-OUTPUT FORMAT - Return EXACTLY this structure:
+Format:
 [
   {{
-    "title": "Add Semantic Article Tags",
-    "description": "Implement proper article and section semantic HTML5 tags",
-    "reason": "AI systems parse semantic HTML better for content understanding",
-    "implementation": "Wrap main content in <article> tags and use <section> for subsections",
-    "priority": "high"
+    "title": "Add Meta Description",
+    "description": "Create a 150-160 character meta description for this page.",
+    "priority": "High"
+  }},
+  {{
+    "title": "Fix Heading Structure", 
+    "description": "Add proper H1 tag and organize content with H2/H3 headings.",
+    "priority": "High"
+  }},
+  {{
+    "title": "Add Schema Markup",
+    "description": "Implement JSON-LD structured data for better content understanding.",
+    "priority": "Medium"
+  }},
+  {{
+    "title": "Improve Content Structure",
+    "description": "Use semantic HTML tags like article, section, and header.",
+    "priority": "Medium"
   }}
 ]
 
-Generate structure recommendations now:"""
+Return ONLY the JSON array, nothing else."""
     
     return prompt
 
 def extract_recommendations_from_response(response_text: str) -> list:
     """
-    Extract structure recommendations from Gemini response.
+    Extract structure recommendations from Gemini response with enhanced debugging.
     """
     import json
     import re
@@ -369,54 +495,99 @@ def extract_recommendations_from_response(response_text: str) -> list:
     recommendations = []
     
     try:
-        # First, try to find JSON array in response
-        json_pattern = r'\[[\s\S]*?\]'
-        json_match = re.search(json_pattern, response_text, re.DOTALL)
+        print(f"AI Response length: {len(response_text)} characters")
+        print(f"First 200 chars: {response_text[:200]}")
         
-        if json_match:
-            json_str = json_match.group()
-            try:
-                # Clean up the JSON string
-                json_str = json_str.strip()
-                # Remove any markdown code block markers
-                json_str = re.sub(r'^```json\s*', '', json_str)
-                json_str = re.sub(r'\s*```$', '', json_str)
-                
-                parsed_recs = json.loads(json_str)
-                if isinstance(parsed_recs, list):
-                    for rec in parsed_recs:
-                        if isinstance(rec, dict) and "title" in rec:
+        # Clean the response more thoroughly
+        cleaned_response = response_text.strip()
+        
+        # Remove markdown code blocks
+        cleaned_response = re.sub(r'^```json\s*', '', cleaned_response, flags=re.MULTILINE)
+        cleaned_response = re.sub(r'^```\s*', '', cleaned_response, flags=re.MULTILINE)
+        cleaned_response = re.sub(r'\s*```$', '', cleaned_response, flags=re.MULTILINE)
+        
+        # Remove any leading/trailing text that's not JSON
+        lines = cleaned_response.split('\n')
+        start_idx = -1
+        end_idx = -1
+        
+        for i, line in enumerate(lines):
+            if line.strip().startswith('['):
+                start_idx = i
+                break
+        
+        for i in range(len(lines) - 1, -1, -1):
+            if lines[i].strip().endswith(']'):
+                end_idx = i
+                break
+        
+        if start_idx != -1 and end_idx != -1:
+            json_lines = lines[start_idx:end_idx + 1]
+            cleaned_response = '\n'.join(json_lines)
+        
+        print(f"Cleaned response: {cleaned_response[:300]}")
+        
+        # Try to parse as JSON directly
+        try:
+            parsed_data = json.loads(cleaned_response)
+            if isinstance(parsed_data, list):
+                print(f"Successfully parsed {len(parsed_data)} recommendations from AI")
+                for rec in parsed_data:
+                    if isinstance(rec, dict) and "title" in rec and "description" in rec:
+                        # Clean up text and remove unwanted characters
+                        title = str(rec.get("title", "")).replace(",,", "").replace("  ", " ").strip()
+                        description = str(rec.get("description", "")).replace(",,", "").replace("  ", " ").strip()
+                        priority = str(rec.get("priority", "Medium")).strip()
+                        
+                        # Remove incomplete sentences that end abruptly
+                        if description.endswith(" an") or description.endswith(" the") or description.endswith(" a"):
+                            description = description.rsplit(' ', 1)[0] + "."
+                        
+                        if title and description and len(description) > 20:  # Ensure meaningful content
                             recommendations.append({
-                                "title": rec.get("title", ""),
-                                "description": rec.get("description", ""),
-                                "reason": rec.get("reason", ""),
-                                "implementation": rec.get("implementation", ""),
-                                "priority": rec.get("priority", "medium")
+                                "title": title,
+                                "description": description,
+                                "priority": priority
                             })
-                return recommendations
-            except json.JSONDecodeError as e:
-                print(f"JSON decode error: {e}")
+                
+                if recommendations:
+                    print(f"Extracted {len(recommendations)} valid recommendations")
+                    return recommendations[:4]
+            
+        except json.JSONDecodeError as e:
+            print(f"Direct JSON parsing failed: {e}")
+            
+            # Try to find JSON array pattern as fallback
+            json_pattern = r'\[[\s\S]*?\]'
+            json_matches = re.findall(json_pattern, cleaned_response, re.DOTALL)
+            
+            for json_str in json_matches:
+                try:
+                    parsed_recs = json.loads(json_str)
+                    if isinstance(parsed_recs, list) and len(parsed_recs) > 0:
+                        print(f"Found valid JSON array with {len(parsed_recs)} items")
+                        for rec in parsed_recs:
+                            if isinstance(rec, dict) and "title" in rec and "description" in rec:
+                                title = str(rec.get("title", "")).replace(",,", "").strip()
+                                description = str(rec.get("description", "")).replace(",,", "").strip()
+                                priority = str(rec.get("priority", "Medium")).strip()
+                                
+                                if title and description:
+                                    recommendations.append({
+                                        "title": title,
+                                        "description": description,
+                                        "priority": priority
+                                    })
+                        
+                        if recommendations:
+                            return recommendations[:4]
+                            
+                except json.JSONDecodeError as e2:
+                    print(f"Fallback JSON parsing failed: {e2}")
+                    continue
         
-        # Fallback: Create default recommendations if AI response failed
-        if not recommendations:
-            recommendations = [
-                {
-                    "title": "Add Semantic HTML Structure",
-                    "description": "Implement proper semantic HTML5 tags for better content organization",
-                    "reason": "AI systems parse semantic HTML more effectively for content understanding",
-                    "implementation": "Use <article>, <section>, <header>, and <main> tags appropriately",
-                    "priority": "high"
-                },
-                {
-                    "title": "Optimize Meta Tags",
-                    "description": "Add missing critical meta tags for better AI comprehension",
-                    "reason": "Meta tags provide structured information that AI systems rely on",
-                    "implementation": "Add meta description, title, and Open Graph tags",
-                    "priority": "high"
-                }
-            ]
-        
-        return recommendations
+        print("Warning: AI response parsing failed - using fallback recommendations")
+        return []
         
     except Exception as e:
         print(f"Error extracting recommendations: {e}")
