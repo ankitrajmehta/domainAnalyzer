@@ -34,57 +34,59 @@ async def crawl_website(url: str) -> Optional[dict]:
         print(f"Error: Crawling failed - {e}")
         return None
 
-def get_structure_recommendations_prompt(structure_analysis: dict, crawled_data: dict) -> str:
-    """
-    Generate a prompt for getting comprehensive GEO recommendations from Gemini.
+# Not used. Enable if running this file as main
+# def get_structure_recommendations_prompt(structure_analysis: dict, crawled_data: dict) -> str:
+#     """
+#     Generate a prompt for getting comprehensive GEO recommendations from Gemini.
     
-    Args:
-        structure_analysis: Analysis results from StructureAnalyzer
-        crawled_data: Original crawled data
+#     Args:
+#         structure_analysis: Analysis results from StructureAnalyzer
+#         crawled_data: Original crawled data
         
-    Returns:
-        The formatted prompt string for structure recommendations
-    """
+#     Returns:
+#         The formatted prompt string for structure recommendations
+#     """
     
-    content_sample = crawled_data.get("clean_text", "")[:800]  # First 800 chars
-    missing_elements = structure_analysis.get('semantic_elements', {}).get('missing_elements', [])
-    missing_meta = structure_analysis.get('meta_completeness', {}).get('missing_critical', [])
-    structural_issues = structure_analysis.get('structural_issues', [])
+#     content_sample = crawled_data.get("clean_text", "")[:800]  # First 800 chars
+#     missing_elements = structure_analysis.get('semantic_elements', {}).get('missing_elements', [])
+#     missing_meta = structure_analysis.get('meta_completeness', {}).get('missing_critical', [])
+#     structural_issues = structure_analysis.get('structural_issues', [])
     
-    prompt = f"""You are a professional website optimization consultant. Analyze this specific website and provide 4 customized recommendations based on the actual content and issues found.
+#     prompt = f"""You are a professional website optimization consultant. Analyze this specific website and provide 4 customized recommendations based on the actual content and issues found.
 
-WEBSITE CONTENT SAMPLE:
-"{content_sample}"
+# WEBSITE CONTENT SAMPLE:
+# "{content_sample}"
 
-SPECIFIC ISSUES IDENTIFIED:
-- Missing semantic elements: {missing_elements}
-- Missing critical meta tags: {missing_meta}  
-- Structural problems found: {len(structural_issues)}
-- Content length: {structure_analysis.get('content_metrics', {}).get('word_count', 0)} words
-- H1 headings: {structure_analysis.get('heading_structure', {}).get('h1_count', 0)}
-- Total headings: {structure_analysis.get('heading_structure', {}).get('total', 0)}
+# SPECIFIC ISSUES IDENTIFIED:
+# - Missing semantic elements: {missing_elements}
+# - Missing critical meta tags: {missing_meta}  
+# - Structural problems found: {len(structural_issues)}
+# - Content length: {structure_analysis.get('content_metrics', {}).get('word_count', 0)} words
+# - H1 headings: {structure_analysis.get('heading_structure', {}).get('h1_count', 0)}
+# - Total headings: {structure_analysis.get('heading_structure', {}).get('total', 0)}
 
-Based on this SPECIFIC analysis, create 4 targeted recommendations. DO NOT use generic examples. Analyze the actual content and issues.
+# Based on this SPECIFIC analysis, create 4 targeted recommendations. DO NOT use generic examples. Analyze the actual content and issues.
 
-Return ONLY a JSON array with this structure:
-[
-  {{
-    "title": "Specific recommendation based on analysis",
-    "description": "Detailed explanation of the specific issue found and why fixing it will help this particular website",
-    "solution": "Concrete steps to fix this specific issue",
-    "priority": "High or Medium"
-  }}
-]
+# Return ONLY a JSON array with this structure:
+# [
+#   {{
+#     "title": "Specific recommendation based on analysis",
+#     "description": "Detailed explanation of the specific issue found and why fixing it will help this particular website",
+#     "solution": "Concrete steps to fix this specific issue",
+#     "priority": "High or Medium"
+#   }}
+# ]
 
-IMPORTANT: 
-- Base recommendations on the actual content sample provided
-- Address the specific missing elements and meta tags listed
-- Don't use generic placeholder text
-- Focus on the most impactful improvements for THIS website"""
+# IMPORTANT: 
+# - Base recommendations on the actual content sample provided
+# - Address the specific missing elements and meta tags listed
+# - Don't use generic placeholder text
+# - Focus on the most impactful improvements for THIS website"""
     
-    return prompt
+#     return prompt
 
-def extract_recommendations_from_response(response_text: str) -> List[dict]:
+# Not used. Enable if running this file as main
+# def extract_recommendations_from_response(response_text: str) -> List[dict]:
     """
     Extract structure recommendations from Gemini response.
     
@@ -197,7 +199,9 @@ def get_prompt(clean_text: str, num_queries: int = NUM_OF_QUERIES) -> str:
     
     return prompt
 
+
 def extract_queries_from_response(response_text: str) -> List[str]:
+
     """
     Extract and validate queries from the AI response, ensuring we get a clean Python list.
     
@@ -317,118 +321,119 @@ async def generate_queries_from_url(url: str, num_queries: int = NUM_OF_QUERIES)
     return queries
 
 
-#Function has not been used:
-async def analyze_with_structure_recommendations(url: str) -> dict:
-    """
-    Complete analysis including queries, domain analysis, and structure recommendations.
+# Not used. Enable if running this file as main
+
+# async def analyze_with_structure_recommendations(url: str) -> dict:
+    # """
+    # Complete analysis including queries, domain analysis, and structure recommendations.
     
-    Args:
-        url: The URL to analyze
+    # Args:
+    #     url: The URL to analyze
         
-    Returns:
-        Complete analysis results
-    """
-    # Step 1: Crawl website
-    print(f"Crawling website: {url}")
-    crawled_data = await crawl_website(url)
-    if not crawled_data:
-        print("Error: Cannot generate analysis - website crawling failed")
-        return {}
+    # Returns:
+    #     Complete analysis results
+    # """
+    # # Step 1: Crawl website
+    # print(f"Crawling website: {url}")
+    # crawled_data = await crawl_website(url)
+    # if not crawled_data:
+    #     print("Error: Cannot generate analysis - website crawling failed")
+    #     return {}
     
-    # Step 2: Generate queries
-    print("Generating queries...")
-    queries = await generate_queries_from_url(url)
-    if not queries:
-        print("Warning: No queries generated, proceeding with structure analysis only")
-        queries = []
+    # # Step 2: Generate queries
+    # print("Generating queries...")
+    # queries = await generate_queries_from_url(url)
+    # if not queries:
+    #     print("Warning: No queries generated, proceeding with structure analysis only")
+    #     queries = []
     
-    # Step 3: Perform domain analysis
-    print(f"Analyzing domains for {len(queries)} queries...")
-    analyzer = DomainAnalyzer()
-    domain_results = analyzer.analyze_queries(queries, resolve_urls=True) if queries else []
+    # # Step 3: Perform domain analysis
+    # print(f"Analyzing domains for {len(queries)} queries...")
+    # analyzer = DomainAnalyzer()
+    # domain_results = analyzer.analyze_queries(queries, resolve_urls=True) if queries else []
     
-    # Step 4: Analyze website structure
+    # # Step 4: Analyze website structure
     
-    structure_analyzer = StructureAnalyzer()
-    structure_analysis = structure_analyzer.analyze_for_recommendations(crawled_data)
+    # structure_analyzer = StructureAnalyzer()
+    # structure_analysis = structure_analyzer.analyze_for_recommendations(crawled_data)
     
-    # Step 5: Get AI-powered structure recommendations
+    # # Step 5: Get AI-powered structure recommendations
     
-    structure_recommendations = []
-    try:
-        client = GeminiGroundedClient()
-        rec_prompt = get_structure_recommendations_prompt(structure_analysis, crawled_data)
-        rec_response = client.process_query(rec_prompt, resolve_urls=False)
-        structure_recommendations = extract_recommendations_from_response(rec_response["response_text"])
-        print(f"Generated {len(structure_recommendations)} structure recommendations")
-    except Exception as e:
-        print(f"Warning: Could not generate AI recommendations - {e}")
+    # structure_recommendations = []
+    # try:
+    #     client = GeminiGroundedClient()
+    #     rec_prompt = get_structure_recommendations_prompt(structure_analysis, crawled_data)
+    #     rec_response = client.process_query(rec_prompt, resolve_urls=False)
+    #     structure_recommendations = extract_recommendations_from_response(rec_response["response_text"])
+    #     print(f"Generated {len(structure_recommendations)} structure recommendations")
+    # except Exception as e:
+    #     print(f"Warning: Could not generate AI recommendations - {e}")
     
-    # Step 6: Format results in the same format as domain_analysis_prompted.json
-    # Add structure analysis to each query result
-    for result in domain_results:
-        result["structure_analysis"] = structure_analysis
-        result["structure_recommendations"] = structure_recommendations
+    # # Step 6: Format results in the same format as domain_analysis_prompted.json
+    # # Add structure analysis to each query result
+    # for result in domain_results:
+    #     result["structure_analysis"] = structure_analysis
+    #     result["structure_recommendations"] = structure_recommendations
     
-    # If no queries were generated, create a single result with just structure data
-    if not domain_results:
-        domain_results = [{
-            "query": "Structure Analysis Only",
-            "links": [],
-            "complete_result": {
-                "query": "Structure Analysis Only",
-                "response_text": "No queries generated - structure analysis only",
-                "web_search_queries": [],
-                "grounding_metadata": [],
-                "has_grounding": False
-            },
-            "structure_analysis": structure_analysis,
-            "structure_recommendations": structure_recommendations,
-            "website_url": url,
-            "crawl_timestamp": crawled_data.get("timestamp", "")
-        }]
-    else:
-        # Add metadata to all results
-        for result in domain_results:
-            result["website_url"] = url
-            result["crawl_timestamp"] = crawled_data.get("timestamp", "")
+    # # If no queries were generated, create a single result with just structure data
+    # if not domain_results:
+    #     domain_results = [{
+    #         "query": "Structure Analysis Only",
+    #         "links": [],
+    #         "complete_result": {
+    #             "query": "Structure Analysis Only",
+    #             "response_text": "No queries generated - structure analysis only",
+    #             "web_search_queries": [],
+    #             "grounding_metadata": [],
+    #             "has_grounding": False
+    #         },
+    #         "structure_analysis": structure_analysis,
+    #         "structure_recommendations": structure_recommendations,
+    #         "website_url": url,
+    #         "crawl_timestamp": crawled_data.get("timestamp", "")
+    #     }]
+    # else:
+    #     # Add metadata to all results
+    #     for result in domain_results:
+    #         result["website_url"] = url
+    #         result["crawl_timestamp"] = crawled_data.get("timestamp", "")
     
-    # Print summary
-    print(f"\nAnalysis completed:")
-    print(f"- Queries analyzed: {len(queries)}")
-    print(f"- Structure recommendations: {len(structure_recommendations)}")
-    print(f"- Critical structure issues: {len(structure_analysis.get('structural_issues', []))}")
-    print(f"- Website word count: {structure_analysis.get('content_metrics', {}).get('word_count', 0)}")
+    # # Print summary
+    # print(f"\nAnalysis completed:")
+    # print(f"- Queries analyzed: {len(queries)}")
+    # print(f"- Structure recommendations: {len(structure_recommendations)}")
+    # print(f"- Critical structure issues: {len(structure_analysis.get('structural_issues', []))}")
+    # print(f"- Website word count: {structure_analysis.get('content_metrics', {}).get('word_count', 0)}")
     
-    # Save results with timestamp
-    from datetime import datetime
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"domain_analysis_with_structure_{timestamp}.json"
+    # # Save results with timestamp
+    # from datetime import datetime
+    # timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    # filename = f"domain_analysis_with_structure_{timestamp}.json"
     
-    try:
-        with open(filename, 'w', encoding='utf-8') as f:
-            json.dump(domain_results, f, indent=2, ensure_ascii=False)
-        print(f"\nResults saved to: {filename}")
-    except Exception as e:
-        print(f"Warning: Could not save results - {e}")
+    # try:
+    #     with open(filename, 'w', encoding='utf-8') as f:
+    #         json.dump(domain_results, f, indent=2, ensure_ascii=False)
+    #     print(f"\nResults saved to: {filename}")
+    # except Exception as e:
+    #     print(f"Warning: Could not save results - {e}")
     
-    # Print sample recommendations
-    if structure_recommendations:
-        print(f"\nSample Structure Recommendations:")
-        for i, rec in enumerate(structure_recommendations[:3], 1):
-            print(f"{i}. {rec.get('title', 'No title')}")
-    else:
-        print(f"\nNo structure recommendations generated")
+    # # Print sample recommendations
+    # if structure_recommendations:
+    #     print(f"\nSample Structure Recommendations:")
+    #     for i, rec in enumerate(structure_recommendations[:3], 1):
+    #         print(f"{i}. {rec.get('title', 'No title')}")
+    # else:
+    #     print(f"\nNo structure recommendations generated")
     
-    return {
-        "results": domain_results,
-        "summary": {
-            "queries_count": len(queries),
-            "recommendations_count": len(structure_recommendations),
-            "structure_issues_count": len(structure_analysis.get('structural_issues', [])),
-            "word_count": structure_analysis.get('content_metrics', {}).get('word_count', 0)
-        }
-    }
+    # return {
+    #     "results": domain_results,
+    #     "summary": {
+    #         "queries_count": len(queries),
+    #         "recommendations_count": len(structure_recommendations),
+    #         "structure_issues_count": len(structure_analysis.get('structural_issues', [])),
+    #         "word_count": structure_analysis.get('content_metrics', {}).get('word_count', 0)
+    #     }
+    # }
 
 if __name__ == "__main__":
     import sys

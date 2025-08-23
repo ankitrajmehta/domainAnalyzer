@@ -6,7 +6,7 @@ This API provides endpoints for the 4-page frontend:
 1. URL input and analysis start
 2. Loading/status check
 3. Aggregate results view
-4. Individual query details view
+4. Individual query details view 
 5. Structure analysis results
 """
 
