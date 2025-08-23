@@ -133,6 +133,13 @@ def get_aggregate_results():
         "status": "complete",
         "url": "analyzed_url",
         "queries": ["query1", "query2", ...],
+        "query_types": {
+            "total": 8,
+            "direct": 3,
+            "generic": 5,
+            "direct_percentage": 37.5,
+            "generic_percentage": 62.5
+        },
         "domain_percentages": [
             {
                 "domain": "example.com",
@@ -150,11 +157,13 @@ def get_aggregate_results():
         
         percentage_data = analyzer.get_percentage_analysis()
         queries = analyzer.get_all_queries()
+        query_types = analyzer.get_query_types_summary()
         
         return jsonify({
             'status': 'complete',
             'url': analyzer.url,
             'queries': queries,
+            'query_types': query_types,  
             'domain_percentages': percentage_data['domainPercentages'],
             'num_queries': percentage_data['numOfQueries']
         }), 200
@@ -175,6 +184,7 @@ def get_query_details():
     Returns:
     {
         "query": "query text",
+        "query_type": "Direct" | "Generic",
         "gemini_response": "Full response from Gemini",
         "domains": [
             {

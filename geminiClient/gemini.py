@@ -72,18 +72,29 @@ class GeminiGroundedClient:
         except:
             return url
     
-    def generate_response(self, prompt: str, use_grounding: bool = True):
+    def generate_response(self, prompt: str, use_grounding: bool = True, structured_output: bool = False, response_schema=None):
         """
-        Generate a response with optional grounding.
+        Generate a response with optional grounding and structured output.
         
         Args:
             prompt: The input prompt/question.
             use_grounding: Whether to enable Google Search grounding.
+            structured_output: Whether to enable structured JSON output.
+            response_schema: Pydantic model or schema for structured output.
             
         Returns:
             The response object from Gemini API.
         """
         config = self.config if use_grounding else None
+        
+        # If structured output is requested, modify or create config
+        if structured_output and response_schema:
+            if config is None:
+                config = types.GenerateContentConfig()
+            
+            # Add structured output configuration
+            config.response_mime_type = "application/json"
+            config.response_schema = response_schema
         
         response = self.client.models.generate_content(
             model=self.model,

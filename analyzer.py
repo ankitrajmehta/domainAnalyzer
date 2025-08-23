@@ -22,7 +22,7 @@ class Analyzer:
         self.generate_queries = queryGenerator.generate_queries_from_url
         self.url: str = queryGenerator.DEFAULT_URL
         self.queriesToRun: int = queryGenerator.NUM_OF_QUERIES
-        self.generated_queries: List[str] = []
+        self.generated_queries: List[Dict[str, Any]] = []
         self.saveFileName: str = r'analysisReports\domain_analysis_prompted.json'
         self.analysis_results: List[Dict[str, Any]] = []
         self.analysis_status: str = "idle"  # idle, analyzing, complete, error
@@ -79,19 +79,50 @@ class Analyzer:
 
     def get_all_queries(self) -> List[str]:
         """
-        Get all generated queries.
+        Get all generated query strings (for compatibility with frontend).
         
         Returns:
-            List[str]: List of generated queries
+            List[str]: List of query strings extracted from structured queries
+        """
+        return [query_obj.get('query', '') for query_obj in self.generated_queries]
+
+    def get_all_queries_structured(self) -> List[Dict[str, Any]]:
+        """
+        Get all generated queries with their type metadata.
+        
+        Returns:
+            List[Dict[str, Any]]: List of structured query objects
         """
         return self.generated_queries
+
+    def get_query_types_summary(self) -> Dict[str, Any]:
+        """
+        Get summary statistics about query types.
+        
+        Returns:
+            Dict containing counts and percentages of Direct vs Generic queries
+        """
+        if not self.generated_queries:
+            return {'total': 0, 'direct': 0, 'generic': 0, 'direct_percentage': 0, 'generic_percentage': 0}
+        
+        total = len(self.generated_queries)
+        direct_count = sum(1 for q in self.generated_queries if q.get('type') == 'Direct')
+        generic_count = total - direct_count
+        
+        return {
+            'total': total,
+            'direct': direct_count,
+            'generic': generic_count,
+            'direct_percentage': round((direct_count / total) * 100, 1) if total > 0 else 0,
+            'generic_percentage': round((generic_count / total) * 100, 1) if total > 0 else 0
+        }
 
     def get_query_details(self, query: str) -> Optional[Dict[str, Any]]:
         """
         Get detailed results for a specific query.
         
         Args:
-            query (str): The query to get details for
+            query (str): The query string to get details for
             
         Returns:
             Optional[Dict[str, Any]]: Query details including Gemini response and domain stats
@@ -100,6 +131,7 @@ class Analyzer:
             if result['query'] == query:
                 return {
                     'query': result['query'],
+                    'query_type': result.get('query_type', 'Generic'),  # Include query type
                     'gemini_response': result['complete_result']['response_text'] if result['complete_result'] else '',
                     'domains': result['links'],
                     'grounding_metadata': result['complete_result']['grounding_metadata'] if result['complete_result'] else []

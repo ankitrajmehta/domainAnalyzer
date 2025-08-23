@@ -1,1254 +1,1282 @@
 [
   {
-    "query": "Red Door Life addiction treatment programs",
+    "query": "iBriz SUI blockchain projects",
+    "query_type": "Direct",
     "links": [
       {
-        "domain": "addictioncenter.com",
-        "count": 18
-      },
-      {
-        "domain": "reddoor.life",
+        "domain": "ibriz.ai",
         "count": 10
-      },
-      {
-        "domain": "psychologytoday.com",
-        "count": 8
-      },
-      {
-        "domain": "recovery.com",
-        "count": 7
       }
     ],
     "complete_result": {
-      "query": "Red Door Life addiction treatment programs",
-      "response_text": "Red Door Life offers a range of individualized and holistic addiction treatment programs primarily located in Los Angeles, California, with a focus on comprehensive care that addresses substance use disorders, co-occurring mental health conditions, and underlying trauma. The organization was founded in 2005 as a 501c3 nonprofit, aiming to improve recovery outcomes by providing tailored treatment services and fostering entrepreneurship within the recovery community.\n\n**Treatment Programs and Levels of Care:**\nRed Door Life provides multiple levels of care, including:\n*   **Detoxification:** Medically supervised detox services, available both at their center and at a client's home, for substances like alcohol, opiates, cocaine, methamphetamine, fentanyl, heroin, and benzodiazepines.\n*   **Residential Programs:** Immersive inpatient and luxury residential treatment, including small residential programs and adult and young adult residential options.\n*   **Outpatient Services:** Intensive Outpatient (IOP), Outpatient Rehab, and virtual outpatient programs, offering flexible group and individual sessions.\n*   **Partial Hospitalization (PHP):** A higher level of care than traditional outpatient, but less intensive than residential.\n*   **Sober Living Homes:** Upscale, supportive living environments for men and women in recovery.\n*   **Telehealth:** Virtual delivery of groups and individual sessions for convenience.\n*   **Sober Companion Services:** Providing safety, support, and recovery services in a client's home, offering an alternative to residential care for those with work obligations.\n*   **Immersion Experiences:** Five-day immersion programs for detox, cleansing, integration, or recovery renewal.\n*   **Intervention:** Services to help initiate the treatment process.\n\n**Treatment Philosophy and Approach:**\nRed Door Life emphasizes an individualized, trauma-based, and holistic approach, moving beyond a \"car wash\" model of quick recovery. Their philosophy centers on the \"12 Dimensions of Life,\" which addresses not only addiction but also nutrition, legal, medical, financial, and relationship issues to tackle the root causes of substance use. They are LGBTQIA friendly and offer an inclusive environment. The programs are designed to create bespoke treatment plans rather than a one-size-fits-all approach, recognizing that healing from substance abuse can take a year or longer. They also support clients in either the 12-Step route or a harm reduction approach.\n\n**Therapies and Amenities:**\nA wide array of therapies and amenities are utilized to support healing and growth, including:\n*   **Therapeutic Modalities:** Individual and group therapy, cognitive behavioral therapy (CBT), dialectical behavior therapy (DBT), Eye Movement Desensitization and Reprocessing (EMDR), somatic experiencing, and writing. They prioritize trauma-based therapy.\n*   **Holistic and Wellness Practices:** Reiki, massage, yoga, acupuncture, Kundalini, aerial dance, surfing, meditation, boxing, Pilates, strength and cardio training, hiking, spin, and sound healing.\n*   **Specialized Treatments:** Ketamine-assisted therapy, medication-assisted treatment (MAT), and equine therapy.\n*   **Professional Support:** Access to a multidisciplinary team including psychiatrists, medical doctors, psychologists, therapists, nutritionists, and fitness coaches.\n*   **Amenities:** Personalized nutrition plans from chefs, state-of-the-art fitness facilities, infrared sauna, and luxury settings in Bel Air and Beverly Hills with views of the Los Angeles Valley.\n\nRed Door Life also provides long-term support through client advocates, ongoing connection with the treatment team, and community-building events, extending care beyond the residential phase to foster a new, healthy, and fulfilling existence.",
+      "query": "iBriz SUI blockchain projects",
+      "response_text": "iBriz is actively involved with the Sui blockchain, demonstrating a partnership with Sui and engaging in various projects and initiatives within its ecosystem.\n\nKey aspects of iBriz's involvement with the Sui blockchain include:\n*   **Partnership with Sui** iBriz is an official partner of Sui, a Layer 1 blockchain known for its speed, scalability, and security.\n*   **Projects on Sui** iBriz has developed and participated in several projects on the Sui blockchain, including Kiosk Indexer, Arden, Song Bits, and Arttoo. Six of their projects also participated in the SUI Overflow Hackathon.\n*   **Community and Educational Initiatives** iBriz has hosted technical series to onboard engineering students to the Sui ecosystem and smart contract development using the Move language. They have also been involved in Sui community events, such as the Sui SF Community Event and SUI Basecamp 2024.\n*   **Events and Collaboration** iBriz.ai co-hosted a significant event with the Sui Foundation titled \"Sui Blockchain & AI: A New Era of Decentralized Intelligence\" in Palo Alto, California, on February 19th. This event brought together innovators to explore the convergence of blockchain and artificial intelligence, with iBriz.ai's CEO, Bijay Niraula, and CTO, Kumar Pandey, participating and showcasing their work on the Sui platform. The discussions at this event highlighted projects leveraging Sui's decentralized infrastructure for secure AI data management, scalability, and data integrity.\n*   **Validator Node** iBriz also operates a Validator Node for Sui.\n\niBriz's focus in these endeavors often bridges blockchain technology, particularly Sui, with artificial intelligence and fintech solutions, including services for startups and enterprises.",
       "web_search_queries": [
-        "Red Door Life addiction treatment programs"
+        "iBriz SUI blockchain projects",
+        "iBriz blockchain projects",
+        "SUI blockchain projects"
       ],
       "grounding_metadata": [
         {
-          "text": "The organization was founded in 2005 as a 501c3 nonprofit, aiming to improve recovery outcomes by providing tailored treatment services and fostering entrepreneurship within the recovery community.",
+          "text": "iBriz is actively involved with the Sui blockchain, demonstrating a partnership with Sui and engaging in various projects and initiatives within its ecosystem.",
           "links": [
             {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9e7v6vqxIWdxhCGRb8UhBBBDXV0vFiD8yCeDyfXYSgrM6X0uF8rPdEhh7IUCackKK1NlDGaENK57NEFdmrW96LAnre91YNYshsDU5XbFAW10D0Q==",
-              "actual_url": "https://www.reddoor.life/"
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgCBLtmn2572p1btmoO_TwTRxf70NzoQZx-nuyGmPJ-4iGH7GGhjIEluX44MxM9xjuAkuCpPqQiniF438z3diRCLpUpvK75QBHZBA=",
+              "actual_url": "https://ibriz.ai/"
             }
           ],
-          "start_index": 272,
-          "end_index": 469
+          "start_index": null,
+          "end_index": 159
         },
         {
-          "text": "**Treatment Programs and Levels of Care:**\nRed Door Life provides multiple levels of care, including:\n*   **Detoxification:** Medically supervised detox services, available both at their center and at a client's home, for substances like alcohol, opiates, cocaine, methamphetamine, fentanyl, heroin, and benzodiazepines.",
+          "text": "Key aspects of iBriz's involvement with the Sui blockchain include:\n*   **Partnership with Sui** iBriz is an official partner of Sui, a Layer 1 blockchain known for its speed, scalability, and security.",
           "links": [
             {
-              "title": "recovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7CxrTM8k5oEAcokPvFgIu2JujiAcvVVIrDsk0XCQ5zpKYctqdptjvgEknP4qtBs275YKmLeozzxWC593HUFM4ndafDF0QHqJrCd_ouPYREZuuIKTWtflGOrTPnOnGo27ptN5ZOEmOKVqJbcd0YkyglO_zpg==",
-              "actual_url": "https://recovery.com/red-door-life-los-angeles-california/"
-            },
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            },
-            {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9e7v6vqxIWdxhCGRb8UhBBBDXV0vFiD8yCeDyfXYSgrM6X0uF8rPdEhh7IUCackKK1NlDGaENK57NEFdmrW96LAnre91YNYshsDU5XbFAW10D0Q==",
-              "actual_url": "https://www.reddoor.life/"
-            },
-            {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdCuZ8QdsaIBHoQWZZ60MyoOM42R4SSmVoHt-CjZlMP980GCihZPtoSynqzxJWItlqHuvF_KQp40f-yQtR6-FZvvsIFvm_ZAu_vW1t3pnbCRM7enEhfObWoYfnJT8=",
-              "actual_url": "https://www.reddoor.life/admissions"
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgCBLtmn2572p1btmoO_TwTRxf70NzoQZx-nuyGmPJ-4iGH7GGhjIEluX44MxM9xjuAkuCpPqQiniF438z3diRCLpUpvK75QBHZBA=",
+              "actual_url": "https://ibriz.ai/"
             }
           ],
-          "start_index": 471,
-          "end_index": 791
+          "start_index": 161,
+          "end_index": 363
         },
         {
-          "text": "*   **Residential Programs:** Immersive inpatient and luxury residential treatment, including small residential programs and adult and young adult residential options.",
+          "text": "Six of their projects also participated in the SUI Overflow Hackathon.",
           "links": [
             {
-              "title": "recovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7CxrTM8k5oEAcokPvFgIu2JujiAcvVVIrDsk0XCQ5zpKYctqdptjvgEknP4qtBs275YKmLeozzxWC593HUFM4ndafDF0QHqJrCd_ouPYREZuuIKTWtflGOrTPnOnGo27ptN5ZOEmOKVqJbcd0YkyglO_zpg==",
-              "actual_url": "https://recovery.com/red-door-life-los-angeles-california/"
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgCBLtmn2572p1btmoO_TwTRxf70NzoQZx-nuyGmPJ-4iGH7GGhjIEluX44MxM9xjuAkuCpPqQiniF438z3diRCLpUpvK75QBHZBA=",
+              "actual_url": "https://ibriz.ai/"
+            }
+          ],
+          "start_index": 523,
+          "end_index": 593
+        },
+        {
+          "text": "They have also been involved in Sui community events, such as the Sui SF Community Event and SUI Basecamp 2024.",
+          "links": [
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgCBLtmn2572p1btmoO_TwTRxf70NzoQZx-nuyGmPJ-4iGH7GGhjIEluX44MxM9xjuAkuCpPqQiniF438z3diRCLpUpvK75QBHZBA=",
+              "actual_url": "https://ibriz.ai/"
+            }
+          ],
+          "start_index": 783,
+          "end_index": 894
+        },
+        {
+          "text": "ai's CEO, Bijay Niraula, and CTO, Kumar Pandey, participating and showcasing their work on the Sui platform.",
+          "links": [
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUa1yRjPoPVLBojtf6IE46UawWgNd_wHKyojqFKDfHxHTtauWxlfRZnEiSArR5XcFF8pPIDxapPbrH5S6ZW1oIlOU4VFw1xOuT7Usftar2PPpt2yiPgfQtBYCngo8yv3NEACWAGgXeHq8GUQfz-TGyfGdQ8IE4T86iZWJq9M4ecFJ2KnpkI8RR",
+              "actual_url": "https://blog.ibriz.ai/sui-blockchain-ai-new-era-of-decentralized-intelligence/"
             },
             {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoTJJtk-A2ltuibkfGmSz9Bc0AfFGNeAdpW3Q1rSsahiOK13ySOcVPa_Ccv2jLO1VY1mJ0VYGkYWtuyJeqTlPnqT0Nehmcq-1zenRCRTs8w75_eF85wFPQ-uBJiN6bxw==",
+              "actual_url": "https://blog.ibriz.ai/tag/blockchain/"
+            }
+          ],
+          "start_index": 1225,
+          "end_index": 1333
+        },
+        {
+          "text": "The discussions at this event highlighted projects leveraging Sui's decentralized infrastructure for secure AI data management, scalability, and data integrity.",
+          "links": [
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUa1yRjPoPVLBojtf6IE46UawWgNd_wHKyojqFKDfHxHTtauWxlfRZnEiSArR5XcFF8pPIDxapPbrH5S6ZW1oIlOU4VFw1xOuT7Usftar2PPpt2yiPgfQtBYCngo8yv3NEACWAGgXeHq8GUQfz-TGyfGdQ8IE4T86iZWJq9M4ecFJ2KnpkI8RR",
+              "actual_url": "https://blog.ibriz.ai/sui-blockchain-ai-new-era-of-decentralized-intelligence/"
+            }
+          ],
+          "start_index": 1334,
+          "end_index": 1494
+        },
+        {
+          "text": "*   **Validator Node** iBriz also operates a Validator Node for Sui.",
+          "links": [
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgCBLtmn2572p1btmoO_TwTRxf70NzoQZx-nuyGmPJ-4iGH7GGhjIEluX44MxM9xjuAkuCpPqQiniF438z3diRCLpUpvK75QBHZBA=",
+              "actual_url": "https://ibriz.ai/"
+            }
+          ],
+          "start_index": 1495,
+          "end_index": 1563
+        },
+        {
+          "text": "iBriz's focus in these endeavors often bridges blockchain technology, particularly Sui, with artificial intelligence and fintech solutions, including services for startups and enterprises.",
+          "links": [
+            {
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgCBLtmn2572p1btmoO_TwTRxf70NzoQZx-nuyGmPJ-4iGH7GGhjIEluX44MxM9xjuAkuCpPqQiniF438z3diRCLpUpvK75QBHZBA=",
+              "actual_url": "https://ibriz.ai/"
             },
             {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5hZHgiHrgE17c9v3T5Mzwgxh6t1Yvu6IsWuvUhHkep3vWNfVVFUT9leTsGBcBg9Xmm2AYCToAlxwQlYyOaIgrXYayOddAqfed4eO_PooTe5b1Esr0oiIYjKOTtgkuIUC1V-w4fPL6EvkwqN-MfEEDa5-0Ep-ZXcqlOfP5Q5AyOqk_1EGuKe82eQ9lIB_Syys=",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
+              "title": "ibriz.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUa1yRjPoPVLBojtf6IE46UawWgNd_wHKyojqFKDfHxHTtauWxlfRZnEiSArR5XcFF8pPIDxapPbrH5S6ZW1oIlOU4VFw1xOuT7Usftar2PPpt2yiPgfQtBYCngo8yv3NEACWAGgXeHq8GUQfz-TGyfGdQ8IE4T86iZWJq9M4ecFJ2KnpkI8RR",
+              "actual_url": "https://blog.ibriz.ai/sui-blockchain-ai-new-era-of-decentralized-intelligence/"
             }
           ],
-          "start_index": 792,
-          "end_index": 959
-        },
-        {
-          "text": "*   **Outpatient Services:** Intensive Outpatient (IOP), Outpatient Rehab, and virtual outpatient programs, offering flexible group and individual sessions.",
-          "links": [
-            {
-              "title": "recovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7CxrTM8k5oEAcokPvFgIu2JujiAcvVVIrDsk0XCQ5zpKYctqdptjvgEknP4qtBs275YKmLeozzxWC593HUFM4ndafDF0QHqJrCd_ouPYREZuuIKTWtflGOrTPnOnGo27ptN5ZOEmOKVqJbcd0YkyglO_zpg==",
-              "actual_url": "https://recovery.com/red-door-life-los-angeles-california/"
-            },
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            },
-            {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9e7v6vqxIWdxhCGRb8UhBBBDXV0vFiD8yCeDyfXYSgrM6X0uF8rPdEhh7IUCackKK1NlDGaENK57NEFdmrW96LAnre91YNYshsDU5XbFAW10D0Q==",
-              "actual_url": "https://www.reddoor.life/"
-            }
-          ],
-          "start_index": 960,
-          "end_index": 1116
-        },
-        {
-          "text": "*   **Partial Hospitalization (PHP):** A higher level of care than traditional outpatient, but less intensive than residential.",
-          "links": [
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            }
-          ],
-          "start_index": 1117,
-          "end_index": 1244
-        },
-        {
-          "text": "*   **Sober Living Homes:** Upscale, supportive living environments for men and women in recovery.",
-          "links": [
-            {
-              "title": "recovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7CxrTM8k5oEAcokPvFgIu2JujiAcvVVIrDsk0XCQ5zpKYctqdptjvgEknP4qtBs275YKmLeozzxWC593HUFM4ndafDF0QHqJrCd_ouPYREZuuIKTWtflGOrTPnOnGo27ptN5ZOEmOKVqJbcd0YkyglO_zpg==",
-              "actual_url": "https://recovery.com/red-door-life-los-angeles-california/"
-            },
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            }
-          ],
-          "start_index": 1245,
-          "end_index": 1343
-        },
-        {
-          "text": "*   **Telehealth:** Virtual delivery of groups and individual sessions for convenience.",
-          "links": [
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            },
-            {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9e7v6vqxIWdxhCGRb8UhBBBDXV0vFiD8yCeDyfXYSgrM6X0uF8rPdEhh7IUCackKK1NlDGaENK57NEFdmrW96LAnre91YNYshsDU5XbFAW10D0Q==",
-              "actual_url": "https://www.reddoor.life/"
-            }
-          ],
-          "start_index": 1344,
-          "end_index": 1431
-        },
-        {
-          "text": "*   **Sober Companion Services:** Providing safety, support, and recovery services in a client's home, offering an alternative to residential care for those with work obligations.",
-          "links": [
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            },
-            {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9e7v6vqxIWdxhCGRb8UhBBBDXV0vFiD8yCeDyfXYSgrM6X0uF8rPdEhh7IUCackKK1NlDGaENK57NEFdmrW96LAnre91YNYshsDU5XbFAW10D0Q==",
-              "actual_url": "https://www.reddoor.life/"
-            },
-            {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdCuZ8QdsaIBHoQWZZ60MyoOM42R4SSmVoHt-CjZlMP980GCihZPtoSynqzxJWItlqHuvF_KQp40f-yQtR6-FZvvsIFvm_ZAu_vW1t3pnbCRM7enEhfObWoYfnJT8=",
-              "actual_url": "https://www.reddoor.life/admissions"
-            }
-          ],
-          "start_index": 1432,
-          "end_index": 1611
-        },
-        {
-          "text": "*   **Immersion Experiences:** Five-day immersion programs for detox, cleansing, integration, or recovery renewal.",
-          "links": [
-            {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9e7v6vqxIWdxhCGRb8UhBBBDXV0vFiD8yCeDyfXYSgrM6X0uF8rPdEhh7IUCackKK1NlDGaENK57NEFdmrW96LAnre91YNYshsDU5XbFAW10D0Q==",
-              "actual_url": "https://www.reddoor.life/"
-            }
-          ],
-          "start_index": 1612,
-          "end_index": 1726
-        },
-        {
-          "text": "*   **Intervention:** Services to help initiate the treatment process.",
-          "links": [
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            },
-            {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5hZHgiHrgE17c9v3T5Mzwgxh6t1Yvu6IsWuvUhHkep3vWNfVVFUT9leTsGBcBg9Xmm2AYCToAlxwQlYyOaIgrXYayOddAqfed4eO_PooTe5b1Esr0oiIYjKOTtgkuIUC1V-w4fPL6EvkwqN-MfEEDa5-0Ep-ZXcqlOfP5Q5AyOqk_1EGuKe82eQ9lIB_Syys=",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
-            }
-          ],
-          "start_index": 1727,
-          "end_index": 1797
-        },
-        {
-          "text": "**Treatment Philosophy and Approach:**\nRed Door Life emphasizes an individualized, trauma-based, and holistic approach, moving beyond a \"car wash\" model of quick recovery.",
-          "links": [
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            },
-            {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5hZHgiHrgE17c9v3T5Mzwgxh6t1Yvu6IsWuvUhHkep3vWNfVVFUT9leTsGBcBg9Xmm2AYCToAlxwQlYyOaIgrXYayOddAqfed4eO_PooTe5b1Esr0oiIYjKOTtgkuIUC1V-w4fPL6EvkwqN-MfEEDa5-0Ep-ZXcqlOfP5Q5AyOqk_1EGuKe82eQ9lIB_Syys=",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
-            }
-          ],
-          "start_index": 1799,
-          "end_index": 1970
-        },
-        {
-          "text": "Their philosophy centers on the \"12 Dimensions of Life,\" which addresses not only addiction but also nutrition, legal, medical, financial, and relationship issues to tackle the root causes of substance use.",
-          "links": [
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            }
-          ],
-          "start_index": 1971,
-          "end_index": 2177
-        },
-        {
-          "text": "They are LGBTQIA friendly and offer an inclusive environment.",
-          "links": [
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            }
-          ],
-          "start_index": 2178,
-          "end_index": 2239
-        },
-        {
-          "text": "The programs are designed to create bespoke treatment plans rather than a one-size-fits-all approach, recognizing that healing from substance abuse can take a year or longer.",
-          "links": [
-            {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5hZHgiHrgE17c9v3T5Mzwgxh6t1Yvu6IsWuvUhHkep3vWNfVVFUT9leTsGBcBg9Xmm2AYCToAlxwQlYyOaIgrXYayOddAqfed4eO_PooTe5b1Esr0oiIYjKOTtgkuIUC1V-w4fPL6EvkwqN-MfEEDa5-0Ep-ZXcqlOfP5Q5AyOqk_1EGuKe82eQ9lIB_Syys=",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
-            },
-            {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdCuZ8QdsaIBHoQWZZ60MyoOM42R4SSmVoHt-CjZlMP980GCihZPtoSynqzxJWItlqHuvF_KQp40f-yQtR6-FZvvsIFvm_ZAu_vW1t3pnbCRM7enEhfObWoYfnJT8=",
-              "actual_url": "https://www.reddoor.life/admissions"
-            }
-          ],
-          "start_index": 2240,
-          "end_index": 2414
-        },
-        {
-          "text": "They also support clients in either the 12-Step route or a harm reduction approach.",
-          "links": [
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            }
-          ],
-          "start_index": 2415,
-          "end_index": 2498
-        },
-        {
-          "text": "**Therapies and Amenities:**\nA wide array of therapies and amenities are utilized to support healing and growth, including:\n*   **Therapeutic Modalities:** Individual and group therapy, cognitive behavioral therapy (CBT), dialectical behavior therapy (DBT), Eye Movement Desensitization and Reprocessing (EMDR), somatic experiencing, and writing.",
-          "links": [
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            },
-            {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5hZHgiHrgE17c9v3T5Mzwgxh6t1Yvu6IsWuvUhHkep3vWNfVVFUT9leTsGBcBg9Xmm2AYCToAlxwQlYyOaIgrXYayOddAqfed4eO_PooTe5b1Esr0oiIYjKOTtgkuIUC1V-w4fPL6EvkwqN-MfEEDa5-0Ep-ZXcqlOfP5Q5AyOqk_1EGuKe82eQ9lIB_Syys=",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
-            }
-          ],
-          "start_index": 2500,
-          "end_index": 2846
-        },
-        {
-          "text": "They prioritize trauma-based therapy.",
-          "links": [
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            }
-          ],
-          "start_index": 2847,
-          "end_index": 2884
-        },
-        {
-          "text": "*   **Holistic and Wellness Practices:** Reiki, massage, yoga, acupuncture, Kundalini, aerial dance, surfing, meditation, boxing, Pilates, strength and cardio training, hiking, spin, and sound healing.",
-          "links": [
-            {
-              "title": "recovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7CxrTM8k5oEAcokPvFgIu2JujiAcvVVIrDsk0XCQ5zpKYctqdptjvgEknP4qtBs275YKmLeozzxWC593HUFM4ndafDF0QHqJrCd_ouPYREZuuIKTWtflGOrTPnOnGo27ptN5ZOEmOKVqJbcd0YkyglO_zpg==",
-              "actual_url": "https://recovery.com/red-door-life-los-angeles-california/"
-            },
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            },
-            {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5hZHgiHrgE17c9v3T5Mzwgxh6t1Yvu6IsWuvUhHkep3vWNfVVFUT9leTsGBcBg9Xmm2AYCToAlxwQlYyOaIgrXYayOddAqfed4eO_PooTe5b1Esr0oiIYjKOTtgkuIUC1V-w4fPL6EvkwqN-MfEEDa5-0Ep-ZXcqlOfP5Q5AyOqk_1EGuKe82eQ9lIB_Syys=",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
-            }
-          ],
-          "start_index": 2885,
-          "end_index": 3086
-        },
-        {
-          "text": "*   **Specialized Treatments:** Ketamine-assisted therapy, medication-assisted treatment (MAT), and equine therapy.",
-          "links": [
-            {
-              "title": "recovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7CxrTM8k5oEAcokPvFgIu2JujiAcvVVIrDsk0XCQ5zpKYctqdptjvgEknP4qtBs275YKmLeozzxWC593HUFM4ndafDF0QHqJrCd_ouPYREZuuIKTWtflGOrTPnOnGo27ptN5ZOEmOKVqJbcd0YkyglO_zpg==",
-              "actual_url": "https://recovery.com/red-door-life-los-angeles-california/"
-            },
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            },
-            {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5hZHgiHrgE17c9v3T5Mzwgxh6t1Yvu6IsWuvUhHkep3vWNfVVFUT9leTsGBcBg9Xmm2AYCToAlxwQlYyOaIgrXYayOddAqfed4eO_PooTe5b1Esr0oiIYjKOTtgkuIUC1V-w4fPL6EvkwqN-MfEEDa5-0Ep-ZXcqlOfP5Q5AyOqk_1EGuKe82eQ9lIB_Syys=",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
-            }
-          ],
-          "start_index": 3087,
-          "end_index": 3202
-        },
-        {
-          "text": "*   **Professional Support:** Access to a multidisciplinary team including psychiatrists, medical doctors, psychologists, therapists, nutritionists, and fitness coaches.",
-          "links": [
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            }
-          ],
-          "start_index": 3203,
-          "end_index": 3372
-        },
-        {
-          "text": "*   **Amenities:** Personalized nutrition plans from chefs, state-of-the-art fitness facilities, infrared sauna, and luxury settings in Bel Air and Beverly Hills with views of the Los Angeles Valley.",
-          "links": [
-            {
-              "title": "recovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7CxrTM8k5oEAcokPvFgIu2JujiAcvVVIrDsk0XCQ5zpKYctqdptjvgEknP4qtBs275YKmLeozzxWC593HUFM4ndafDF0QHqJrCd_ouPYREZuuIKTWtflGOrTPnOnGo27ptN5ZOEmOKVqJbcd0YkyglO_zpg==",
-              "actual_url": "https://recovery.com/red-door-life-los-angeles-california/"
-            },
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjgOLFY3nwtJA_zYRw7M0rLKKz8wypnjg1E3bqGlmCOMZCpzjGnB3cxR7G7bjFNurHgWh4sjCFtzJdl5ztT5AY-kQIGw701a9gtsiVNZtOCas5-m7JymiDU9WRciJc-IHfkTAPIxerF_5P9ySHgiLgvefUi2Hz7egQ9dVaRBz7guMPGMpW-g==",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            }
-          ],
-          "start_index": 3373,
-          "end_index": 3572
-        },
-        {
-          "text": "Red Door Life also provides long-term support through client advocates, ongoing connection with the treatment team, and community-building events, extending care beyond the residential phase to foster a new, healthy, and fulfilling existence.",
-          "links": [
-            {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5hZHgiHrgE17c9v3T5Mzwgxh6t1Yvu6IsWuvUhHkep3vWNfVVFUT9leTsGBcBg9Xmm2AYCToAlxwQlYyOaIgrXYayOddAqfed4eO_PooTe5b1Esr0oiIYjKOTtgkuIUC1V-w4fPL6EvkwqN-MfEEDa5-0Ep-ZXcqlOfP5Q5AyOqk_1EGuKe82eQ9lIB_Syys=",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
-            },
-            {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdCuZ8QdsaIBHoQWZZ60MyoOM42R4SSmVoHt-CjZlMP980GCihZPtoSynqzxJWItlqHuvF_KQp40f-yQtR6-FZvvsIFvm_ZAu_vW1t3pnbCRM7enEhfObWoYfnJT8=",
-              "actual_url": "https://www.reddoor.life/admissions"
-            }
-          ],
-          "start_index": 3574,
-          "end_index": 3816
+          "start_index": 1565,
+          "end_index": 1753
         }
       ],
       "has_grounding": true
     }
   },
   {
-    "query": "Luxury residential detox California",
+    "query": "SUI blockchain smart contract development",
+    "query_type": "Generic",
     "links": [
       {
-        "domain": "cabehavioral.com",
-        "count": 11
-      },
-      {
-        "domain": "houseofzenla.com",
-        "count": 10
-      },
-      {
-        "domain": "luxury-rehabs.com",
-        "count": 7
-      },
-      {
-        "domain": "californiaprimerecovery.com",
-        "count": 6
-      },
-      {
-        "domain": "luxuryrehab.com",
-        "count": 6
-      },
-      {
-        "domain": "luxerecoveryla.com",
-        "count": 6
-      },
-      {
-        "domain": "crescentmoonrecovery.com",
-        "count": 6
-      },
-      {
-        "domain": "oceansluxuryrehab.com",
-        "count": 5
-      },
-      {
-        "domain": "renaissancerecovery.com",
-        "count": 4
-      },
-      {
-        "domain": "recovery.com",
-        "count": 4
-      },
-      {
-        "domain": "capobythesea.com",
-        "count": 4
-      },
-      {
-        "domain": "addictioncenter.com",
-        "count": 3
-      },
-      {
-        "domain": "reddit.com",
-        "count": 2
-      }
-    ],
-    "complete_result": {
-      "query": "Luxury residential detox California",
-      "response_text": "California offers a range of luxury residential detox facilities that combine high-end amenities with comprehensive, personalized addiction treatment. These centers are designed to provide a discreet, comfortable, and supportive environment for individuals seeking to overcome substance use disorders and co-occurring mental health conditions.\n\n**Key Features and Amenities of Luxury Residential Detox in California:**\n\nLuxury detox centers in California often resemble high-end resorts or boutique hotels, prioritizing privacy, comfort, and an individualized approach to recovery. Common features and amenities include:\n\n*   **Personalized Treatment Plans:** Tailored programs that integrate evidence-based therapies with holistic wellness practices.\n*   **Medical Supervision:** Clinically supervised detox with 24/7 care from experienced medical and treatment professionals to manage withdrawal symptoms safely.\n*   **Upscale Accommodations:** Private suites or rooms with high-end furnishings, designed for tranquility and comfort.\n*   **Gourmet Dining:** Meals prepared by private chefs, emphasizing fresh, nutritious, and organic options, often catering to specific dietary needs.\n*   **Holistic Therapies:** A wide array of complementary therapies such as yoga, meditation, massage therapy, acupuncture, art therapy, music therapy, and adventure therapy.\n*   **Comprehensive Care:** Treatment for various substance use disorders, alcohol addiction, and co-occurring mental health conditions (dual diagnosis).\n*   **Low Client-to-Staff Ratio:** Ensures highly personalized and attentive care.\n*   **Additional Amenities:** May include fitness centers, spa services, swimming pools, serene grounds, and concierge services.\n*   **Aftercare Planning:** Support for transitioning out of residential treatment, including personalized discharge plans, intensive outpatient programs (IOP), and sober living options.\n\n**Examples of Luxury Residential Detox Facilities in California:**\n\nSeveral renowned centers in California offer luxury residential detox and treatment programs:\n\n*   **AToN Center (San Diego):** Known for personalized care and upscale amenities on a tranquil 10-acre estate.\n*   **Capo by The Sea (Orange County):** Offers high-end luxury and executive detox and residential treatment.\n*   **Ritz Recovery (Los Angeles):** Provides personalized drug and alcohol detox in a private, upscale setting with a focus on world-class care.\n*   **Luxe Recovery (Los Angeles):** Located in the private hills of Los Angeles, offering cutting-edge treatment and holistic therapies in a luxurious home setting.\n*   **Villa Oasis (San Diego):** Specializes in residential treatment and detox in a secluded, high-end environment.\n*   **Legacy Healing Centers (Hollywood Hills and Tarzana, Los Angeles):** Offers executive-level care and a refined recovery approach in tranquil settings.\n*   **Wish Recovery (Los Angeles):** A luxury rehab center providing world-class care for substance use disorder and dual diagnosis with premium facilities and diverse entertainment options.\n*   **Glendale Luxury Rehab (Glendale):** A co-educational medical detox facility nestled in picturesque hills.\n*   **Passages Malibu (Malibu):** Well-known for its non-12-step treatment approach, private suites, oceanfront views, and gourmet dining.\n*   **Cliffside Malibu (Malibu):** Offers stunning ocean views, a swimming pool, spa treatments, and individualized, evidence-based therapies.\n*   **California Behavioral Health (Palm Desert):** A luxury rehab center specializing in drug and alcohol addiction treatment and co-occurring mental health conditions.\n*   **Oceans Luxury Rehab (Orange County):** Provides a discreet, comfortable setting with personalized care and state-of-the-art amenities.\n\n**Cost of Luxury Residential Detox:**\n\nThe cost of luxury residential detox and rehab in California can vary significantly based on the facility, the amenities offered, the length of the program, and the specific types of therapy and medication involved.\n\n*   Generally, a month-long stay at a luxury rehab averages between **$30,000 to $100,000**.\n*   Some programs can cost up to **$80,000 for a 30-day program**, breaking down to approximately $1,900 to $2,660 per day.\n*   More exclusive programs with extensive amenities and bespoke care may range from **$60,000 to $100,000 for a 30-day program**.\n\nWhile luxury rehabs are more expensive than standard facilities, they often provide an incomparable level of care, comfort, and personalized attention. Many luxury rehabs offer flexible payment options and accept various forms of private insurance, which can help cover some of the treatment costs, though typically not the entire stay. It is recommended to contact the admissions team of specific facilities for a confidential assessment and to discuss pricing and insurance verification.",
-      "web_search_queries": [
-        "luxury residential detox California",
-        "luxury detox centers California",
-        "high-end rehab California",
-        "cost of luxury residential detox California",
-        "luxury detox California pricing",
-        "luxury rehab California reviews experiences",
-        "exclusive addiction treatment California testimonials"
-      ],
-      "grounding_metadata": [
-        {
-          "text": "These centers are designed to provide a discreet, comfortable, and supportive environment for individuals seeking to overcome substance use disorders and co-occurring mental health conditions.",
-          "links": [
-            {
-              "title": "luxury-rehabs.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx10MDdE7CMEipQDQVBOY_uUfiGS-ABsKPeX7zCWQIBhNuLPxSOqzSEgEWVmB3HYiMD1qNeCls9iS91mERbdD1foZYGPLYCvRP921KZlJtnRa66npivonmuUsVJ-wB4CjR1woaPKiD89U=",
-              "actual_url": "https://luxury-rehabs.com/california/addiction/"
-            },
-            {
-              "title": "californiaprimerecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEERqcwMIjzVGHtP6YtJOywQsCN5bvHsgFw-YY5BJefscKuv2qHiJDYr3_Vp33Fir859BG6dgQ2622nS3cAyCS5cHigR85BafeTogN-2YnmZ6r201l6T7EMH4jrP4L1kakjpz0m-VD3222PjgEjadc8ZzUTvbLjZ5THATLFxnDQXnQ4VakFe64Ckk6qjJNZkVLBzA==",
-              "actual_url": "https://californiaprimerecovery.com/luxury-rehab-centers-in-california-orange-county-ca/"
-            },
-            {
-              "title": "renaissancerecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUl_elyHWXwqI9YXLflkj_MiY8T8_rEAnp4UaLp91i2ayh7hn1usPzDdymkElC3IbbOotQ2mVOGbeDl8jZmd0yrQc0rG49Uoj06qcG0Q6VQXXG-ofXrkS8IKpRFlre3Ap0FaX6QgTnyW9P_c0nicHe9HBdygks",
-              "actual_url": "https://www.renaissancerecovery.com/drug/rehab/luxury-rehab/"
-            }
-          ],
-          "start_index": 151,
-          "end_index": 343
-        },
-        {
-          "text": "Luxury detox centers in California often resemble high-end resorts or boutique hotels, prioritizing privacy, comfort, and an individualized approach to recovery.",
-          "links": [
-            {
-              "title": "cabehavioral.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHfqo6O8fEoYZ910s1ppX8N8NoWCr0qionbUlbwFLhEtTG8jZBrrVbvaeCJvMJSiG5xxn6rl3KImcC4_TmJs5mmn5uKW9zVEycw1tjFTAxPTDWBHskX9PxJ0W6-PlZGSTMok9HwQ==",
-              "actual_url": "https://cabehavioral.com/cost/luxury-rehab/"
-            },
-            {
-              "title": "luxuryrehab.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFL_jKQWx2LsuTklwsz21jACyHqX3K8N_FkNAI3wO9tW5pHBqw7rpat1QQW-o8kSAUVmFVhlNd4tuFjcc1Fo8T9u6AeQXX-Gw4l2NrhYQNmQQdPNvynQ==",
-              "actual_url": "https://www.luxuryrehab.com/"
-            },
-            {
-              "title": "luxerecoveryla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE95fp9uOL6py9vi5XyxC2VPGoLMas94w860G61--dGK07sDs6ZW7GOqAEnq6VtfTIn8ZJThhzDyRSPDZ5rKRs9u9QYudkw_mxoIu4LWo8P7g5GC-0klMe-XLZ6a6U3aIldGuZuUtxx38WyUqovkg==",
-              "actual_url": "https://luxerecoveryla.com/how-much-does-rehab-cost/"
-            }
-          ],
-          "start_index": 420,
-          "end_index": 581
-        },
-        {
-          "text": "*   **Personalized Treatment Plans:** Tailored programs that integrate evidence-based therapies with holistic wellness practices.",
-          "links": [
-            {
-              "title": "cabehavioral.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHfqo6O8fEoYZ910s1ppX8N8NoWCr0qionbUlbwFLhEtTG8jZBrrVbvaeCJvMJSiG5xxn6rl3KImcC4_TmJs5mmn5uKW9zVEycw1tjFTAxPTDWBHskX9PxJ0W6-PlZGSTMok9HwQ==",
-              "actual_url": "https://cabehavioral.com/cost/luxury-rehab/"
-            },
-            {
-              "title": "luxury-rehabs.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx10MDdE7CMEipQDQVBOY_uUfiGS-ABsKPeX7zCWQIBhNuLPxSOqzSEgEWVmB3HYiMD1qNeCls9iS91mERbdD1foZYGPLYCvRP921KZlJtnRa66npivonmuUsVJ-wB4CjR1woaPKiD89U=",
-              "actual_url": "https://luxury-rehabs.com/california/addiction/"
-            },
-            {
-              "title": "renaissancerecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUl_elyHWXwqI9YXLflkj_MiY8T8_rEAnp4UaLp91i2ayh7hn1usPzDdymkElC3IbbOotQ2mVOGbeDl8jZmd0yrQc0rG49Uoj06qcG0Q6VQXXG-ofXrkS8IKpRFlre3Ap0FaX6QgTnyW9P_c0nicHe9HBdygks",
-              "actual_url": "https://www.renaissancerecovery.com/drug/rehab/luxury-rehab/"
-            }
-          ],
-          "start_index": 622,
-          "end_index": 751
-        },
-        {
-          "text": "*   **Medical Supervision:** Clinically supervised detox with 24/7 care from experienced medical and treatment professionals to manage withdrawal symptoms safely.",
-          "links": [
-            {
-              "title": "recovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFt_UQmLTdJzVBxJy31AhqxhYzzawMqbF9G2kmilSFZS_nTN3BlTQrIcMLFCd2HtFyA3Odap6jk6h_8BC4IVsefJ8aQianx1Gdv2evKK_gYhSZd6L08mDn-Ov2x4en5yJhmI_5awdtCXA==",
-              "actual_url": "https://recovery.com/luxe-recovery-california/"
-            },
-            {
-              "title": "houseofzenla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETMMQ5iI9oeXnG1PBqfy2N-0cSp9J6desTvcsg56wHFL1yc9gpmGLxC25e78wqX2ybcAtSozTsoKnU65CK8-Rgwp7dsW4ayF1AAHLLTbl20WDbwg15luNoaLbMpQEk-noGdn0vPRTIhpi6j0tW4frzlf7OI8oM3IRn0rrFadZs8kxE",
-              "actual_url": "https://houseofzenla.com/top-12-luxury-drug-rehab-centers-in-california/"
-            },
-            {
-              "title": "capobythesea.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7E9YnSbGYpKeGMsjkF0uJWcJjlZ0-QEA7oWRX53XtKt35GIfKpDaSM8b4G4yRHH9HHgrFLBWB9pvlf2e5XuIHvCKgIwST-wghL02d6yYAupJTqw==",
-              "actual_url": "https://capobythesea.com/"
-            },
-            {
-              "title": "renaissancerecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUl_elyHWXwqI9YXLflkj_MiY8T8_rEAnp4UaLp91i2ayh7hn1usPzDdymkElC3IbbOotQ2mVOGbeDl8jZmd0yrQc0rG49Uoj06qcG0Q6VQXXG-ofXrkS8IKpRFlre3Ap0FaX6QgTnyW9P_c0nicHe9HBdygks",
-              "actual_url": "https://www.renaissancerecovery.com/drug/rehab/luxury-rehab/"
-            }
-          ],
-          "start_index": 752,
-          "end_index": 914
-        },
-        {
-          "text": "*   **Upscale Accommodations:** Private suites or rooms with high-end furnishings, designed for tranquility and comfort.",
-          "links": [
-            {
-              "title": "cabehavioral.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHfqo6O8fEoYZ910s1ppX8N8NoWCr0qionbUlbwFLhEtTG8jZBrrVbvaeCJvMJSiG5xxn6rl3KImcC4_TmJs5mmn5uKW9zVEycw1tjFTAxPTDWBHskX9PxJ0W6-PlZGSTMok9HwQ==",
-              "actual_url": "https://cabehavioral.com/cost/luxury-rehab/"
-            },
-            {
-              "title": "luxerecoveryla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE95fp9uOL6py9vi5XyxC2VPGoLMas94w860G61--dGK07sDs6ZW7GOqAEnq6VtfTIn8ZJThhzDyRSPDZ5rKRs9u9QYudkw_mxoIu4LWo8P7g5GC-0klMe-XLZ6a6U3aIldGuZuUtxx38WyUqovkg==",
-              "actual_url": "https://luxerecoveryla.com/how-much-does-rehab-cost/"
-            },
-            {
-              "title": "californiaprimerecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEERqcwMIjzVGHtP6YtJOywQsCN5bvHsgFw-YY5BJefscKuv2qHiJDYr3_Vp33Fir859BG6dgQ2622nS3cAyCS5cHigR85BafeTogN-2YnmZ6r201l6T7EMH4jrP4L1kakjpz0m-VD3222PjgEjadc8ZzUTvbLjZ5THATLFxnDQXnQ4VakFe64Ckk6qjJNZkVLBzA==",
-              "actual_url": "https://californiaprimerecovery.com/luxury-rehab-centers-in-california-orange-county-ca/"
-            },
-            {
-              "title": "oceansluxuryrehab.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8ctYtl8iisKTOQdP-XWdBR0gZWXRe_zvdutiz9XAQE_gAG0R3-yKwCHffJj9dXZVNUXRQgzYae6Ve19U_twtkmIlE1SAlzrtEFjOjtQSxukJBbTPSdHufgjn_GwXmOoqg-ho9nC-LMw==",
-              "actual_url": "https://oceansluxuryrehab.com/substance-abuse/"
-            },
-            {
-              "title": "crescentmoonrecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-0_x7W_J3PHuPKYoAyhOKRxOtBDg4znamm_btUTcyPfiInLpqLgtfAzkhHNx3vXi4VKb2UrA-s-8eRa9hdwIpm7ya1DrcxjLVPS0YRBke3McOLPdlVtqo-IJF0pOB-DJP-cxFCVzjp6awAFMezCofYAVP7YWwZaC-ohg3jTUPCKTON6Si",
-              "actual_url": "https://crescentmoonrecovery.com/treatment-programs/luxury-rehab-california"
-            }
-          ],
-          "start_index": 915,
-          "end_index": 1035
-        },
-        {
-          "text": "*   **Gourmet Dining:** Meals prepared by private chefs, emphasizing fresh, nutritious, and organic options, often catering to specific dietary needs.",
-          "links": [
-            {
-              "title": "cabehavioral.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHfqo6O8fEoYZ910s1ppX8N8NoWCr0qionbUlbwFLhEtTG8jZBrrVbvaeCJvMJSiG5xxn6rl3KImcC4_TmJs5mmn5uKW9zVEycw1tjFTAxPTDWBHskX9PxJ0W6-PlZGSTMok9HwQ==",
-              "actual_url": "https://cabehavioral.com/cost/luxury-rehab/"
-            },
-            {
-              "title": "houseofzenla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETMMQ5iI9oeXnG1PBqfy2N-0cSp9J6desTvcsg56wHFL1yc9gpmGLxC25e78wqX2ybcAtSozTsoKnU65CK8-Rgwp7dsW4ayF1AAHLLTbl20WDbwg15luNoaLbMpQEk-noGdn0vPRTIhpi6j0tW4frzlf7OI8oM3IRn0rrFadZs8kxE",
-              "actual_url": "https://houseofzenla.com/top-12-luxury-drug-rehab-centers-in-california/"
-            },
-            {
-              "title": "oceansluxuryrehab.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8ctYtl8iisKTOQdP-XWdBR0gZWXRe_zvdutiz9XAQE_gAG0R3-yKwCHffJj9dXZVNUXRQgzYae6Ve19U_twtkmIlE1SAlzrtEFjOjtQSxukJBbTPSdHufgjn_GwXmOoqg-ho9nC-LMw==",
-              "actual_url": "https://oceansluxuryrehab.com/substance-abuse/"
-            },
-            {
-              "title": "crescentmoonrecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-0_x7W_J3PHuPKYoAyhOKRxOtBDg4znamm_btUTcyPfiInLpqLgtfAzkhHNx3vXi4VKb2UrA-s-8eRa9hdwIpm7ya1DrcxjLVPS0YRBke3McOLPdlVtqo-IJF0pOB-DJP-cxFCVzjp6awAFMezCofYAVP7YWwZaC-ohg3jTUPCKTON6Si",
-              "actual_url": "https://crescentmoonrecovery.com/treatment-programs/luxury-rehab-california"
-            }
-          ],
-          "start_index": 1036,
-          "end_index": 1186
-        },
-        {
-          "text": "*   **Holistic Therapies:** A wide array of complementary therapies such as yoga, meditation, massage therapy, acupuncture, art therapy, music therapy, and adventure therapy.",
-          "links": [
-            {
-              "title": "cabehavioral.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHfqo6O8fEoYZ910s1ppX8N8NoWCr0qionbUlbwFLhEtTG8jZBrrVbvaeCJvMJSiG5xxn6rl3KImcC4_TmJs5mmn5uKW9zVEycw1tjFTAxPTDWBHskX9PxJ0W6-PlZGSTMok9HwQ==",
-              "actual_url": "https://cabehavioral.com/cost/luxury-rehab/"
-            },
-            {
-              "title": "houseofzenla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETMMQ5iI9oeXnG1PBqfy2N-0cSp9J6desTvcsg56wHFL1yc9gpmGLxC25e78wqX2ybcAtSozTsoKnU65CK8-Rgwp7dsW4ayF1AAHLLTbl20WDbwg15luNoaLbMpQEk-noGdn0vPRTIhpi6j0tW4frzlf7OI8oM3IRn0rrFadZs8kxE",
-              "actual_url": "https://houseofzenla.com/top-12-luxury-drug-rehab-centers-in-california/"
-            },
-            {
-              "title": "luxuryrehab.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFL_jKQWx2LsuTklwsz21jACyHqX3K8N_FkNAI3wO9tW5pHBqw7rpat1QQW-o8kSAUVmFVhlNd4tuFjcc1Fo8T9u6AeQXX-Gw4l2NrhYQNmQQdPNvynQ==",
-              "actual_url": "https://www.luxuryrehab.com/"
-            },
-            {
-              "title": "luxury-rehabs.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx10MDdE7CMEipQDQVBOY_uUfiGS-ABsKPeX7zCWQIBhNuLPxSOqzSEgEWVmB3HYiMD1qNeCls9iS91mERbdD1foZYGPLYCvRP921KZlJtnRa66npivonmuUsVJ-wB4CjR1woaPKiD89U=",
-              "actual_url": "https://luxury-rehabs.com/california/addiction/"
-            },
-            {
-              "title": "renaissancerecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUl_elyHWXwqI9YXLflkj_MiY8T8_rEAnp4UaLp91i2ayh7hn1usPzDdymkElC3IbbOotQ2mVOGbeDl8jZmd0yrQc0rG49Uoj06qcG0Q6VQXXG-ofXrkS8IKpRFlre3Ap0FaX6QgTnyW9P_c0nicHe9HBdygks",
-              "actual_url": "https://www.renaissancerecovery.com/drug/rehab/luxury-rehab/"
-            },
-            {
-              "title": "oceansluxuryrehab.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8ctYtl8iisKTOQdP-XWdBR0gZWXRe_zvdutiz9XAQE_gAG0R3-yKwCHffJj9dXZVNUXRQgzYae6Ve19U_twtkmIlE1SAlzrtEFjOjtQSxukJBbTPSdHufgjn_GwXmOoqg-ho9nC-LMw==",
-              "actual_url": "https://oceansluxuryrehab.com/substance-abuse/"
-            },
-            {
-              "title": "crescentmoonrecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-0_x7W_J3PHuPKYoAyhOKRxOtBDg4znamm_btUTcyPfiInLpqLgtfAzkhHNx3vXi4VKb2UrA-s-8eRa9hdwIpm7ya1DrcxjLVPS0YRBke3McOLPdlVtqo-IJF0pOB-DJP-cxFCVzjp6awAFMezCofYAVP7YWwZaC-ohg3jTUPCKTON6Si",
-              "actual_url": "https://crescentmoonrecovery.com/treatment-programs/luxury-rehab-california"
-            }
-          ],
-          "start_index": 1187,
-          "end_index": 1361
-        },
-        {
-          "text": "*   **Comprehensive Care:** Treatment for various substance use disorders, alcohol addiction, and co-occurring mental health conditions (dual diagnosis).",
-          "links": [
-            {
-              "title": "houseofzenla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETMMQ5iI9oeXnG1PBqfy2N-0cSp9J6desTvcsg56wHFL1yc9gpmGLxC25e78wqX2ybcAtSozTsoKnU65CK8-Rgwp7dsW4ayF1AAHLLTbl20WDbwg15luNoaLbMpQEk-noGdn0vPRTIhpi6j0tW4frzlf7OI8oM3IRn0rrFadZs8kxE",
-              "actual_url": "https://houseofzenla.com/top-12-luxury-drug-rehab-centers-in-california/"
-            },
-            {
-              "title": "luxuryrehab.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFL_jKQWx2LsuTklwsz21jACyHqX3K8N_FkNAI3wO9tW5pHBqw7rpat1QQW-o8kSAUVmFVhlNd4tuFjcc1Fo8T9u6AeQXX-Gw4l2NrhYQNmQQdPNvynQ==",
-              "actual_url": "https://www.luxuryrehab.com/"
-            },
-            {
-              "title": "reddit.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbTSrxjAfKY6mGd-MYTTQqPR4RgqHcSSHIrUtOeYidZfZJLuNgKhvE_uQud1ZLR6izZGT5K6cu5bdgVXxs5JftyFVr1YCBc5zJsbpurp70mRIn8QcNrHBlXJaSVrcAgmRpuzuuAkxaBPp4cOI5Yrj4U7xe_bjDu5VuLuTkJ5eHtQve7E3Yr_b_7b5Gah3nkZOm8MWqwSUDMaum-AiaRqE5ODEkuA==",
-              "actual_url": "https://www.reddit.com/r/AskLosAngeles/comments/q6v44n/does_anyone_have_any_experiences_with_these_rehabs/?rdt=51484"
-            },
-            {
-              "title": "luxury-rehabs.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx10MDdE7CMEipQDQVBOY_uUfiGS-ABsKPeX7zCWQIBhNuLPxSOqzSEgEWVmB3HYiMD1qNeCls9iS91mERbdD1foZYGPLYCvRP921KZlJtnRa66npivonmuUsVJ-wB4CjR1woaPKiD89U=",
-              "actual_url": "https://luxury-rehabs.com/california/addiction/"
-            },
-            {
-              "title": "californiaprimerecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEERqcwMIjzVGHtP6YtJOywQsCN5bvHsgFw-YY5BJefscKuv2qHiJDYr3_Vp33Fir859BG6dgQ2622nS3cAyCS5cHigR85BafeTogN-2YnmZ6r201l6T7EMH4jrP4L1kakjpz0m-VD3222PjgEjadc8ZzUTvbLjZ5THATLFxnDQXnQ4VakFe64Ckk6qjJNZkVLBzA==",
-              "actual_url": "https://californiaprimerecovery.com/luxury-rehab-centers-in-california-orange-county-ca/"
-            },
-            {
-              "title": "capobythesea.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7E9YnSbGYpKeGMsjkF0uJWcJjlZ0-QEA7oWRX53XtKt35GIfKpDaSM8b4G4yRHH9HHgrFLBWB9pvlf2e5XuIHvCKgIwST-wghL02d6yYAupJTqw==",
-              "actual_url": "https://capobythesea.com/"
-            }
-          ],
-          "start_index": 1362,
-          "end_index": 1515
-        },
-        {
-          "text": "*   **Low Client-to-Staff Ratio:** Ensures highly personalized and attentive care.",
-          "links": [
-            {
-              "title": "recovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFt_UQmLTdJzVBxJy31AhqxhYzzawMqbF9G2kmilSFZS_nTN3BlTQrIcMLFCd2HtFyA3Odap6jk6h_8BC4IVsefJ8aQianx1Gdv2evKK_gYhSZd6L08mDn-Ov2x4en5yJhmI_5awdtCXA==",
-              "actual_url": "https://recovery.com/luxe-recovery-california/"
-            },
-            {
-              "title": "houseofzenla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETMMQ5iI9oeXnG1PBqfy2N-0cSp9J6desTvcsg56wHFL1yc9gpmGLxC25e78wqX2ybcAtSozTsoKnU65CK8-Rgwp7dsW4ayF1AAHLLTbl20WDbwg15luNoaLbMpQEk-noGdn0vPRTIhpi6j0tW4frzlf7OI8oM3IRn0rrFadZs8kxE",
-              "actual_url": "https://houseofzenla.com/top-12-luxury-drug-rehab-centers-in-california/"
-            },
-            {
-              "title": "crescentmoonrecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-0_x7W_J3PHuPKYoAyhOKRxOtBDg4znamm_btUTcyPfiInLpqLgtfAzkhHNx3vXi4VKb2UrA-s-8eRa9hdwIpm7ya1DrcxjLVPS0YRBke3McOLPdlVtqo-IJF0pOB-DJP-cxFCVzjp6awAFMezCofYAVP7YWwZaC-ohg3jTUPCKTON6Si",
-              "actual_url": "https://crescentmoonrecovery.com/treatment-programs/luxury-rehab-california"
-            }
-          ],
-          "start_index": 1516,
-          "end_index": 1598
-        },
-        {
-          "text": "*   **Additional Amenities:** May include fitness centers, spa services, swimming pools, serene grounds, and concierge services.",
-          "links": [
-            {
-              "title": "cabehavioral.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHfqo6O8fEoYZ910s1ppX8N8NoWCr0qionbUlbwFLhEtTG8jZBrrVbvaeCJvMJSiG5xxn6rl3KImcC4_TmJs5mmn5uKW9zVEycw1tjFTAxPTDWBHskX9PxJ0W6-PlZGSTMok9HwQ==",
-              "actual_url": "https://cabehavioral.com/cost/luxury-rehab/"
-            },
-            {
-              "title": "houseofzenla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETMMQ5iI9oeXnG1PBqfy2N-0cSp9J6desTvcsg56wHFL1yc9gpmGLxC25e78wqX2ybcAtSozTsoKnU65CK8-Rgwp7dsW4ayF1AAHLLTbl20WDbwg15luNoaLbMpQEk-noGdn0vPRTIhpi6j0tW4frzlf7OI8oM3IRn0rrFadZs8kxE",
-              "actual_url": "https://houseofzenla.com/top-12-luxury-drug-rehab-centers-in-california/"
-            },
-            {
-              "title": "luxerecoveryla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE95fp9uOL6py9vi5XyxC2VPGoLMas94w860G61--dGK07sDs6ZW7GOqAEnq6VtfTIn8ZJThhzDyRSPDZ5rKRs9u9QYudkw_mxoIu4LWo8P7g5GC-0klMe-XLZ6a6U3aIldGuZuUtxx38WyUqovkg==",
-              "actual_url": "https://luxerecoveryla.com/how-much-does-rehab-cost/"
-            },
-            {
-              "title": "luxury-rehabs.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx10MDdE7CMEipQDQVBOY_uUfiGS-ABsKPeX7zCWQIBhNuLPxSOqzSEgEWVmB3HYiMD1qNeCls9iS91mERbdD1foZYGPLYCvRP921KZlJtnRa66npivonmuUsVJ-wB4CjR1woaPKiD89U=",
-              "actual_url": "https://luxury-rehabs.com/california/addiction/"
-            },
-            {
-              "title": "californiaprimerecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEERqcwMIjzVGHtP6YtJOywQsCN5bvHsgFw-YY5BJefscKuv2qHiJDYr3_Vp33Fir859BG6dgQ2622nS3cAyCS5cHigR85BafeTogN-2YnmZ6r201l6T7EMH4jrP4L1kakjpz0m-VD3222PjgEjadc8ZzUTvbLjZ5THATLFxnDQXnQ4VakFe64Ckk6qjJNZkVLBzA==",
-              "actual_url": "https://californiaprimerecovery.com/luxury-rehab-centers-in-california-orange-county-ca/"
-            },
-            {
-              "title": "oceansluxuryrehab.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8ctYtl8iisKTOQdP-XWdBR0gZWXRe_zvdutiz9XAQE_gAG0R3-yKwCHffJj9dXZVNUXRQgzYae6Ve19U_twtkmIlE1SAlzrtEFjOjtQSxukJBbTPSdHufgjn_GwXmOoqg-ho9nC-LMw==",
-              "actual_url": "https://oceansluxuryrehab.com/substance-abuse/"
-            },
-            {
-              "title": "crescentmoonrecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-0_x7W_J3PHuPKYoAyhOKRxOtBDg4znamm_btUTcyPfiInLpqLgtfAzkhHNx3vXi4VKb2UrA-s-8eRa9hdwIpm7ya1DrcxjLVPS0YRBke3McOLPdlVtqo-IJF0pOB-DJP-cxFCVzjp6awAFMezCofYAVP7YWwZaC-ohg3jTUPCKTON6Si",
-              "actual_url": "https://crescentmoonrecovery.com/treatment-programs/luxury-rehab-california"
-            }
-          ],
-          "start_index": 1599,
-          "end_index": 1727
-        },
-        {
-          "text": "*   **Aftercare Planning:** Support for transitioning out of residential treatment, including personalized discharge plans, intensive outpatient programs (IOP), and sober living options.",
-          "links": [
-            {
-              "title": "recovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFt_UQmLTdJzVBxJy31AhqxhYzzawMqbF9G2kmilSFZS_nTN3BlTQrIcMLFCd2HtFyA3Odap6jk6h_8BC4IVsefJ8aQianx1Gdv2evKK_gYhSZd6L08mDn-Ov2x4en5yJhmI_5awdtCXA==",
-              "actual_url": "https://recovery.com/luxe-recovery-california/"
-            },
-            {
-              "title": "luxuryrehab.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFL_jKQWx2LsuTklwsz21jACyHqX3K8N_FkNAI3wO9tW5pHBqw7rpat1QQW-o8kSAUVmFVhlNd4tuFjcc1Fo8T9u6AeQXX-Gw4l2NrhYQNmQQdPNvynQ==",
-              "actual_url": "https://www.luxuryrehab.com/"
-            },
-            {
-              "title": "luxury-rehabs.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx10MDdE7CMEipQDQVBOY_uUfiGS-ABsKPeX7zCWQIBhNuLPxSOqzSEgEWVmB3HYiMD1qNeCls9iS91mERbdD1foZYGPLYCvRP921KZlJtnRa66npivonmuUsVJ-wB4CjR1woaPKiD89U=",
-              "actual_url": "https://luxury-rehabs.com/california/addiction/"
-            }
-          ],
-          "start_index": 1728,
-          "end_index": 1914
-        },
-        {
-          "text": "*   **AToN Center (San Diego):** Known for personalized care and upscale amenities on a tranquil 10-acre estate.",
-          "links": [
-            {
-              "title": "cabehavioral.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHfqo6O8fEoYZ910s1ppX8N8NoWCr0qionbUlbwFLhEtTG8jZBrrVbvaeCJvMJSiG5xxn6rl3KImcC4_TmJs5mmn5uKW9zVEycw1tjFTAxPTDWBHskX9PxJ0W6-PlZGSTMok9HwQ==",
-              "actual_url": "https://cabehavioral.com/cost/luxury-rehab/"
-            }
-          ],
-          "start_index": 2079,
-          "end_index": 2191
-        },
-        {
-          "text": "*   **Capo by The Sea (Orange County):** Offers high-end luxury and executive detox and residential treatment.",
-          "links": [
-            {
-              "title": "recovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFt_UQmLTdJzVBxJy31AhqxhYzzawMqbF9G2kmilSFZS_nTN3BlTQrIcMLFCd2HtFyA3Odap6jk6h_8BC4IVsefJ8aQianx1Gdv2evKK_gYhSZd6L08mDn-Ov2x4en5yJhmI_5awdtCXA==",
-              "actual_url": "https://recovery.com/luxe-recovery-california/"
-            },
-            {
-              "title": "capobythesea.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7E9YnSbGYpKeGMsjkF0uJWcJjlZ0-QEA7oWRX53XtKt35GIfKpDaSM8b4G4yRHH9HHgrFLBWB9pvlf2e5XuIHvCKgIwST-wghL02d6yYAupJTqw==",
-              "actual_url": "https://capobythesea.com/"
-            }
-          ],
-          "start_index": 2192,
-          "end_index": 2302
-        },
-        {
-          "text": "*   **Ritz Recovery (Los Angeles):** Provides personalized drug and alcohol detox in a private, upscale setting with a focus on world-class care.",
-          "links": [
-            {
-              "title": "houseofzenla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETMMQ5iI9oeXnG1PBqfy2N-0cSp9J6desTvcsg56wHFL1yc9gpmGLxC25e78wqX2ybcAtSozTsoKnU65CK8-Rgwp7dsW4ayF1AAHLLTbl20WDbwg15luNoaLbMpQEk-noGdn0vPRTIhpi6j0tW4frzlf7OI8oM3IRn0rrFadZs8kxE",
-              "actual_url": "https://houseofzenla.com/top-12-luxury-drug-rehab-centers-in-california/"
-            }
-          ],
-          "start_index": 2303,
-          "end_index": 2448
-        },
-        {
-          "text": "*   **Luxe Recovery (Los Angeles):** Located in the private hills of Los Angeles, offering cutting-edge treatment and holistic therapies in a luxurious home setting.",
-          "links": [
-            {
-              "title": "luxuryrehab.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFL_jKQWx2LsuTklwsz21jACyHqX3K8N_FkNAI3wO9tW5pHBqw7rpat1QQW-o8kSAUVmFVhlNd4tuFjcc1Fo8T9u6AeQXX-Gw4l2NrhYQNmQQdPNvynQ==",
-              "actual_url": "https://www.luxuryrehab.com/"
-            },
-            {
-              "title": "reddit.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbTSrxjAfKY6mGd-MYTTQqPR4RgqHcSSHIrUtOeYidZfZJLuNgKhvE_uQud1ZLR6izZGT5K6cu5bdgVXxs5JftyFVr1YCBc5zJsbpurp70mRIn8QcNrHBlXJaSVrcAgmRpuzuuAkxaBPp4cOI5Yrj4U7xe_bjDu5VuLuTkJ5eHtQve7E3Yr_b_7b5Gah3nkZOm8MWqwSUDMaum-AiaRqE5ODEkuA==",
-              "actual_url": "https://www.reddit.com/r/AskLosAngeles/comments/q6v44n/does_anyone_have_any_experiences_with_these_rehabs/?rdt=51484"
-            }
-          ],
-          "start_index": 2449,
-          "end_index": 2614
-        },
-        {
-          "text": "*   **Villa Oasis (San Diego):** Specializes in residential treatment and detox in a secluded, high-end environment.",
-          "links": [
-            {
-              "title": "luxerecoveryla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE95fp9uOL6py9vi5XyxC2VPGoLMas94w860G61--dGK07sDs6ZW7GOqAEnq6VtfTIn8ZJThhzDyRSPDZ5rKRs9u9QYudkw_mxoIu4LWo8P7g5GC-0klMe-XLZ6a6U3aIldGuZuUtxx38WyUqovkg==",
-              "actual_url": "https://luxerecoveryla.com/how-much-does-rehab-cost/"
-            }
-          ],
-          "start_index": 2615,
-          "end_index": 2731
-        },
-        {
-          "text": "*   **Legacy Healing Centers (Hollywood Hills and Tarzana, Los Angeles):** Offers executive-level care and a refined recovery approach in tranquil settings.",
-          "links": [
-            {
-              "title": "luxury-rehabs.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx10MDdE7CMEipQDQVBOY_uUfiGS-ABsKPeX7zCWQIBhNuLPxSOqzSEgEWVmB3HYiMD1qNeCls9iS91mERbdD1foZYGPLYCvRP921KZlJtnRa66npivonmuUsVJ-wB4CjR1woaPKiD89U=",
-              "actual_url": "https://luxury-rehabs.com/california/addiction/"
-            }
-          ],
-          "start_index": 2732,
-          "end_index": 2888
-        },
-        {
-          "text": "*   **Wish Recovery (Los Angeles):** A luxury rehab center providing world-class care for substance use disorder and dual diagnosis with premium facilities and diverse entertainment options.",
-          "links": [
-            {
-              "title": "californiaprimerecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEERqcwMIjzVGHtP6YtJOywQsCN5bvHsgFw-YY5BJefscKuv2qHiJDYr3_Vp33Fir859BG6dgQ2622nS3cAyCS5cHigR85BafeTogN-2YnmZ6r201l6T7EMH4jrP4L1kakjpz0m-VD3222PjgEjadc8ZzUTvbLjZ5THATLFxnDQXnQ4VakFe64Ckk6qjJNZkVLBzA==",
-              "actual_url": "https://californiaprimerecovery.com/luxury-rehab-centers-in-california-orange-county-ca/"
-            }
-          ],
-          "start_index": 2889,
-          "end_index": 3079
-        },
-        {
-          "text": "*   **Glendale Luxury Rehab (Glendale):** A co-educational medical detox facility nestled in picturesque hills.",
-          "links": [
-            {
-              "title": "capobythesea.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7E9YnSbGYpKeGMsjkF0uJWcJjlZ0-QEA7oWRX53XtKt35GIfKpDaSM8b4G4yRHH9HHgrFLBWB9pvlf2e5XuIHvCKgIwST-wghL02d6yYAupJTqw==",
-              "actual_url": "https://capobythesea.com/"
-            }
-          ],
-          "start_index": 3080,
-          "end_index": 3191
-        },
-        {
-          "text": "*   **Passages Malibu (Malibu):** Well-known for its non-12-step treatment approach, private suites, oceanfront views, and gourmet dining.",
-          "links": [
-            {
-              "title": "houseofzenla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETMMQ5iI9oeXnG1PBqfy2N-0cSp9J6desTvcsg56wHFL1yc9gpmGLxC25e78wqX2ybcAtSozTsoKnU65CK8-Rgwp7dsW4ayF1AAHLLTbl20WDbwg15luNoaLbMpQEk-noGdn0vPRTIhpi6j0tW4frzlf7OI8oM3IRn0rrFadZs8kxE",
-              "actual_url": "https://houseofzenla.com/top-12-luxury-drug-rehab-centers-in-california/"
-            }
-          ],
-          "start_index": 3192,
-          "end_index": 3330
-        },
-        {
-          "text": "*   **Cliffside Malibu (Malibu):** Offers stunning ocean views, a swimming pool, spa treatments, and individualized, evidence-based therapies.",
-          "links": [
-            {
-              "title": "houseofzenla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETMMQ5iI9oeXnG1PBqfy2N-0cSp9J6desTvcsg56wHFL1yc9gpmGLxC25e78wqX2ybcAtSozTsoKnU65CK8-Rgwp7dsW4ayF1AAHLLTbl20WDbwg15luNoaLbMpQEk-noGdn0vPRTIhpi6j0tW4frzlf7OI8oM3IRn0rrFadZs8kxE",
-              "actual_url": "https://houseofzenla.com/top-12-luxury-drug-rehab-centers-in-california/"
-            }
-          ],
-          "start_index": 3331,
-          "end_index": 3473
-        },
-        {
-          "text": "*   **California Behavioral Health (Palm Desert):** A luxury rehab center specializing in drug and alcohol addiction treatment and co-occurring mental health conditions.",
-          "links": [
-            {
-              "title": "cabehavioral.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHfqo6O8fEoYZ910s1ppX8N8NoWCr0qionbUlbwFLhEtTG8jZBrrVbvaeCJvMJSiG5xxn6rl3KImcC4_TmJs5mmn5uKW9zVEycw1tjFTAxPTDWBHskX9PxJ0W6-PlZGSTMok9HwQ==",
-              "actual_url": "https://cabehavioral.com/cost/luxury-rehab/"
-            }
-          ],
-          "start_index": 3474,
-          "end_index": 3643
-        },
-        {
-          "text": "*   **Oceans Luxury Rehab (Orange County):** Provides a discreet, comfortable setting with personalized care and state-of-the-art amenities.",
-          "links": [
-            {
-              "title": "oceansluxuryrehab.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8ctYtl8iisKTOQdP-XWdBR0gZWXRe_zvdutiz9XAQE_gAG0R3-yKwCHffJj9dXZVNUXRQgzYae6Ve19U_twtkmIlE1SAlzrtEFjOjtQSxukJBbTPSdHufgjn_GwXmOoqg-ho9nC-LMw==",
-              "actual_url": "https://oceansluxuryrehab.com/substance-abuse/"
-            }
-          ],
-          "start_index": 3644,
-          "end_index": 3784
-        },
-        {
-          "text": "The cost of luxury residential detox and rehab in California can vary significantly based on the facility, the amenities offered, the length of the program, and the specific types of therapy and medication involved.",
-          "links": [
-            {
-              "title": "cabehavioral.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHfqo6O8fEoYZ910s1ppX8N8NoWCr0qionbUlbwFLhEtTG8jZBrrVbvaeCJvMJSiG5xxn6rl3KImcC4_TmJs5mmn5uKW9zVEycw1tjFTAxPTDWBHskX9PxJ0W6-PlZGSTMok9HwQ==",
-              "actual_url": "https://cabehavioral.com/cost/luxury-rehab/"
-            },
-            {
-              "title": "luxuryrehab.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFL_jKQWx2LsuTklwsz21jACyHqX3K8N_FkNAI3wO9tW5pHBqw7rpat1QQW-o8kSAUVmFVhlNd4tuFjcc1Fo8T9u6AeQXX-Gw4l2NrhYQNmQQdPNvynQ==",
-              "actual_url": "https://www.luxuryrehab.com/"
-            },
-            {
-              "title": "luxerecoveryla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE95fp9uOL6py9vi5XyxC2VPGoLMas94w860G61--dGK07sDs6ZW7GOqAEnq6VtfTIn8ZJThhzDyRSPDZ5rKRs9u9QYudkw_mxoIu4LWo8P7g5GC-0klMe-XLZ6a6U3aIldGuZuUtxx38WyUqovkg==",
-              "actual_url": "https://luxerecoveryla.com/how-much-does-rehab-cost/"
-            }
-          ],
-          "start_index": 3825,
-          "end_index": 4040
-        },
-        {
-          "text": "*   Generally, a month-long stay at a luxury rehab averages between **$30,000 to $100,000**",
-          "links": [
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGC8dl_VW-kbOOawR5B_LJKS5Fd26uvEEzGwq0RMLY0aDtbDDttMqvFQFPqaHk0wHCkzEFb4IsI5UlhgaJgICvM2k5BpjRdOwnyQNfD-4Ji8T8-nTV7O62phICPSYCzBkgw1fwvButV-pxufq3I3JOGMZzjfu4epra307XMubg9F9M4mpx3Uxu6mfmhZSAG2-0GT_RrGg==",
-              "actual_url": "https://www.addictioncenter.com/treatment/luxury-treatment/how-much-does-luxury-rehab-cost/"
-            }
-          ],
-          "start_index": 4042,
-          "end_index": 4133
-        },
-        {
-          "text": "*   Some programs can cost up to **$80,000 for a 30-day program**, breaking down to approximately $1,900 to $2,660 per day.",
-          "links": [
-            {
-              "title": "cabehavioral.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHfqo6O8fEoYZ910s1ppX8N8NoWCr0qionbUlbwFLhEtTG8jZBrrVbvaeCJvMJSiG5xxn6rl3KImcC4_TmJs5mmn5uKW9zVEycw1tjFTAxPTDWBHskX9PxJ0W6-PlZGSTMok9HwQ==",
-              "actual_url": "https://cabehavioral.com/cost/luxury-rehab/"
-            }
-          ],
-          "start_index": 4135,
-          "end_index": 4258
-        },
-        {
-          "text": "*   More exclusive programs with extensive amenities and bespoke care may range from **$60,000 to $100,000 for a 30-day program**.",
-          "links": [
-            {
-              "title": "luxerecoveryla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE95fp9uOL6py9vi5XyxC2VPGoLMas94w860G61--dGK07sDs6ZW7GOqAEnq6VtfTIn8ZJThhzDyRSPDZ5rKRs9u9QYudkw_mxoIu4LWo8P7g5GC-0klMe-XLZ6a6U3aIldGuZuUtxx38WyUqovkg==",
-              "actual_url": "https://luxerecoveryla.com/how-much-does-rehab-cost/"
-            }
-          ],
-          "start_index": 4259,
-          "end_index": 4389
-        },
-        {
-          "text": "While luxury rehabs are more expensive than standard facilities, they often provide an incomparable level of care, comfort, and personalized attention.",
-          "links": [
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGC8dl_VW-kbOOawR5B_LJKS5Fd26uvEEzGwq0RMLY0aDtbDDttMqvFQFPqaHk0wHCkzEFb4IsI5UlhgaJgICvM2k5BpjRdOwnyQNfD-4Ji8T8-nTV7O62phICPSYCzBkgw1fwvButV-pxufq3I3JOGMZzjfu4epra307XMubg9F9M4mpx3Uxu6mfmhZSAG2-0GT_RrGg==",
-              "actual_url": "https://www.addictioncenter.com/treatment/luxury-treatment/how-much-does-luxury-rehab-cost/"
-            }
-          ],
-          "start_index": 4391,
-          "end_index": 4542
-        },
-        {
-          "text": "Many luxury rehabs offer flexible payment options and accept various forms of private insurance, which can help cover some of the treatment costs, though typically not the entire stay.",
-          "links": [
-            {
-              "title": "cabehavioral.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHfqo6O8fEoYZ910s1ppX8N8NoWCr0qionbUlbwFLhEtTG8jZBrrVbvaeCJvMJSiG5xxn6rl3KImcC4_TmJs5mmn5uKW9zVEycw1tjFTAxPTDWBHskX9PxJ0W6-PlZGSTMok9HwQ==",
-              "actual_url": "https://cabehavioral.com/cost/luxury-rehab/"
-            },
-            {
-              "title": "californiaprimerecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEERqcwMIjzVGHtP6YtJOywQsCN5bvHsgFw-YY5BJefscKuv2qHiJDYr3_Vp33Fir859BG6dgQ2622nS3cAyCS5cHigR85BafeTogN-2YnmZ6r201l6T7EMH4jrP4L1kakjpz0m-VD3222PjgEjadc8ZzUTvbLjZ5THATLFxnDQXnQ4VakFe64Ckk6qjJNZkVLBzA==",
-              "actual_url": "https://californiaprimerecovery.com/luxury-rehab-centers-in-california-orange-county-ca/"
-            },
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGC8dl_VW-kbOOawR5B_LJKS5Fd26uvEEzGwq0RMLY0aDtbDDttMqvFQFPqaHk0wHCkzEFb4IsI5UlhgaJgICvM2k5BpjRdOwnyQNfD-4Ji8T8-nTV7O62phICPSYCzBkgw1fwvButV-pxufq3I3JOGMZzjfu4epra307XMubg9F9M4mpx3Uxu6mfmhZSAG2-0GT_RrGg==",
-              "actual_url": "https://www.addictioncenter.com/treatment/luxury-treatment/how-much-does-luxury-rehab-cost/"
-            },
-            {
-              "title": "crescentmoonrecovery.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-0_x7W_J3PHuPKYoAyhOKRxOtBDg4znamm_btUTcyPfiInLpqLgtfAzkhHNx3vXi4VKb2UrA-s-8eRa9hdwIpm7ya1DrcxjLVPS0YRBke3McOLPdlVtqo-IJF0pOB-DJP-cxFCVzjp6awAFMezCofYAVP7YWwZaC-ohg3jTUPCKTON6Si",
-              "actual_url": "https://crescentmoonrecovery.com/treatment-programs/luxury-rehab-california"
-            }
-          ],
-          "start_index": 4543,
-          "end_index": 4727
-        },
-        {
-          "text": "It is recommended to contact the admissions team of specific facilities for a confidential assessment and to discuss pricing and insurance verification.",
-          "links": [
-            {
-              "title": "houseofzenla.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETMMQ5iI9oeXnG1PBqfy2N-0cSp9J6desTvcsg56wHFL1yc9gpmGLxC25e78wqX2ybcAtSozTsoKnU65CK8-Rgwp7dsW4ayF1AAHLLTbl20WDbwg15luNoaLbMpQEk-noGdn0vPRTIhpi6j0tW4frzlf7OI8oM3IRn0rrFadZs8kxE",
-              "actual_url": "https://houseofzenla.com/top-12-luxury-drug-rehab-centers-in-california/"
-            }
-          ],
-          "start_index": 4728,
-          "end_index": 4880
-        }
-      ],
-      "has_grounding": true
-    }
-  },
-  {
-    "query": "What is the Red Door Life Model of Care?",
-    "links": [
-      {
-        "domain": "psychologytoday.com",
-        "count": 8
-      },
-      {
-        "domain": "reddoor.life",
-        "count": 7
-      },
-      {
-        "domain": "addictioncenter.com",
-        "count": 5
+        "domain": "sui.io",
+        "count": 35
       },
       {
         "domain": "medium.com",
-        "count": 3
+        "count": 23
+      },
+      {
+        "domain": "peera.ai",
+        "count": 18
+      },
+      {
+        "domain": "rapidinnovation.io",
+        "count": 14
+      },
+      {
+        "domain": "mevx.io",
+        "count": 11
+      },
+      {
+        "domain": "antiersolutions.com",
+        "count": 9
+      },
+      {
+        "domain": "movebit.xyz",
+        "count": 7
+      },
+      {
+        "domain": "suipiens.com",
+        "count": 7
+      },
+      {
+        "domain": "sui-book.com",
+        "count": 6
+      },
+      {
+        "domain": "cleeviox.com",
+        "count": 5
+      },
+      {
+        "domain": "scafsui.com",
+        "count": 4
       }
     ],
     "complete_result": {
-      "query": "What is the Red Door Life Model of Care?",
-      "response_text": "The Red Door Life Model of Care is an innovative and holistic approach to addiction, substance abuse, recovery, and trauma healing, developed by Red Door Life in Los Angeles, CA. It distinguishes itself from conventional \"car wash\" treatment models by offering highly individualized, flexible, and comprehensive programs designed for deep and profound healing, behavioral change, and life transformation, rather than just symptom management.\n\nKey aspects of the Red Door Life Model of Care include:\n\n*   **The 12 Dimensions of Human Health and Wellness** This proprietary framework is central to the model, evaluating all areas of an individual's life to identify underlying dysregulation. These dimensions encompass: substance use & medications, education, finances, career, legal/criminal & civil, family, romantic relationships, purpose, connection to community & friendships, housing & living situation, medical & physical health, spirituality & religion, mental health & emotional regulation, and nutrition & fitness.\n*   **Individualized and Flexible Treatment** Unlike programs with predetermined lengths of stay, Red Door Life creates bespoke plans that suit each individual's needs and lifestyle, allowing for stays of a few days to several months. The model supports individuals without isolating them from their friends, partners, family, or colleagues.\n*   **Holistic and Attachment-Based Approach** The model views each person as a dimensional being with immense potential, moving beyond simply treating symptoms or diagnoses. It employs a top-down and bottom-up approach, integrating cognitive therapy, skills building, somatic practices, and nervous system regulation to address deeper psychological material and impressions stored in the nervous system. It is also one of the few attachment-based centers in the industry.\n*   **Comprehensive Support and Community Building** The Red Door Life Model extends support far beyond initial sobriety or harm reduction. It emphasizes creating a new lifestyle and integrating it into the world beyond residential care through client advocates, sober companions, online programs, entrepreneurship empowerment, and robust community and sober world re-discovery events.\n*   **Multidisciplinary Team and Diverse Modalities** A highly experienced and compassionate multidisciplinary team works with clients, incorporating a vast network of thought leaders in medicine, psychiatry, psychology, trauma healing, and holistic modalities such as sound healing, virtual reality immersive experiences, yoga, Kundalini, EMDR, Reiki, and various fitness and therapeutic activities.\n*   **Focus on Root Causes and Life Transformation** The philosophy centers on tackling the root causes of substance use and mental health issues by addressing all 12 dimensions of life, aiming for \"life transformation\" rather than just \"sobriety\".\n\nFounded in 2005, Red Door Life, a 501c3 nonprofit organization, aims to improve recovery outcomes for individuals with substance use disorders and mental health issues, including high-acuity and high-profile clients, by providing comprehensive treatment and fostering entrepreneurship within the recovery community.",
+      "query": "SUI blockchain smart contract development",
+      "response_text": "The Sui blockchain is a next-generation Layer 1 platform designed for high throughput, low latency, and an asset-oriented programming model, making it suitable for scalable and secure decentralized applications (dApps). Smart contract development on Sui primarily utilizes the Move programming language.\n\n### The Move Programming Language\n\nMove is an open-source, bytecode-based programming language that originated from the Diem blockchain project. Sui adopted and enhanced Move to leverage its object-centric data model, which treats assets and smart contracts as complex objects rather than traditional account balances or UTXOs. This resource-oriented programming paradigm is a core strength of Move, enforcing explicit ownership and preventing issues like accidental asset duplication or loss.\n\nKey features of Move on Sui include:\n*   **Object-Centric Model**: Assets are first-class citizens, simplifying management and enhancing programmability. Sui's objects have globally unique IDs and can have owners (users or other objects), or be shared.\n*   **Security Focus**: Move is designed to prevent common blockchain vulnerabilities such as reentrancy attacks, integer overflows, and double-spending, by baking financial primitives into the language's semantics and enforcing strict type checking.\n*   **Scalability and Performance**: Sui's architecture, combined with Move, enables parallel execution of transactions, significantly increasing throughput and reducing latency.\n*   **Composability**: Move on Sui allows for rich and composable on-chain assets, where objects can interact with each other to create intricate data structures and application logic.\n*   **Developer Experience**: Move aims to simplify secure smart contract development and offers \"win-win abstractions\" that provide expressive power while improving execution efficiency.\n\n### Development Environment Setup\n\nTo begin developing smart contracts on Sui, developers typically follow these steps:\n1.  **Install Rust**: Since Move is built on Rust, installing the Rust programming language is a prerequisite.\n2.  **Install Sui CLI**: The Sui Command Line Interface (CLI) is essential for interacting with the Sui network and smart contracts, allowing for tasks like creating accounts, transferring tokens, deploying contracts, and querying objects. It can be installed via Cargo (Rust's package manager) or suiup, a custom installer and version manager.\n3.  **Choose an IDE**: While any text editor can be used, Visual Studio Code with a Move extension is recommended for enhanced syntax highlighting and error checking. IntelliJ IDEA and Emacs also offer Move language plugins.\n4.  **Set up a Wallet**: A Sui wallet (browser extension or CLI-generated) is needed to deploy contracts and pay gas fees. Developers can obtain testnet SUI tokens from a faucet for development purposes.\n5.  **Local Network/Testnet**: For testing and debugging, developers can set up a local full node or deploy to the Sui devnet or testnet.\n\n### Smart Contract Development Workflow\n\nThe general process for developing and deploying a Sui smart contract involves:\n1.  **Create a Move Package**: Initialize a new Move project using the `sui move new <PACKAGE_NAME>` command. A Sui package includes a `sources` directory for Move code, a `Move.toml` manifest file, and a `Move.lock` file.\n2.  **Write the Smart Contract**: Define the contract's structure, including state variables and functions, within `.move` files in the `sources` folder. Sui's object model means custom types with `key` and `store` abilities are considered assets.\n3.  **Build the Contract**: Compile the Move code using the Sui CLI command `sui move build`. This step checks for syntax errors and prepares the code for execution.\n4.  **Test the Contract**: Thoroughly test the smart contract in a safe environment like the Sui testnet to identify and fix bugs or vulnerabilities. Sui provides extensive testing frameworks.\n5.  **Deploy the Contract**: Once testing is complete, the contract can be deployed to the Sui mainnet (or devnet/testnet) using the Sui CLI command `sui move publish --gas-budget <AMOUNT>`. The deployment output will include a `package id` which is the smart contract's object ID.\n6.  **Interact with the Contract**: After deployment, users and dApps can interact with the smart contract using Sui's APIs or SDKs (e.g., Sui JS for web/mobile applications).\n\n### Best Practices and Security Considerations\n\nWhile Move is designed for security, developers should adhere to best practices to further enhance contract safety:\n*   **Clear Naming Conventions and Documentation**: Use clear naming conventions for code readability and thoroughly document modules.\n*   **Module Design**: Design modules around a single object or data structure to avoid complexity and bugs.\n*   **Function Organization**: Structure code with comments, organize functions by purpose, and use explicit names (e.g., `admin_set_fees`). `init` functions should be the first in a module.\n*   **Resource Management**: Understand Move's ownership rules; every object must be explicitly transferred, shared, or destroyed.\n*   **Limit Shared Object Usage**: Shared objects can be slower than owned objects, and converting a private object to a shared one can pose a security risk if not handled carefully.\n*   **Emit Events**: Emit events for state changes to aid off-chain indexing.\n*   **Thorough Testing**: Even with Move's compiler catching many issues, logic bugs can occur, so comprehensive testing (unit, integration, property-based) is crucial.\n*   **Permission Checks**: Implement robust permission checks for privileged functions and external function exposures, ensuring that only authorized objects are involved.\n*   **Separate Credentials**: Use different addresses and credentials for Devnet, Testnet, and Mainnet to prevent inadvertent access to valuable assets.\n*   **Safeguard Keys and Mnemonics**: Never store hardcoded keys or mnemonics in public repositories. Generate keys programmatically.\n*   **Dual Asserts**: Assert important conditions in both on-chain smart contract code and off-chain UI code to prevent bypasses and exploits.\n*   **Avoid Object IDs for Randomness**: Object IDs are not suitable sources of randomness or entropy for applications like lotteries or cryptography.\n*   **Oracle Price Manipulation**: For contracts using oracles, mitigate price manipulation risks by incorporating multiple data sources, consensus mechanisms, and time-weighted average prices.\n*   **Governance and Arbitrage Attacks**: Carefully design governance token voting rights and review DeFi contract logic to prevent potential governance and arbitrage attacks.\n*   **Security Audits**: Regular security audits by specialized firms like MoveBit are essential, as Move, while secure, does not eliminate all risks of developer errors.\n\n### Development Tools and SDKs\n\nSui offers a range of tools and SDKs to facilitate development:\n*   **Sui CLI**: Command-line interface for publishing smart contracts and data retrieval.\n*   **Sui SDK**: A software development kit offering tools and libraries for various tasks, supporting different languages and frameworks.\n*   **Sui VSCode Extension**: A Visual Studio Code extension for editing, debugging, compiling, running, and testing Move code.\n*   **Sui JS SDK**: A JavaScript library for interacting with the Sui network and smart contracts from web or mobile applications.\n*   **Sui Rust SDK**: A Rust JSON-RPC wrapper and crypto utilities.\n*   **SuiKit**: A Swift SDK for iOS development.\n*   **Dart SDK**: Enables developers to build Sui applications for web, mobile, and desktop.\n*   **BitsLab IDE**: An online Move code editor with syntax highlighting and Sui interaction support.\n*   **Sui Explorer**: A tool to view objects and transactions on the Sui network.\n*   **Move Analyzer and Move Trace Debugger**: Tools for code analysis and debugging.\n\nSui aims to be an accessible smart contract platform, providing developers with a robust ecosystem to build innovative dApps in Web3.",
       "web_search_queries": [
-        "Red Door Life Model of Care"
+        "SUI blockchain smart contract development",
+        "SUI smart contract language",
+        "Move language SUI",
+        "SUI smart contract tools",
+        "SUI smart contract SDK",
+        "SUI smart contract development environment setup",
+        "deploy SUI smart contract",
+        "SUI Move best practices",
+        "SUI smart contract security best practices"
       ],
       "grounding_metadata": [
         {
-          "text": "It distinguishes itself from conventional \"car wash\" treatment models by offering highly individualized, flexible, and comprehensive programs designed for deep and profound healing, behavioral change, and life transformation, rather than just symptom management",
+          "text": "The Sui blockchain is a next-generation Layer 1 platform designed for high throughput, low latency, and an asset-oriented programming model, making it suitable for scalable and secure decentralized applications (dApps)",
           "links": [
             {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9ktvrcBqszd1R2Qr_SqwGtkA7ShjTb4_W76j0MRSPyVISE1vMREBOc2Ba1EU8VCMU5E5HrqiOD8N-e-l116e041EnHB6EyRW04XHOmthThcicwGmXe5fPnEM3VzE-FtpQrQKWIwmbJ1YpPe9zBY8Sf9zIjukV-n1fW17o3WnWqmylmEBCSSuJ-Yy0OEG2_ekU3wNsw34d9efWLAFrM7uDN7W6rDtMJUuMrFRxwZZOseUnEFEXLkXG1Q==",
-              "actual_url": "https://www.reddoor.life/post/how-i-came-up-with-the-unique-red-door-life-model-of-care-for-addiction-substance-abuse-recovery"
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu-jRFJWTF7qSVTSonnsDCecMQum_YYVo2dKUkOOPKS19cvNg6w0Gk1tcYLGamQ327npnhHGs2K3lidg2JkddytBlpAEr3LBYb4Tnv4RkOmv9piGj4uQkaf2MkdN2QN-1XFfeRKpdw8v2xCL5ov1zxVORfTw==",
+              "actual_url": "https://docs.sui.io/concepts/sui-move-concepts/conventions"
             },
             {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_lzt5M-uwhctDXDgw3Zdkk8C7KxWeRCGH4aZuASL6mzRAtsB557jwCp-3DLvVQsxbp1eCKuP0Ju8ZflQ0ckLdIlXN_wuBztVntbLs6DDXH2-5HPQ=",
-              "actual_url": "https://www.reddoor.life/"
-            },
-            {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6viuC23LcCk0z8E_zL2WwDdYCyK4PcfMlqJYNcStTlk87XJO4LZsecqBJzhiYsWju-EEFZsGEqv8_Z_LqErajrFVl7A-_U2nGhcv4rX3Kwgv6S2enK4ZzFZoADjlKSCk9TzH5SDZ1O56u3LXQRPrsTasFeCZGwI0_zaM6qtYDN7l7rjwi7z4lkaSlgUeOp0hM",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
+              "title": "antiersolutions.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFD0CPBTRzV6vZ5YWU_0LmKphGRFDK63LEz8HeJnzBqHe-_JAPVmkQHQB4Hnk052YaWK4aQqTRUZpJSCsSykZhkV8_PcFkeLd11-GTD0RCnhWKO2VQYnFq416eS6rXc3UjA5WfrrR4fZcck1YOto3DrHFBmhXJYexXZsixsLY0xGbJvzlT3KCKTbTrNqUAAgSIB6ZkiV6rDMpk-",
+              "actual_url": "https://www.antiersolutions.com/blogs/a-comprehensive-guide-to-building-dapps-on-sui-blockchain/"
             },
             {
               "title": "medium.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyv8e5kl3dImXkCM6p--WXt_2pnbK_lG9kXp50cbIf1JFWl08KDeMFKqR918FhD_xTuvpUICiOVb9cN2QZWIBDp4iqH2uz0wMdCIfQNntNw8aU5LTomTBwrSjQ3tmCKRjbb__d-rR6Uz9-gghcwlIcdiR_daMDfY4abMfudItviWHyrik1VnWWB1Xv3h0R87Gx-Spb7eS7A2Mu8530LGrdhv43uFnAHRsnAoFWE8jJLN9KCZ9H4uuE21-zXA==",
-              "actual_url": "https://medium.com/@reddoor_life/the-car-wash-model-vs-the-red-door-life-model-of-care-for-substance-abuse-recovery-f014aa77a1ad"
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLMc7_NcbjwMdsNRk3PGuoDVHGWNj-ijQoSNZRNwkvmlXsjUHZRleN5CRR2VuUKlaQESYnh09jgsSTW4djYpSNiMsroG34OGDBjmy65lC0UCN7C8oCVrJpmELhNAEN29GKHn7rscCQ06Jw2gEmXaMIcWeiih6TODHG5Nyc25Ny9S-kHPVO05zhitxLKhl31I2wtXfjOnoAcqKUfgtgEQUhmPVdYs26Ed4x1y0XRQ==",
+              "actual_url": "https://slowmist.medium.com/exploring-sui-the-technology-behind-high-performance-and-contract-security-9ef60c5a2c11"
             },
             {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9ptYWrZZb8Aamju3mnO0cipq18AFuXKZCy9YxUj3YzQTzbbpvYNiPXXgzGgfLeJ4pxhaRT07leHTwc6zIoi4W-K1H0yNuF7XQcUwj-PqVYJsqCiSGHjpO-Gzm1pScsixVn9OxMCLtpgSSRlfxE6_AdWTA72fA4nwxJ48LyBnxFuuaiLJouEU=",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
+              "title": "mevx.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4-42Mi9Ty_f3QRlYihrqHOKq6dd4vddOaIb5nlDNKGwlKsOfZi7oELt8mCDnvMPDB5dnbn2i-mUHMGoJJntw9ySchucMF9cv4zPN3OGT1pCgM0TFW8NK1qaxYctnD2CIcKTedBVZbvw71RM-0HXTEq7Bd6x0SalLwzdRwwKwOp3xIuw==",
+              "actual_url": "https://blog.mevx.io/sui/guide-to-deploying-your-first-sui-smart-contract"
             }
           ],
-          "start_index": 179,
-          "end_index": 440
+          "start_index": null,
+          "end_index": 218
         },
         {
-          "text": "These dimensions encompass: substance use & medications, education, finances, career, legal/criminal & civil, family, romantic relationships, purpose, connection to community & friendships, housing & living situation, medical & physical health, spirituality & religion, mental health & emotional regulation, and nutrition & fitness",
+          "text": "Smart contract development on Sui primarily utilizes the Move programming language",
           "links": [
             {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9ktvrcBqszd1R2Qr_SqwGtkA7ShjTb4_W76j0MRSPyVISE1vMREBOc2Ba1EU8VCMU5E5HrqiOD8N-e-l116e041EnHB6EyRW04XHOmthThcicwGmXe5fPnEM3VzE-FtpQrQKWIwmbJ1YpPe9zBY8Sf9zIjukV-n1fW17o3WnWqmylmEBCSSuJ-Yy0OEG2_ekU3wNsw34d9efWLAFrM7uDN7W6rDtMJUuMrFRxwZZOseUnEFEXLkXG1Q==",
-              "actual_url": "https://www.reddoor.life/post/how-i-came-up-with-the-unique-red-door-life-model-of-care-for-addiction-substance-abuse-recovery"
-            },
-            {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6viuC23LcCk0z8E_zL2WwDdYCyK4PcfMlqJYNcStTlk87XJO4LZsecqBJzhiYsWju-EEFZsGEqv8_Z_LqErajrFVl7A-_U2nGhcv4rX3Kwgv6S2enK4ZzFZoADjlKSCk9TzH5SDZ1O56u3LXQRPrsTasFeCZGwI0_zaM6qtYDN7l7rjwi7z4lkaSlgUeOp0hM",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
+              "title": "rapidinnovation.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJSaD-lHoSjU7m6X9RKQ3RZt0fCID7rjx5A2CZpylTylYqRtwI-ZPGgxWDTVU8Kw0KZprioJ9wTOkn3aRCsqG5dE6g1koyHdtspfDMEv23QUdZGj3S9QX5WmIFEb_qaEfzW2Mid91gfB54ARxLH7MCj-vXoYcsrw==",
+              "actual_url": "https://www.rapidinnovation.io/post/create-smart-contract-sui"
             },
             {
               "title": "medium.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyv8e5kl3dImXkCM6p--WXt_2pnbK_lG9kXp50cbIf1JFWl08KDeMFKqR918FhD_xTuvpUICiOVb9cN2QZWIBDp4iqH2uz0wMdCIfQNntNw8aU5LTomTBwrSjQ3tmCKRjbb__d-rR6Uz9-gghcwlIcdiR_daMDfY4abMfudItviWHyrik1VnWWB1Xv3h0R87Gx-Spb7eS7A2Mu8530LGrdhv43uFnAHRsnAoFWE8jJLN9KCZ9H4uuE21-zXA==",
-              "actual_url": "https://medium.com/@reddoor_life/the-car-wash-model-vs-the-red-door-life-model-of-care-for-substance-abuse-recovery-f014aa77a1ad"
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpJUBPOjUXQVThD6dwLKE0wjV4PAmBuwoJ5le2dPo0s9y9TiFQdc6SuWnssxgd71JyEFIHUUHA6lBt-UzuiMtrQH5JrOFsLHH5PzeZFdo3l52_LJn2OP3tsY5UBU5Xrt6KeYGVCm626YUnRBRyvbWcV6ePOuFW8biJJ_j9rBFKrMCJP_KsA1zcVSDwMuJF0N96h4qMfTTD_Q==",
+              "actual_url": "https://medium.com/@andreidev/publish-a-hello-world-smart-contract-on-sui-network-414bb1bac245"
+            },
+            {
+              "title": "mevx.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4-42Mi9Ty_f3QRlYihrqHOKq6dd4vddOaIb5nlDNKGwlKsOfZi7oELt8mCDnvMPDB5dnbn2i-mUHMGoJJntw9ySchucMF9cv4zPN3OGT1pCgM0TFW8NK1qaxYctnD2CIcKTedBVZbvw71RM-0HXTEq7Bd6x0SalLwzdRwwKwOp3xIuw==",
+              "actual_url": "https://blog.mevx.io/sui/guide-to-deploying-your-first-sui-smart-contract"
             }
           ],
-          "start_index": 690,
-          "end_index": 1021
+          "start_index": 220,
+          "end_index": 302
         },
         {
-          "text": "The model supports individuals without isolating them from their friends, partners, family, or colleagues",
+          "text": "Move is an open-source, bytecode-based programming language that originated from the Diem blockchain project",
           "links": [
             {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_lzt5M-uwhctDXDgw3Zdkk8C7KxWeRCGH4aZuASL6mzRAtsB557jwCp-3DLvVQsxbp1eCKuP0Ju8ZflQ0ckLdIlXN_wuBztVntbLs6DDXH2-5HPQ=",
-              "actual_url": "https://www.reddoor.life/"
+              "title": "rapidinnovation.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJSaD-lHoSjU7m6X9RKQ3RZt0fCID7rjx5A2CZpylTylYqRtwI-ZPGgxWDTVU8Kw0KZprioJ9wTOkn3aRCsqG5dE6g1koyHdtspfDMEv23QUdZGj3S9QX5WmIFEb_qaEfzW2Mid91gfB54ARxLH7MCj-vXoYcsrw==",
+              "actual_url": "https://www.rapidinnovation.io/post/create-smart-contract-sui"
             },
             {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6viuC23LcCk0z8E_zL2WwDdYCyK4PcfMlqJYNcStTlk87XJO4LZsecqBJzhiYsWju-EEFZsGEqv8_Z_LqErajrFVl7A-_U2nGhcv4rX3Kwgv6S2enK4ZzFZoADjlKSCk9TzH5SDZ1O56u3LXQRPrsTasFeCZGwI0_zaM6qtYDN7l7rjwi7z4lkaSlgUeOp0hM",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
-            },
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9ptYWrZZb8Aamju3mnO0cipq18AFuXKZCy9YxUj3YzQTzbbpvYNiPXXgzGgfLeJ4pxhaRT07leHTwc6zIoi4W-K1H0yNuF7XQcUwj-PqVYJsqCiSGHjpO-Gzm1pScsixVn9OxMCLtpgSSRlfxE6_AdWTA72fA4nwxJ48LyBnxFuuaiLJouEU=",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
             }
           ],
-          "start_index": 1258,
-          "end_index": 1363
+          "start_index": 340,
+          "end_index": 448
         },
         {
-          "text": "It is also one of the few attachment-based centers in the industry",
+          "text": "Sui adopted and enhanced Move to leverage its object-centric data model, which treats assets and smart contracts as complex objects rather than traditional account balances or UTXOs",
           "links": [
             {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6viuC23LcCk0z8E_zL2WwDdYCyK4PcfMlqJYNcStTlk87XJO4LZsecqBJzhiYsWju-EEFZsGEqv8_Z_LqErajrFVl7A-_U2nGhcv4rX3Kwgv6S2enK4ZzFZoADjlKSCk9TzH5SDZ1O56u3LXQRPrsTasFeCZGwI0_zaM6qtYDN7l7rjwi7z4lkaSlgUeOp0hM",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
-            }
-          ],
-          "start_index": 1770,
-          "end_index": 1836
-        },
-        {
-          "text": "It emphasizes creating a new lifestyle and integrating it into the world beyond residential care through client advocates, sober companions, online programs, entrepreneurship empowerment, and robust community and sober world re-discovery events",
-          "links": [
-            {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9ktvrcBqszd1R2Qr_SqwGtkA7ShjTb4_W76j0MRSPyVISE1vMREBOc2Ba1EU8VCMU5E5HrqiOD8N-e-l116e041EnHB6EyRW04XHOmthThcicwGmXe5fPnEM3VzE-FtpQrQKWIwmbJ1YpPe9zBY8Sf9zIjukV-n1fW17o3WnWqmylmEBCSSuJ-Yy0OEG2_ekU3wNsw34d9efWLAFrM7uDN7W6rDtMJUuMrFRxwZZOseUnEFEXLkXG1Q==",
-              "actual_url": "https://www.reddoor.life/post/how-i-came-up-with-the-unique-red-door-life-model-of-care-for-addiction-substance-abuse-recovery"
+              "title": "rapidinnovation.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJSaD-lHoSjU7m6X9RKQ3RZt0fCID7rjx5A2CZpylTylYqRtwI-ZPGgxWDTVU8Kw0KZprioJ9wTOkn3aRCsqG5dE6g1koyHdtspfDMEv23QUdZGj3S9QX5WmIFEb_qaEfzW2Mid91gfB54ARxLH7MCj-vXoYcsrw==",
+              "actual_url": "https://www.rapidinnovation.io/post/create-smart-contract-sui"
             },
             {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6viuC23LcCk0z8E_zL2WwDdYCyK4PcfMlqJYNcStTlk87XJO4LZsecqBJzhiYsWju-EEFZsGEqv8_Z_LqErajrFVl7A-_U2nGhcv4rX3Kwgv6S2enK4ZzFZoADjlKSCk9TzH5SDZ1O56u3LXQRPrsTasFeCZGwI0_zaM6qtYDN7l7rjwi7z4lkaSlgUeOp0hM",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
-            },
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9ptYWrZZb8Aamju3mnO0cipq18AFuXKZCy9YxUj3YzQTzbbpvYNiPXXgzGgfLeJ4pxhaRT07leHTwc6zIoi4W-K1H0yNuF7XQcUwj-PqVYJsqCiSGHjpO-Gzm1pScsixVn9OxMCLtpgSSRlfxE6_AdWTA72fA4nwxJ48LyBnxFuuaiLJouEU=",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            }
-          ],
-          "start_index": 1978,
-          "end_index": 2222
-        },
-        {
-          "text": "*   **Multidisciplinary Team and Diverse Modalities** A highly experienced and compassionate multidisciplinary team works with clients, incorporating a vast network of thought leaders in medicine, psychiatry, psychology, trauma healing, and holistic modalities such as sound healing, virtual reality immersive experiences, yoga, Kundalini, EMDR, Reiki, and various fitness and therapeutic activities",
-          "links": [
-            {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9ktvrcBqszd1R2Qr_SqwGtkA7ShjTb4_W76j0MRSPyVISE1vMREBOc2Ba1EU8VCMU5E5HrqiOD8N-e-l116e041EnHB6EyRW04XHOmthThcicwGmXe5fPnEM3VzE-FtpQrQKWIwmbJ1YpPe9zBY8Sf9zIjukV-n1fW17o3WnWqmylmEBCSSuJ-Yy0OEG2_ekU3wNsw34d9efWLAFrM7uDN7W6rDtMJUuMrFRxwZZOseUnEFEXLkXG1Q==",
-              "actual_url": "https://www.reddoor.life/post/how-i-came-up-with-the-unique-red-door-life-model-of-care-for-addiction-substance-abuse-recovery"
-            },
-            {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6viuC23LcCk0z8E_zL2WwDdYCyK4PcfMlqJYNcStTlk87XJO4LZsecqBJzhiYsWju-EEFZsGEqv8_Z_LqErajrFVl7A-_U2nGhcv4rX3Kwgv6S2enK4ZzFZoADjlKSCk9TzH5SDZ1O56u3LXQRPrsTasFeCZGwI0_zaM6qtYDN7l7rjwi7z4lkaSlgUeOp0hM",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
-            },
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9ptYWrZZb8Aamju3mnO0cipq18AFuXKZCy9YxUj3YzQTzbbpvYNiPXXgzGgfLeJ4pxhaRT07leHTwc6zIoi4W-K1H0yNuF7XQcUwj-PqVYJsqCiSGHjpO-Gzm1pScsixVn9OxMCLtpgSSRlfxE6_AdWTA72fA4nwxJ48LyBnxFuuaiLJouEU=",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            }
-          ],
-          "start_index": 2224,
-          "end_index": 2623
-        },
-        {
-          "text": "*   **Focus on Root Causes and Life Transformation** The philosophy centers on tackling the root causes of substance use and mental health issues by addressing all 12 dimensions of life, aiming for \"life transformation\" rather than just \"sobriety\"",
-          "links": [
-            {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6viuC23LcCk0z8E_zL2WwDdYCyK4PcfMlqJYNcStTlk87XJO4LZsecqBJzhiYsWju-EEFZsGEqv8_Z_LqErajrFVl7A-_U2nGhcv4rX3Kwgv6S2enK4ZzFZoADjlKSCk9TzH5SDZ1O56u3LXQRPrsTasFeCZGwI0_zaM6qtYDN7l7rjwi7z4lkaSlgUeOp0hM",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
-            },
-            {
-              "title": "addictioncenter.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9ptYWrZZb8Aamju3mnO0cipq18AFuXKZCy9YxUj3YzQTzbbpvYNiPXXgzGgfLeJ4pxhaRT07leHTwc6zIoi4W-K1H0yNuF7XQcUwj-PqVYJsqCiSGHjpO-Gzm1pScsixVn9OxMCLtpgSSRlfxE6_AdWTA72fA4nwxJ48LyBnxFuuaiLJouEU=",
-              "actual_url": "https://www.addictioncenter.com/rehabs/california/los-angeles/red-door-life/"
-            }
-          ],
-          "start_index": 2625,
-          "end_index": 2872
-        },
-        {
-          "text": "Founded in 2005, Red Door Life, a 501c3 nonprofit organization, aims to improve recovery outcomes for individuals with substance use disorders and mental health issues, including high-acuity and high-profile clients, by providing comprehensive treatment and fostering entrepreneurship within the recovery community",
-          "links": [
-            {
-              "title": "reddoor.life",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_lzt5M-uwhctDXDgw3Zdkk8C7KxWeRCGH4aZuASL6mzRAtsB557jwCp-3DLvVQsxbp1eCKuP0Ju8ZflQ0ckLdIlXN_wuBztVntbLs6DDXH2-5HPQ=",
-              "actual_url": "https://www.reddoor.life/"
-            },
-            {
-              "title": "psychologytoday.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6viuC23LcCk0z8E_zL2WwDdYCyK4PcfMlqJYNcStTlk87XJO4LZsecqBJzhiYsWju-EEFZsGEqv8_Z_LqErajrFVl7A-_U2nGhcv4rX3Kwgv6S2enK4ZzFZoADjlKSCk9TzH5SDZ1O56u3LXQRPrsTasFeCZGwI0_zaM6qtYDN7l7rjwi7z4lkaSlgUeOp0hM",
-              "actual_url": "https://www.psychologytoday.com/us/treatment-rehab/red-door-life-los-angeles-ca/968007"
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu-jRFJWTF7qSVTSonnsDCecMQum_YYVo2dKUkOOPKS19cvNg6w0Gk1tcYLGamQ327npnhHGs2K3lidg2JkddytBlpAEr3LBYb4Tnv4RkOmv9piGj4uQkaf2MkdN2QN-1XFfeRKpdw8v2xCL5ov1zxVORfTw==",
+              "actual_url": "https://docs.sui.io/concepts/sui-move-concepts/conventions"
             },
             {
               "title": "medium.com",
-              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyv8e5kl3dImXkCM6p--WXt_2pnbK_lG9kXp50cbIf1JFWl08KDeMFKqR918FhD_xTuvpUICiOVb9cN2QZWIBDp4iqH2uz0wMdCIfQNntNw8aU5LTomTBwrSjQ3tmCKRjbb__d-rR6Uz9-gghcwlIcdiR_daMDfY4abMfudItviWHyrik1VnWWB1Xv3h0R87Gx-Spb7eS7A2Mu8530LGrdhv43uFnAHRsnAoFWE8jJLN9KCZ9H4uuE21-zXA==",
-              "actual_url": "https://medium.com/@reddoor_life/the-car-wash-model-vs-the-red-door-life-model-of-care-for-substance-abuse-recovery-f014aa77a1ad"
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpJUBPOjUXQVThD6dwLKE0wjV4PAmBuwoJ5le2dPo0s9y9TiFQdc6SuWnssxgd71JyEFIHUUHA6lBt-UzuiMtrQH5JrOFsLHH5PzeZFdo3l52_LJn2OP3tsY5UBU5Xrt6KeYGVCm626YUnRBRyvbWcV6ePOuFW8biJJ_j9rBFKrMCJP_KsA1zcVSDwMuJF0N96h4qMfTTD_Q==",
+              "actual_url": "https://medium.com/@andreidev/publish-a-hello-world-smart-contract-on-sui-network-414bb1bac245"
+            },
+            {
+              "title": "cleeviox.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUg2OOJZctxsd0j7r_zRZ12ymrnnXJRMSyowBQUl3rAlf0A4Xejl70Kgisn4G5Me5M2UGyXAJFhzLIiw2B9nTquQjvWhxCxRsbg0puXnZrpJHVBq2q3fRnIG_OOhfvxfCbhPyc39DVf1WDMZU5xa61vVIwy6ueQkSeT3rn2bUdoqYExLIcOgjzg6BiU_YTKHkX",
+              "actual_url": "https://www.cleeviox.com/blog/how-to-deploy-an-nft-smart-contract-on-the-sui-blockchain"
+            },
+            {
+              "title": "mevx.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4-42Mi9Ty_f3QRlYihrqHOKq6dd4vddOaIb5nlDNKGwlKsOfZi7oELt8mCDnvMPDB5dnbn2i-mUHMGoJJntw9ySchucMF9cv4zPN3OGT1pCgM0TFW8NK1qaxYctnD2CIcKTedBVZbvw71RM-0HXTEq7Bd6x0SalLwzdRwwKwOp3xIuw==",
+              "actual_url": "https://blog.mevx.io/sui/guide-to-deploying-your-first-sui-smart-contract"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-MH2E7dB0V7bvaXPH9jJRAGa3L4eLbhWhDmSSQ5wEz-NDW8afy0fE6TDl5Qlf_SchjBa98TYYF4p0W834ET5hoYhQS6BIiEC4T5qMcarot4b2HlWOs4486bw7dFOP7FnI6Q7VLqCkVyoAKM0rm5xonNXj",
+              "actual_url": "https://docs.sui.io/references/contribute/sui-environment"
             }
           ],
-          "start_index": 2875,
-          "end_index": 3189
+          "start_index": 450,
+          "end_index": 631
+        },
+        {
+          "text": "This resource-oriented programming paradigm is a core strength of Move, enforcing explicit ownership and preventing issues like accidental asset duplication or loss",
+          "links": [
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDorpAwNGBQRTtF54MVn4k0BAWVydmrcLTrul_-7_IZf8XE_cgj92eN0EZTj8rcaoCTBJ-HtDfooFODoUzBjAWTK1EpfUdmHQuOqcJWpO62YJVpwDBaaqZaFnhuTlAwJoJNGTbjfo=",
+              "actual_url": "https://blog.sui.io/security-best-practices/"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-MH2E7dB0V7bvaXPH9jJRAGa3L4eLbhWhDmSSQ5wEz-NDW8afy0fE6TDl5Qlf_SchjBa98TYYF4p0W834ET5hoYhQS6BIiEC4T5qMcarot4b2HlWOs4486bw7dFOP7FnI6Q7VLqCkVyoAKM0rm5xonNXj",
+              "actual_url": "https://docs.sui.io/references/contribute/sui-environment"
+            }
+          ],
+          "start_index": 633,
+          "end_index": 797
+        },
+        {
+          "text": "Key features of Move on Sui include:\n*   **Object-Centric Model**: Assets are first-class citizens, simplifying management and enhancing programmability",
+          "links": [
+            {
+              "title": "rapidinnovation.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJSaD-lHoSjU7m6X9RKQ3RZt0fCID7rjx5A2CZpylTylYqRtwI-ZPGgxWDTVU8Kw0KZprioJ9wTOkn3aRCsqG5dE6g1koyHdtspfDMEv23QUdZGj3S9QX5WmIFEb_qaEfzW2Mid91gfB54ARxLH7MCj-vXoYcsrw==",
+              "actual_url": "https://www.rapidinnovation.io/post/create-smart-contract-sui"
+            },
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpJUBPOjUXQVThD6dwLKE0wjV4PAmBuwoJ5le2dPo0s9y9TiFQdc6SuWnssxgd71JyEFIHUUHA6lBt-UzuiMtrQH5JrOFsLHH5PzeZFdo3l52_LJn2OP3tsY5UBU5Xrt6KeYGVCm626YUnRBRyvbWcV6ePOuFW8biJJ_j9rBFKrMCJP_KsA1zcVSDwMuJF0N96h4qMfTTD_Q==",
+              "actual_url": "https://medium.com/@andreidev/publish-a-hello-world-smart-contract-on-sui-network-414bb1bac245"
+            },
+            {
+              "title": "mevx.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4-42Mi9Ty_f3QRlYihrqHOKq6dd4vddOaIb5nlDNKGwlKsOfZi7oELt8mCDnvMPDB5dnbn2i-mUHMGoJJntw9ySchucMF9cv4zPN3OGT1pCgM0TFW8NK1qaxYctnD2CIcKTedBVZbvw71RM-0HXTEq7Bd6x0SalLwzdRwwKwOp3xIuw==",
+              "actual_url": "https://blog.mevx.io/sui/guide-to-deploying-your-first-sui-smart-contract"
+            }
+          ],
+          "start_index": 800,
+          "end_index": 952
+        },
+        {
+          "text": "Sui's objects have globally unique IDs and can have owners (users or other objects), or be shared",
+          "links": [
+            {
+              "title": "cleeviox.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUg2OOJZctxsd0j7r_zRZ12ymrnnXJRMSyowBQUl3rAlf0A4Xejl70Kgisn4G5Me5M2UGyXAJFhzLIiw2B9nTquQjvWhxCxRsbg0puXnZrpJHVBq2q3fRnIG_OOhfvxfCbhPyc39DVf1WDMZU5xa61vVIwy6ueQkSeT3rn2bUdoqYExLIcOgjzg6BiU_YTKHkX",
+              "actual_url": "https://www.cleeviox.com/blog/how-to-deploy-an-nft-smart-contract-on-the-sui-blockchain"
+            },
+            {
+              "title": "movebit.xyz",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWAvjAZdMnNZ7caN1DnyipOG5e8AhBjOBfg5qelhs_pmSQZQfCpG8_oSw3QIX_4MedzFH0L0w7EqhWKMGwaEC0aMoOACMcWzM74mTt_Iln_m-FyVlW_qS3xchPZIR_44fskA2ycnhjFdhaO-_Y-tFKdmP5wMQLp8p-KGoUzlScPiM3SniLEWG1-KTUCpU7Vbreyus=",
+              "actual_url": "https://www.movebit.xyz/blog/post/Sui-Objects-Security-Principles-and-Best-Practices.html"
+            }
+          ],
+          "start_index": 954,
+          "end_index": 1051
+        },
+        {
+          "text": "*   **Security Focus**: Move is designed to prevent common blockchain vulnerabilities such as reentrancy attacks, integer overflows, and double-spending, by baking financial primitives into the language's semantics and enforcing strict type checking",
+          "links": [
+            {
+              "title": "rapidinnovation.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJSaD-lHoSjU7m6X9RKQ3RZt0fCID7rjx5A2CZpylTylYqRtwI-ZPGgxWDTVU8Kw0KZprioJ9wTOkn3aRCsqG5dE6g1koyHdtspfDMEv23QUdZGj3S9QX5WmIFEb_qaEfzW2Mid91gfB54ARxLH7MCj-vXoYcsrw==",
+              "actual_url": "https://www.rapidinnovation.io/post/create-smart-contract-sui"
+            },
+            {
+              "title": "antiersolutions.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFD0CPBTRzV6vZ5YWU_0LmKphGRFDK63LEz8HeJnzBqHe-_JAPVmkQHQB4Hnk052YaWK4aQqTRUZpJSCsSykZhkV8_PcFkeLd11-GTD0RCnhWKO2VQYnFq416eS6rXc3UjA5WfrrR4fZcck1YOto3DrHFBmhXJYexXZsixsLY0xGbJvzlT3KCKTbTrNqUAAgSIB6ZkiV6rDMpk-",
+              "actual_url": "https://www.antiersolutions.com/blogs/a-comprehensive-guide-to-building-dapps-on-sui-blockchain/"
+            },
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLMc7_NcbjwMdsNRk3PGuoDVHGWNj-ijQoSNZRNwkvmlXsjUHZRleN5CRR2VuUKlaQESYnh09jgsSTW4djYpSNiMsroG34OGDBjmy65lC0UCN7C8oCVrJpmELhNAEN29GKHn7rscCQ06Jw2gEmXaMIcWeiih6TODHG5Nyc25Ny9S-kHPVO05zhitxLKhl31I2wtXfjOnoAcqKUfgtgEQUhmPVdYs26Ed4x1y0XRQ==",
+              "actual_url": "https://slowmist.medium.com/exploring-sui-the-technology-behind-high-performance-and-contract-security-9ef60c5a2c11"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-MH2E7dB0V7bvaXPH9jJRAGa3L4eLbhWhDmSSQ5wEz-NDW8afy0fE6TDl5Qlf_SchjBa98TYYF4p0W834ET5hoYhQS6BIiEC4T5qMcarot4b2HlWOs4486bw7dFOP7FnI6Q7VLqCkVyoAKM0rm5xonNXj",
+              "actual_url": "https://docs.sui.io/references/contribute/sui-environment"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUPaGIO_cWX1BT412a8Oo_FooerUF3nUX_1qSUF7IwzUlqwjuoPEfErhveN2tA-boOXtYLE_nRqj3e8yFQ-37vGMVUmAs0-B_P_NKvACMypz8vRm2go0Hh2jviUZU690DSLIxh1lu6mm1rrs_4RA==",
+              "actual_url": "https://docs.sui.io/guides/developer/getting-started"
+            },
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8IGTdcsVKtIqPEf82BfaRh9Pw2o3zBcMsTra8C9siIOdgm3X56i0Z_SoDcQKFaQ8_pxfq-a3qI_8LnqrmC5iEinYmyO37c0e9Wdd_6MwSh6bE-LAw8UR9e6KuF5n8EnyyvmHUQTzdEU_WddhaMAy2DvK44I9eEK4ohecVVrmG2_L5k5oDiF8xK8Hb0ERYNChZNuI8hQCs",
+              "actual_url": "https://slowmist.medium.com/slowmist-introduction-to-auditing-sui-move-contracts-da005149f6bc"
+            }
+          ],
+          "start_index": 1053,
+          "end_index": 1302
+        },
+        {
+          "text": "*   **Scalability and Performance**: Sui's architecture, combined with Move, enables parallel execution of transactions, significantly increasing throughput and reducing latency",
+          "links": [
+            {
+              "title": "rapidinnovation.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJSaD-lHoSjU7m6X9RKQ3RZt0fCID7rjx5A2CZpylTylYqRtwI-ZPGgxWDTVU8Kw0KZprioJ9wTOkn3aRCsqG5dE6g1koyHdtspfDMEv23QUdZGj3S9QX5WmIFEb_qaEfzW2Mid91gfB54ARxLH7MCj-vXoYcsrw==",
+              "actual_url": "https://www.rapidinnovation.io/post/create-smart-contract-sui"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu-jRFJWTF7qSVTSonnsDCecMQum_YYVo2dKUkOOPKS19cvNg6w0Gk1tcYLGamQ327npnhHGs2K3lidg2JkddytBlpAEr3LBYb4Tnv4RkOmv9piGj4uQkaf2MkdN2QN-1XFfeRKpdw8v2xCL5ov1zxVORfTw==",
+              "actual_url": "https://docs.sui.io/concepts/sui-move-concepts/conventions"
+            },
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpJUBPOjUXQVThD6dwLKE0wjV4PAmBuwoJ5le2dPo0s9y9TiFQdc6SuWnssxgd71JyEFIHUUHA6lBt-UzuiMtrQH5JrOFsLHH5PzeZFdo3l52_LJn2OP3tsY5UBU5Xrt6KeYGVCm626YUnRBRyvbWcV6ePOuFW8biJJ_j9rBFKrMCJP_KsA1zcVSDwMuJF0N96h4qMfTTD_Q==",
+              "actual_url": "https://medium.com/@andreidev/publish-a-hello-world-smart-contract-on-sui-network-414bb1bac245"
+            },
+            {
+              "title": "antiersolutions.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFD0CPBTRzV6vZ5YWU_0LmKphGRFDK63LEz8HeJnzBqHe-_JAPVmkQHQB4Hnk052YaWK4aQqTRUZpJSCsSykZhkV8_PcFkeLd11-GTD0RCnhWKO2VQYnFq416eS6rXc3UjA5WfrrR4fZcck1YOto3DrHFBmhXJYexXZsixsLY0xGbJvzlT3KCKTbTrNqUAAgSIB6ZkiV6rDMpk-",
+              "actual_url": "https://www.antiersolutions.com/blogs/a-comprehensive-guide-to-building-dapps-on-sui-blockchain/"
+            },
+            {
+              "title": "mevx.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4-42Mi9Ty_f3QRlYihrqHOKq6dd4vddOaIb5nlDNKGwlKsOfZi7oELt8mCDnvMPDB5dnbn2i-mUHMGoJJntw9ySchucMF9cv4zPN3OGT1pCgM0TFW8NK1qaxYctnD2CIcKTedBVZbvw71RM-0HXTEq7Bd6x0SalLwzdRwwKwOp3xIuw==",
+              "actual_url": "https://blog.mevx.io/sui/guide-to-deploying-your-first-sui-smart-contract"
+            }
+          ],
+          "start_index": 1304,
+          "end_index": 1481
+        },
+        {
+          "text": "*   **Composability**: Move on Sui allows for rich and composable on-chain assets, where objects can interact with each other to create intricate data structures and application logic",
+          "links": [
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpJUBPOjUXQVThD6dwLKE0wjV4PAmBuwoJ5le2dPo0s9y9TiFQdc6SuWnssxgd71JyEFIHUUHA6lBt-UzuiMtrQH5JrOFsLHH5PzeZFdo3l52_LJn2OP3tsY5UBU5Xrt6KeYGVCm626YUnRBRyvbWcV6ePOuFW8biJJ_j9rBFKrMCJP_KsA1zcVSDwMuJF0N96h4qMfTTD_Q==",
+              "actual_url": "https://medium.com/@andreidev/publish-a-hello-world-smart-contract-on-sui-network-414bb1bac245"
+            },
+            {
+              "title": "sui-book.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS9zDiK8OirHOo910hpN4uNFX_Hb96Mt-DAXwPPV1cYvsEhpnXUn_SfDSbuPqEof57NvGxmcABhgpjfsh3paSaWuedJ8g4TPr1tWDmqXtBdN67QRgsOlzzqlCAWKekQXEFf6-VYo3l3M6ygQEA9_bK8lfcUY2OSjwlLl83XJ4z4w==",
+              "actual_url": "https://intro.sui-book.com/unit-one/lessons/5_contract_deployment.html"
+            }
+          ],
+          "start_index": 1483,
+          "end_index": 1666
+        },
+        {
+          "text": "*   **Developer Experience**: Move aims to simplify secure smart contract development and offers \"win-win abstractions\" that provide expressive power while improving execution efficiency",
+          "links": [
+            {
+              "title": "rapidinnovation.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJSaD-lHoSjU7m6X9RKQ3RZt0fCID7rjx5A2CZpylTylYqRtwI-ZPGgxWDTVU8Kw0KZprioJ9wTOkn3aRCsqG5dE6g1koyHdtspfDMEv23QUdZGj3S9QX5WmIFEb_qaEfzW2Mid91gfB54ARxLH7MCj-vXoYcsrw==",
+              "actual_url": "https://www.rapidinnovation.io/post/create-smart-contract-sui"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu-jRFJWTF7qSVTSonnsDCecMQum_YYVo2dKUkOOPKS19cvNg6w0Gk1tcYLGamQ327npnhHGs2K3lidg2JkddytBlpAEr3LBYb4Tnv4RkOmv9piGj4uQkaf2MkdN2QN-1XFfeRKpdw8v2xCL5ov1zxVORfTw==",
+              "actual_url": "https://docs.sui.io/concepts/sui-move-concepts/conventions"
+            },
+            {
+              "title": "scafsui.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGe6Nld9AQj7RCnZHkHTS-aI9CaoZjYeZRA_8t7KIJkqjRxtKs3HX2Pwmi3DyRlqft2HrixVApyM0Q40f6Ef5bsLWlNQhxmmQhSYVeXPZWMk921asmds9LO-HhnJHs=",
+              "actual_url": "https://scafsui.com/learn/lesson_2/"
+            },
+            {
+              "title": "sui-book.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS9zDiK8OirHOo910hpN4uNFX_Hb96Mt-DAXwPPV1cYvsEhpnXUn_SfDSbuPqEof57NvGxmcABhgpjfsh3paSaWuedJ8g4TPr1tWDmqXtBdN67QRgsOlzzqlCAWKekQXEFf6-VYo3l3M6ygQEA9_bK8lfcUY2OSjwlLl83XJ4z4w==",
+              "actual_url": "https://intro.sui-book.com/unit-one/lessons/5_contract_deployment.html"
+            }
+          ],
+          "start_index": 1668,
+          "end_index": 1854
+        },
+        {
+          "text": "**Install Rust**: Since Move is built on Rust, installing the Rust programming language is a prerequisite",
+          "links": [
+            {
+              "title": "rapidinnovation.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJSaD-lHoSjU7m6X9RKQ3RZt0fCID7rjx5A2CZpylTylYqRtwI-ZPGgxWDTVU8Kw0KZprioJ9wTOkn3aRCsqG5dE6g1koyHdtspfDMEv23QUdZGj3S9QX5WmIFEb_qaEfzW2Mid91gfB54ARxLH7MCj-vXoYcsrw==",
+              "actual_url": "https://www.rapidinnovation.io/post/create-smart-contract-sui"
+            },
+            {
+              "title": "antiersolutions.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFD0CPBTRzV6vZ5YWU_0LmKphGRFDK63LEz8HeJnzBqHe-_JAPVmkQHQB4Hnk052YaWK4aQqTRUZpJSCsSykZhkV8_PcFkeLd11-GTD0RCnhWKO2VQYnFq416eS6rXc3UjA5WfrrR4fZcck1YOto3DrHFBmhXJYexXZsixsLY0xGbJvzlT3KCKTbTrNqUAAgSIB6ZkiV6rDMpk-",
+              "actual_url": "https://www.antiersolutions.com/blogs/a-comprehensive-guide-to-building-dapps-on-sui-blockchain/"
+            },
+            {
+              "title": "mevx.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4-42Mi9Ty_f3QRlYihrqHOKq6dd4vddOaIb5nlDNKGwlKsOfZi7oELt8mCDnvMPDB5dnbn2i-mUHMGoJJntw9ySchucMF9cv4zPN3OGT1pCgM0TFW8NK1qaxYctnD2CIcKTedBVZbvw71RM-0HXTEq7Bd6x0SalLwzdRwwKwOp3xIuw==",
+              "actual_url": "https://blog.mevx.io/sui/guide-to-deploying-your-first-sui-smart-contract"
+            }
+          ],
+          "start_index": 1981,
+          "end_index": 2086
+        },
+        {
+          "text": "**Install Sui CLI**: The Sui Command Line Interface (CLI) is essential for interacting with the Sui network and smart contracts, allowing for tasks like creating accounts, transferring tokens, deploying contracts, and querying objects",
+          "links": [
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            },
+            {
+              "title": "antiersolutions.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFD0CPBTRzV6vZ5YWU_0LmKphGRFDK63LEz8HeJnzBqHe-_JAPVmkQHQB4Hnk052YaWK4aQqTRUZpJSCsSykZhkV8_PcFkeLd11-GTD0RCnhWKO2VQYnFq416eS6rXc3UjA5WfrrR4fZcck1YOto3DrHFBmhXJYexXZsixsLY0xGbJvzlT3KCKTbTrNqUAAgSIB6ZkiV6rDMpk-",
+              "actual_url": "https://www.antiersolutions.com/blogs/a-comprehensive-guide-to-building-dapps-on-sui-blockchain/"
+            },
+            {
+              "title": "mevx.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4-42Mi9Ty_f3QRlYihrqHOKq6dd4vddOaIb5nlDNKGwlKsOfZi7oELt8mCDnvMPDB5dnbn2i-mUHMGoJJntw9ySchucMF9cv4zPN3OGT1pCgM0TFW8NK1qaxYctnD2CIcKTedBVZbvw71RM-0HXTEq7Bd6x0SalLwzdRwwKwOp3xIuw==",
+              "actual_url": "https://blog.mevx.io/sui/guide-to-deploying-your-first-sui-smart-contract"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUPaGIO_cWX1BT412a8Oo_FooerUF3nUX_1qSUF7IwzUlqwjuoPEfErhveN2tA-boOXtYLE_nRqj3e8yFQ-37vGMVUmAs0-B_P_NKvACMypz8vRm2go0Hh2jviUZU690DSLIxh1lu6mm1rrs_4RA==",
+              "actual_url": "https://docs.sui.io/guides/developer/getting-started"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRtKez02jR2-v-jvghW6NgcS4cbDhX7tkTGWC_3YeB-jGWwXZv1eyrjkBleH9oTbfaBuEDJRisNBg2LaTCXQ1qdIZ3O39sz-BY1vY-f3m7PC2sLV_-rYqSY7okH26oRoRk",
+              "actual_url": "https://docs.sui.io/references/sui-move"
+            }
+          ],
+          "start_index": 2092,
+          "end_index": 2326
+        },
+        {
+          "text": "It can be installed via Cargo (Rust's package manager) or suiup, a custom installer and version manager",
+          "links": [
+            {
+              "title": "rapidinnovation.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJSaD-lHoSjU7m6X9RKQ3RZt0fCID7rjx5A2CZpylTylYqRtwI-ZPGgxWDTVU8Kw0KZprioJ9wTOkn3aRCsqG5dE6g1koyHdtspfDMEv23QUdZGj3S9QX5WmIFEb_qaEfzW2Mid91gfB54ARxLH7MCj-vXoYcsrw==",
+              "actual_url": "https://www.rapidinnovation.io/post/create-smart-contract-sui"
+            },
+            {
+              "title": "mevx.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4-42Mi9Ty_f3QRlYihrqHOKq6dd4vddOaIb5nlDNKGwlKsOfZi7oELt8mCDnvMPDB5dnbn2i-mUHMGoJJntw9ySchucMF9cv4zPN3OGT1pCgM0TFW8NK1qaxYctnD2CIcKTedBVZbvw71RM-0HXTEq7Bd6x0SalLwzdRwwKwOp3xIuw==",
+              "actual_url": "https://blog.mevx.io/sui/guide-to-deploying-your-first-sui-smart-contract"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUPaGIO_cWX1BT412a8Oo_FooerUF3nUX_1qSUF7IwzUlqwjuoPEfErhveN2tA-boOXtYLE_nRqj3e8yFQ-37vGMVUmAs0-B_P_NKvACMypz8vRm2go0Hh2jviUZU690DSLIxh1lu6mm1rrs_4RA==",
+              "actual_url": "https://docs.sui.io/guides/developer/getting-started"
+            }
+          ],
+          "start_index": 2328,
+          "end_index": 2431
+        },
+        {
+          "text": "**Choose an IDE**: While any text editor can be used, Visual Studio Code with a Move extension is recommended for enhanced syntax highlighting and error checking",
+          "links": [
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            },
+            {
+              "title": "mevx.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4-42Mi9Ty_f3QRlYihrqHOKq6dd4vddOaIb5nlDNKGwlKsOfZi7oELt8mCDnvMPDB5dnbn2i-mUHMGoJJntw9ySchucMF9cv4zPN3OGT1pCgM0TFW8NK1qaxYctnD2CIcKTedBVZbvw71RM-0HXTEq7Bd6x0SalLwzdRwwKwOp3xIuw==",
+              "actual_url": "https://blog.mevx.io/sui/guide-to-deploying-your-first-sui-smart-contract"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUPaGIO_cWX1BT412a8Oo_FooerUF3nUX_1qSUF7IwzUlqwjuoPEfErhveN2tA-boOXtYLE_nRqj3e8yFQ-37vGMVUmAs0-B_P_NKvACMypz8vRm2go0Hh2jviUZU690DSLIxh1lu6mm1rrs_4RA==",
+              "actual_url": "https://docs.sui.io/guides/developer/getting-started"
+            }
+          ],
+          "start_index": 2437,
+          "end_index": 2598
+        },
+        {
+          "text": "IntelliJ IDEA and Emacs also offer Move language plugins",
+          "links": [
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUPaGIO_cWX1BT412a8Oo_FooerUF3nUX_1qSUF7IwzUlqwjuoPEfErhveN2tA-boOXtYLE_nRqj3e8yFQ-37vGMVUmAs0-B_P_NKvACMypz8vRm2go0Hh2jviUZU690DSLIxh1lu6mm1rrs_4RA==",
+              "actual_url": "https://docs.sui.io/guides/developer/getting-started"
+            }
+          ],
+          "start_index": 2600,
+          "end_index": 2656
+        },
+        {
+          "text": "Developers can obtain testnet SUI tokens from a faucet for development purposes",
+          "links": [
+            {
+              "title": "cleeviox.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUg2OOJZctxsd0j7r_zRZ12ymrnnXJRMSyowBQUl3rAlf0A4Xejl70Kgisn4G5Me5M2UGyXAJFhzLIiw2B9nTquQjvWhxCxRsbg0puXnZrpJHVBq2q3fRnIG_OOhfvxfCbhPyc39DVf1WDMZU5xa61vVIwy6ueQkSeT3rn2bUdoqYExLIcOgjzg6BiU_YTKHkX",
+              "actual_url": "https://www.cleeviox.com/blog/how-to-deploy-an-nft-smart-contract-on-the-sui-blockchain"
+            },
+            {
+              "title": "mevx.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4-42Mi9Ty_f3QRlYihrqHOKq6dd4vddOaIb5nlDNKGwlKsOfZi7oELt8mCDnvMPDB5dnbn2i-mUHMGoJJntw9ySchucMF9cv4zPN3OGT1pCgM0TFW8NK1qaxYctnD2CIcKTedBVZbvw71RM-0HXTEq7Bd6x0SalLwzdRwwKwOp3xIuw==",
+              "actual_url": "https://blog.mevx.io/sui/guide-to-deploying-your-first-sui-smart-contract"
+            },
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEC-bSE9GADU_oXOsRhCTok2xYi8x2BcLNWC4Vl_q6tC_6ukoTfsIwy_iip2nksdw4_Nm_iV3x6Jdf406irdUGsDLzWNS834J0-lrPbcshciP4LXJ9KglcyEyw0AimPYWcM3CoTsxWGa_WxKZS0IeWAl3voAXKcPS_x2vVCEJ2Eo6ZS2fHwfjWn5Dwz96_mIg==",
+              "actual_url": "https://medium.com/@ultrasoundchad/smart-contracts-on-the-sui-blockchain-2e4608028bf7"
+            }
+          ],
+          "start_index": 2781,
+          "end_index": 2860
+        },
+        {
+          "text": "**Local Network/Testnet**: For testing and debugging, developers can set up a local full node or deploy to the Sui devnet or testnet",
+          "links": [
+            {
+              "title": "rapidinnovation.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJSaD-lHoSjU7m6X9RKQ3RZt0fCID7rjx5A2CZpylTylYqRtwI-ZPGgxWDTVU8Kw0KZprioJ9wTOkn3aRCsqG5dE6g1koyHdtspfDMEv23QUdZGj3S9QX5WmIFEb_qaEfzW2Mid91gfB54ARxLH7MCj-vXoYcsrw==",
+              "actual_url": "https://www.rapidinnovation.io/post/create-smart-contract-sui"
+            },
+            {
+              "title": "antiersolutions.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFD0CPBTRzV6vZ5YWU_0LmKphGRFDK63LEz8HeJnzBqHe-_JAPVmkQHQB4Hnk052YaWK4aQqTRUZpJSCsSykZhkV8_PcFkeLd11-GTD0RCnhWKO2VQYnFq416eS6rXc3UjA5WfrrR4fZcck1YOto3DrHFBmhXJYexXZsixsLY0xGbJvzlT3KCKTbTrNqUAAgSIB6ZkiV6rDMpk-",
+              "actual_url": "https://www.antiersolutions.com/blogs/a-comprehensive-guide-to-building-dapps-on-sui-blockchain/"
+            },
+            {
+              "title": "scafsui.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGe6Nld9AQj7RCnZHkHTS-aI9CaoZjYeZRA_8t7KIJkqjRxtKs3HX2Pwmi3DyRlqft2HrixVApyM0Q40f6Ef5bsLWlNQhxmmQhSYVeXPZWMk921asmds9LO-HhnJHs=",
+              "actual_url": "https://scafsui.com/learn/lesson_2/"
+            },
+            {
+              "title": "sui-book.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS9zDiK8OirHOo910hpN4uNFX_Hb96Mt-DAXwPPV1cYvsEhpnXUn_SfDSbuPqEof57NvGxmcABhgpjfsh3paSaWuedJ8g4TPr1tWDmqXtBdN67QRgsOlzzqlCAWKekQXEFf6-VYo3l3M6ygQEA9_bK8lfcUY2OSjwlLl83XJ4z4w==",
+              "actual_url": "https://intro.sui-book.com/unit-one/lessons/5_contract_deployment.html"
+            }
+          ],
+          "start_index": 2866,
+          "end_index": 2998
+        },
+        {
+          "text": "**Create a Move Package**: Initialize a new Move project using the `sui move new <PACKAGE_NAME>` command",
+          "links": [
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            },
+            {
+              "title": "scafsui.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGe6Nld9AQj7RCnZHkHTS-aI9CaoZjYeZRA_8t7KIJkqjRxtKs3HX2Pwmi3DyRlqft2HrixVApyM0Q40f6Ef5bsLWlNQhxmmQhSYVeXPZWMk921asmds9LO-HhnJHs=",
+              "actual_url": "https://scafsui.com/learn/lesson_2/"
+            },
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEC-bSE9GADU_oXOsRhCTok2xYi8x2BcLNWC4Vl_q6tC_6ukoTfsIwy_iip2nksdw4_Nm_iV3x6Jdf406irdUGsDLzWNS834J0-lrPbcshciP4LXJ9KglcyEyw0AimPYWcM3CoTsxWGa_WxKZS0IeWAl3voAXKcPS_x2vVCEJ2Eo6ZS2fHwfjWn5Dwz96_mIg==",
+              "actual_url": "https://medium.com/@ultrasoundchad/smart-contracts-on-the-sui-blockchain-2e4608028bf7"
+            }
+          ],
+          "start_index": 3126,
+          "end_index": 3230
+        },
+        {
+          "text": "lock` file",
+          "links": [
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu-jRFJWTF7qSVTSonnsDCecMQum_YYVo2dKUkOOPKS19cvNg6w0Gk1tcYLGamQ327npnhHGs2K3lidg2JkddytBlpAEr3LBYb4Tnv4RkOmv9piGj4uQkaf2MkdN2QN-1XFfeRKpdw8v2xCL5ov1zxVORfTw==",
+              "actual_url": "https://docs.sui.io/concepts/sui-move-concepts/conventions"
+            }
+          ],
+          "start_index": 3333,
+          "end_index": 3343
+        },
+        {
+          "text": "move` files in the `sources` folder",
+          "links": [
+            {
+              "title": "rapidinnovation.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJSaD-lHoSjU7m6X9RKQ3RZt0fCID7rjx5A2CZpylTylYqRtwI-ZPGgxWDTVU8Kw0KZprioJ9wTOkn3aRCsqG5dE6g1koyHdtspfDMEv23QUdZGj3S9QX5WmIFEb_qaEfzW2Mid91gfB54ARxLH7MCj-vXoYcsrw==",
+              "actual_url": "https://www.rapidinnovation.io/post/create-smart-contract-sui"
+            },
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            },
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpJUBPOjUXQVThD6dwLKE0wjV4PAmBuwoJ5le2dPo0s9y9TiFQdc6SuWnssxgd71JyEFIHUUHA6lBt-UzuiMtrQH5JrOFsLHH5PzeZFdo3l52_LJn2OP3tsY5UBU5Xrt6KeYGVCm626YUnRBRyvbWcV6ePOuFW8biJJ_j9rBFKrMCJP_KsA1zcVSDwMuJF0N96h4qMfTTD_Q==",
+              "actual_url": "https://medium.com/@andreidev/publish-a-hello-world-smart-contract-on-sui-network-414bb1bac245"
+            },
+            {
+              "title": "mevx.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4-42Mi9Ty_f3QRlYihrqHOKq6dd4vddOaIb5nlDNKGwlKsOfZi7oELt8mCDnvMPDB5dnbn2i-mUHMGoJJntw9ySchucMF9cv4zPN3OGT1pCgM0TFW8NK1qaxYctnD2CIcKTedBVZbvw71RM-0HXTEq7Bd6x0SalLwzdRwwKwOp3xIuw==",
+              "actual_url": "https://blog.mevx.io/sui/guide-to-deploying-your-first-sui-smart-contract"
+            }
+          ],
+          "start_index": 3462,
+          "end_index": 3497
+        },
+        {
+          "text": "Sui's object model means custom types with `key` and `store` abilities are considered assets",
+          "links": [
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpJUBPOjUXQVThD6dwLKE0wjV4PAmBuwoJ5le2dPo0s9y9TiFQdc6SuWnssxgd71JyEFIHUUHA6lBt-UzuiMtrQH5JrOFsLHH5PzeZFdo3l52_LJn2OP3tsY5UBU5Xrt6KeYGVCm626YUnRBRyvbWcV6ePOuFW8biJJ_j9rBFKrMCJP_KsA1zcVSDwMuJF0N96h4qMfTTD_Q==",
+              "actual_url": "https://medium.com/@andreidev/publish-a-hello-world-smart-contract-on-sui-network-414bb1bac245"
+            },
+            {
+              "title": "movebit.xyz",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWAvjAZdMnNZ7caN1DnyipOG5e8AhBjOBfg5qelhs_pmSQZQfCpG8_oSw3QIX_4MedzFH0L0w7EqhWKMGwaEC0aMoOACMcWzM74mTt_Iln_m-FyVlW_qS3xchPZIR_44fskA2ycnhjFdhaO-_Y-tFKdmP5wMQLp8p-KGoUzlScPiM3SniLEWG1-KTUCpU7Vbreyus=",
+              "actual_url": "https://www.movebit.xyz/blog/post/Sui-Objects-Security-Principles-and-Best-Practices.html"
+            }
+          ],
+          "start_index": 3499,
+          "end_index": 3591
+        },
+        {
+          "text": "**Build the Contract**: Compile the Move code using the Sui CLI command `sui move build`",
+          "links": [
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            }
+          ],
+          "start_index": 3597,
+          "end_index": 3685
+        },
+        {
+          "text": "This step checks for syntax errors and prepares the code for execution",
+          "links": [
+            {
+              "title": "rapidinnovation.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJSaD-lHoSjU7m6X9RKQ3RZt0fCID7rjx5A2CZpylTylYqRtwI-ZPGgxWDTVU8Kw0KZprioJ9wTOkn3aRCsqG5dE6g1koyHdtspfDMEv23QUdZGj3S9QX5WmIFEb_qaEfzW2Mid91gfB54ARxLH7MCj-vXoYcsrw==",
+              "actual_url": "https://www.rapidinnovation.io/post/create-smart-contract-sui"
+            }
+          ],
+          "start_index": 3687,
+          "end_index": 3757
+        },
+        {
+          "text": "**Test the Contract**: Thoroughly test the smart contract in a safe environment like the Sui testnet to identify and fix bugs or vulnerabilities",
+          "links": [
+            {
+              "title": "rapidinnovation.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJSaD-lHoSjU7m6X9RKQ3RZt0fCID7rjx5A2CZpylTylYqRtwI-ZPGgxWDTVU8Kw0KZprioJ9wTOkn3aRCsqG5dE6g1koyHdtspfDMEv23QUdZGj3S9QX5WmIFEb_qaEfzW2Mid91gfB54ARxLH7MCj-vXoYcsrw==",
+              "actual_url": "https://www.rapidinnovation.io/post/create-smart-contract-sui"
+            },
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            },
+            {
+              "title": "antiersolutions.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFD0CPBTRzV6vZ5YWU_0LmKphGRFDK63LEz8HeJnzBqHe-_JAPVmkQHQB4Hnk052YaWK4aQqTRUZpJSCsSykZhkV8_PcFkeLd11-GTD0RCnhWKO2VQYnFq416eS6rXc3UjA5WfrrR4fZcck1YOto3DrHFBmhXJYexXZsixsLY0xGbJvzlT3KCKTbTrNqUAAgSIB6ZkiV6rDMpk-",
+              "actual_url": "https://www.antiersolutions.com/blogs/a-comprehensive-guide-to-building-dapps-on-sui-blockchain/"
+            }
+          ],
+          "start_index": 3763,
+          "end_index": 3907
+        },
+        {
+          "text": "Sui provides extensive testing frameworks",
+          "links": [
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDorpAwNGBQRTtF54MVn4k0BAWVydmrcLTrul_-7_IZf8XE_cgj92eN0EZTj8rcaoCTBJ-HtDfooFODoUzBjAWTK1EpfUdmHQuOqcJWpO62YJVpwDBaaqZaFnhuTlAwJoJNGTbjfo=",
+              "actual_url": "https://blog.sui.io/security-best-practices/"
+            }
+          ],
+          "start_index": 3909,
+          "end_index": 3950
+        },
+        {
+          "text": "**Deploy the Contract**: Once testing is complete, the contract can be deployed to the Sui mainnet (or devnet/testnet) using the Sui CLI command `sui move publish --gas-budget <AMOUNT>`",
+          "links": [
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            },
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpJUBPOjUXQVThD6dwLKE0wjV4PAmBuwoJ5le2dPo0s9y9TiFQdc6SuWnssxgd71JyEFIHUUHA6lBt-UzuiMtrQH5JrOFsLHH5PzeZFdo3l52_LJn2OP3tsY5UBU5Xrt6KeYGVCm626YUnRBRyvbWcV6ePOuFW8biJJ_j9rBFKrMCJP_KsA1zcVSDwMuJF0N96h4qMfTTD_Q==",
+              "actual_url": "https://medium.com/@andreidev/publish-a-hello-world-smart-contract-on-sui-network-414bb1bac245"
+            },
+            {
+              "title": "antiersolutions.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFD0CPBTRzV6vZ5YWU_0LmKphGRFDK63LEz8HeJnzBqHe-_JAPVmkQHQB4Hnk052YaWK4aQqTRUZpJSCsSykZhkV8_PcFkeLd11-GTD0RCnhWKO2VQYnFq416eS6rXc3UjA5WfrrR4fZcck1YOto3DrHFBmhXJYexXZsixsLY0xGbJvzlT3KCKTbTrNqUAAgSIB6ZkiV6rDMpk-",
+              "actual_url": "https://www.antiersolutions.com/blogs/a-comprehensive-guide-to-building-dapps-on-sui-blockchain/"
+            },
+            {
+              "title": "scafsui.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGe6Nld9AQj7RCnZHkHTS-aI9CaoZjYeZRA_8t7KIJkqjRxtKs3HX2Pwmi3DyRlqft2HrixVApyM0Q40f6Ef5bsLWlNQhxmmQhSYVeXPZWMk921asmds9LO-HhnJHs=",
+              "actual_url": "https://scafsui.com/learn/lesson_2/"
+            },
+            {
+              "title": "cleeviox.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUg2OOJZctxsd0j7r_zRZ12ymrnnXJRMSyowBQUl3rAlf0A4Xejl70Kgisn4G5Me5M2UGyXAJFhzLIiw2B9nTquQjvWhxCxRsbg0puXnZrpJHVBq2q3fRnIG_OOhfvxfCbhPyc39DVf1WDMZU5xa61vVIwy6ueQkSeT3rn2bUdoqYExLIcOgjzg6BiU_YTKHkX",
+              "actual_url": "https://www.cleeviox.com/blog/how-to-deploy-an-nft-smart-contract-on-the-sui-blockchain"
+            },
+            {
+              "title": "sui-book.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS9zDiK8OirHOo910hpN4uNFX_Hb96Mt-DAXwPPV1cYvsEhpnXUn_SfDSbuPqEof57NvGxmcABhgpjfsh3paSaWuedJ8g4TPr1tWDmqXtBdN67QRgsOlzzqlCAWKekQXEFf6-VYo3l3M6ygQEA9_bK8lfcUY2OSjwlLl83XJ4z4w==",
+              "actual_url": "https://intro.sui-book.com/unit-one/lessons/5_contract_deployment.html"
+            }
+          ],
+          "start_index": 3956,
+          "end_index": 4141
+        },
+        {
+          "text": "The deployment output will include a `package id` which is the smart contract's object ID",
+          "links": [
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            },
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpJUBPOjUXQVThD6dwLKE0wjV4PAmBuwoJ5le2dPo0s9y9TiFQdc6SuWnssxgd71JyEFIHUUHA6lBt-UzuiMtrQH5JrOFsLHH5PzeZFdo3l52_LJn2OP3tsY5UBU5Xrt6KeYGVCm626YUnRBRyvbWcV6ePOuFW8biJJ_j9rBFKrMCJP_KsA1zcVSDwMuJF0N96h4qMfTTD_Q==",
+              "actual_url": "https://medium.com/@andreidev/publish-a-hello-world-smart-contract-on-sui-network-414bb1bac245"
+            },
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEC-bSE9GADU_oXOsRhCTok2xYi8x2BcLNWC4Vl_q6tC_6ukoTfsIwy_iip2nksdw4_Nm_iV3x6Jdf406irdUGsDLzWNS834J0-lrPbcshciP4LXJ9KglcyEyw0AimPYWcM3CoTsxWGa_WxKZS0IeWAl3voAXKcPS_x2vVCEJ2Eo6ZS2fHwfjWn5Dwz96_mIg==",
+              "actual_url": "https://medium.com/@ultrasoundchad/smart-contracts-on-the-sui-blockchain-2e4608028bf7"
+            },
+            {
+              "title": "sui-book.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS9zDiK8OirHOo910hpN4uNFX_Hb96Mt-DAXwPPV1cYvsEhpnXUn_SfDSbuPqEof57NvGxmcABhgpjfsh3paSaWuedJ8g4TPr1tWDmqXtBdN67QRgsOlzzqlCAWKekQXEFf6-VYo3l3M6ygQEA9_bK8lfcUY2OSjwlLl83XJ4z4w==",
+              "actual_url": "https://intro.sui-book.com/unit-one/lessons/5_contract_deployment.html"
+            }
+          ],
+          "start_index": 4143,
+          "end_index": 4232
+        },
+        {
+          "text": "**Interact with the Contract**: After deployment, users and dApps can interact with the smart contract using Sui's APIs or SDKs (e.g., Sui JS for web/mobile applications)",
+          "links": [
+            {
+              "title": "rapidinnovation.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJSaD-lHoSjU7m6X9RKQ3RZt0fCID7rjx5A2CZpylTylYqRtwI-ZPGgxWDTVU8Kw0KZprioJ9wTOkn3aRCsqG5dE6g1koyHdtspfDMEv23QUdZGj3S9QX5WmIFEb_qaEfzW2Mid91gfB54ARxLH7MCj-vXoYcsrw==",
+              "actual_url": "https://www.rapidinnovation.io/post/create-smart-contract-sui"
+            },
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            },
+            {
+              "title": "antiersolutions.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFD0CPBTRzV6vZ5YWU_0LmKphGRFDK63LEz8HeJnzBqHe-_JAPVmkQHQB4Hnk052YaWK4aQqTRUZpJSCsSykZhkV8_PcFkeLd11-GTD0RCnhWKO2VQYnFq416eS6rXc3UjA5WfrrR4fZcck1YOto3DrHFBmhXJYexXZsixsLY0xGbJvzlT3KCKTbTrNqUAAgSIB6ZkiV6rDMpk-",
+              "actual_url": "https://www.antiersolutions.com/blogs/a-comprehensive-guide-to-building-dapps-on-sui-blockchain/"
+            }
+          ],
+          "start_index": 4238,
+          "end_index": 4408
+        },
+        {
+          "text": "While Move is designed for security, developers should adhere to best practices to further enhance contract safety:\n*   **Clear Naming Conventions and Documentation**: Use clear naming conventions for code readability and thoroughly document modules",
+          "links": [
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu-jRFJWTF7qSVTSonnsDCecMQum_YYVo2dKUkOOPKS19cvNg6w0Gk1tcYLGamQ327npnhHGs2K3lidg2JkddytBlpAEr3LBYb4Tnv4RkOmv9piGj4uQkaf2MkdN2QN-1XFfeRKpdw8v2xCL5ov1zxVORfTw==",
+              "actual_url": "https://docs.sui.io/concepts/sui-move-concepts/conventions"
+            },
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            }
+          ],
+          "start_index": 4459,
+          "end_index": 4708
+        },
+        {
+          "text": "*   **Module Design**: Design modules around a single object or data structure to avoid complexity and bugs",
+          "links": [
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu-jRFJWTF7qSVTSonnsDCecMQum_YYVo2dKUkOOPKS19cvNg6w0Gk1tcYLGamQ327npnhHGs2K3lidg2JkddytBlpAEr3LBYb4Tnv4RkOmv9piGj4uQkaf2MkdN2QN-1XFfeRKpdw8v2xCL5ov1zxVORfTw==",
+              "actual_url": "https://docs.sui.io/concepts/sui-move-concepts/conventions"
+            }
+          ],
+          "start_index": 4710,
+          "end_index": 4817
+        },
+        {
+          "text": "*   **Function Organization**: Structure code with comments, organize functions by purpose, and use explicit names (e.g., `admin_set_fees`)",
+          "links": [
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu-jRFJWTF7qSVTSonnsDCecMQum_YYVo2dKUkOOPKS19cvNg6w0Gk1tcYLGamQ327npnhHGs2K3lidg2JkddytBlpAEr3LBYb4Tnv4RkOmv9piGj4uQkaf2MkdN2QN-1XFfeRKpdw8v2xCL5ov1zxVORfTw==",
+              "actual_url": "https://docs.sui.io/concepts/sui-move-concepts/conventions"
+            }
+          ],
+          "start_index": 4819,
+          "end_index": 4958
+        },
+        {
+          "text": "`init` functions should be the first in a module",
+          "links": [
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu-jRFJWTF7qSVTSonnsDCecMQum_YYVo2dKUkOOPKS19cvNg6w0Gk1tcYLGamQ327npnhHGs2K3lidg2JkddytBlpAEr3LBYb4Tnv4RkOmv9piGj4uQkaf2MkdN2QN-1XFfeRKpdw8v2xCL5ov1zxVORfTw==",
+              "actual_url": "https://docs.sui.io/concepts/sui-move-concepts/conventions"
+            }
+          ],
+          "start_index": 4960,
+          "end_index": 5008
+        },
+        {
+          "text": "*   **Resource Management**: Understand Move's ownership rules; every object must be explicitly transferred, shared, or destroyed",
+          "links": [
+            {
+              "title": "movebit.xyz",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWAvjAZdMnNZ7caN1DnyipOG5e8AhBjOBfg5qelhs_pmSQZQfCpG8_oSw3QIX_4MedzFH0L0w7EqhWKMGwaEC0aMoOACMcWzM74mTt_Iln_m-FyVlW_qS3xchPZIR_44fskA2ycnhjFdhaO-_Y-tFKdmP5wMQLp8p-KGoUzlScPiM3SniLEWG1-KTUCpU7Vbreyus=",
+              "actual_url": "https://www.movebit.xyz/blog/post/Sui-Objects-Security-Principles-and-Best-Practices.html"
+            }
+          ],
+          "start_index": 5010,
+          "end_index": 5139
+        },
+        {
+          "text": "*   **Limit Shared Object Usage**: Shared objects can be slower than owned objects, and converting a private object to a shared one can pose a security risk if not handled carefully",
+          "links": [
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            },
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLMc7_NcbjwMdsNRk3PGuoDVHGWNj-ijQoSNZRNwkvmlXsjUHZRleN5CRR2VuUKlaQESYnh09jgsSTW4djYpSNiMsroG34OGDBjmy65lC0UCN7C8oCVrJpmELhNAEN29GKHn7rscCQ06Jw2gEmXaMIcWeiih6TODHG5Nyc25Ny9S-kHPVO05zhitxLKhl31I2wtXfjOnoAcqKUfgtgEQUhmPVdYs26Ed4x1y0XRQ==",
+              "actual_url": "https://slowmist.medium.com/exploring-sui-the-technology-behind-high-performance-and-contract-security-9ef60c5a2c11"
+            },
+            {
+              "title": "movebit.xyz",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWAvjAZdMnNZ7caN1DnyipOG5e8AhBjOBfg5qelhs_pmSQZQfCpG8_oSw3QIX_4MedzFH0L0w7EqhWKMGwaEC0aMoOACMcWzM74mTt_Iln_m-FyVlW_qS3xchPZIR_44fskA2ycnhjFdhaO-_Y-tFKdmP5wMQLp8p-KGoUzlScPiM3SniLEWG1-KTUCpU7Vbreyus=",
+              "actual_url": "https://www.movebit.xyz/blog/post/Sui-Objects-Security-Principles-and-Best-Practices.html"
+            },
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8IGTdcsVKtIqPEf82BfaRh9Pw2o3zBcMsTra8C9siIOdgm3X56i0Z_SoDcQKFaQ8_pxfq-a3qI_8LnqrmC5iEinYmyO37c0e9Wdd_6MwSh6bE-LAw8UR9e6KuF5n8EnyyvmHUQTzdEU_WddhaMAy2DvK44I9eEK4ohecVVrmG2_L5k5oDiF8xK8Hb0ERYNChZNuI8hQCs",
+              "actual_url": "https://slowmist.medium.com/slowmist-introduction-to-auditing-sui-move-contracts-da005149f6bc"
+            }
+          ],
+          "start_index": 5141,
+          "end_index": 5322
+        },
+        {
+          "text": "*   **Emit Events**: Emit events for state changes to aid off-chain indexing",
+          "links": [
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            }
+          ],
+          "start_index": 5324,
+          "end_index": 5400
+        },
+        {
+          "text": "*   **Thorough Testing**: Even with Move's compiler catching many issues, logic bugs can occur, so comprehensive testing (unit, integration, property-based) is crucial",
+          "links": [
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDorpAwNGBQRTtF54MVn4k0BAWVydmrcLTrul_-7_IZf8XE_cgj92eN0EZTj8rcaoCTBJ-HtDfooFODoUzBjAWTK1EpfUdmHQuOqcJWpO62YJVpwDBaaqZaFnhuTlAwJoJNGTbjfo=",
+              "actual_url": "https://blog.sui.io/security-best-practices/"
+            },
+            {
+              "title": "movebit.xyz",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWAvjAZdMnNZ7caN1DnyipOG5e8AhBjOBfg5qelhs_pmSQZQfCpG8_oSw3QIX_4MedzFH0L0w7EqhWKMGwaEC0aMoOACMcWzM74mTt_Iln_m-FyVlW_qS3xchPZIR_44fskA2ycnhjFdhaO-_Y-tFKdmP5wMQLp8p-KGoUzlScPiM3SniLEWG1-KTUCpU7Vbreyus=",
+              "actual_url": "https://www.movebit.xyz/blog/post/Sui-Objects-Security-Principles-and-Best-Practices.html"
+            }
+          ],
+          "start_index": 5402,
+          "end_index": 5569
+        },
+        {
+          "text": "*   **Permission Checks**: Implement robust permission checks for privileged functions and external function exposures, ensuring that only authorized objects are involved",
+          "links": [
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLMc7_NcbjwMdsNRk3PGuoDVHGWNj-ijQoSNZRNwkvmlXsjUHZRleN5CRR2VuUKlaQESYnh09jgsSTW4djYpSNiMsroG34OGDBjmy65lC0UCN7C8oCVrJpmELhNAEN29GKHn7rscCQ06Jw2gEmXaMIcWeiih6TODHG5Nyc25Ny9S-kHPVO05zhitxLKhl31I2wtXfjOnoAcqKUfgtgEQUhmPVdYs26Ed4x1y0XRQ==",
+              "actual_url": "https://slowmist.medium.com/exploring-sui-the-technology-behind-high-performance-and-contract-security-9ef60c5a2c11"
+            },
+            {
+              "title": "movebit.xyz",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWAvjAZdMnNZ7caN1DnyipOG5e8AhBjOBfg5qelhs_pmSQZQfCpG8_oSw3QIX_4MedzFH0L0w7EqhWKMGwaEC0aMoOACMcWzM74mTt_Iln_m-FyVlW_qS3xchPZIR_44fskA2ycnhjFdhaO-_Y-tFKdmP5wMQLp8p-KGoUzlScPiM3SniLEWG1-KTUCpU7Vbreyus=",
+              "actual_url": "https://www.movebit.xyz/blog/post/Sui-Objects-Security-Principles-and-Best-Practices.html"
+            }
+          ],
+          "start_index": 5571,
+          "end_index": 5741
+        },
+        {
+          "text": "*   **Separate Credentials**: Use different addresses and credentials for Devnet, Testnet, and Mainnet to prevent inadvertent access to valuable assets",
+          "links": [
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDorpAwNGBQRTtF54MVn4k0BAWVydmrcLTrul_-7_IZf8XE_cgj92eN0EZTj8rcaoCTBJ-HtDfooFODoUzBjAWTK1EpfUdmHQuOqcJWpO62YJVpwDBaaqZaFnhuTlAwJoJNGTbjfo=",
+              "actual_url": "https://blog.sui.io/security-best-practices/"
+            },
+            {
+              "title": "suipiens.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5DMc_DGPCp365noy7ytOHUcHlpGU1K0rpQ0jN4pWXwJFN_-NMzGpkiCt2J7RoCYV2F4-CNV_mVjz8LZz33uSOqJqR4QCyi9Msy5o3egOhXPCsVMEMlbRaZl-Qu_Is6upDosA15Qqq7pOopUMED1_1Ju3Ndi8dTIZRssVPS21xMzxHIYiJwxoYr6HsYl9luJU4Xw==",
+              "actual_url": "https://suipiens.com/blog/enhancing-security-measures-when-developing-on-sui-blockchain/"
+            }
+          ],
+          "start_index": 5743,
+          "end_index": 5894
+        },
+        {
+          "text": "Generate keys programmatically",
+          "links": [
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDorpAwNGBQRTtF54MVn4k0BAWVydmrcLTrul_-7_IZf8XE_cgj92eN0EZTj8rcaoCTBJ-HtDfooFODoUzBjAWTK1EpfUdmHQuOqcJWpO62YJVpwDBaaqZaFnhuTlAwJoJNGTbjfo=",
+              "actual_url": "https://blog.sui.io/security-best-practices/"
+            },
+            {
+              "title": "suipiens.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5DMc_DGPCp365noy7ytOHUcHlpGU1K0rpQ0jN4pWXwJFN_-NMzGpkiCt2J7RoCYV2F4-CNV_mVjz8LZz33uSOqJqR4QCyi9Msy5o3egOhXPCsVMEMlbRaZl-Qu_Is6upDosA15Qqq7pOopUMED1_1Ju3Ndi8dTIZRssVPS21xMzxHIYiJwxoYr6HsYl9luJU4Xw==",
+              "actual_url": "https://suipiens.com/blog/enhancing-security-measures-when-developing-on-sui-blockchain/"
+            }
+          ],
+          "start_index": 5998,
+          "end_index": 6028
+        },
+        {
+          "text": "*   **Dual Asserts**: Assert important conditions in both on-chain smart contract code and off-chain UI code to prevent bypasses and exploits",
+          "links": [
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDorpAwNGBQRTtF54MVn4k0BAWVydmrcLTrul_-7_IZf8XE_cgj92eN0EZTj8rcaoCTBJ-HtDfooFODoUzBjAWTK1EpfUdmHQuOqcJWpO62YJVpwDBaaqZaFnhuTlAwJoJNGTbjfo=",
+              "actual_url": "https://blog.sui.io/security-best-practices/"
+            },
+            {
+              "title": "suipiens.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5DMc_DGPCp365noy7ytOHUcHlpGU1K0rpQ0jN4pWXwJFN_-NMzGpkiCt2J7RoCYV2F4-CNV_mVjz8LZz33uSOqJqR4QCyi9Msy5o3egOhXPCsVMEMlbRaZl-Qu_Is6upDosA15Qqq7pOopUMED1_1Ju3Ndi8dTIZRssVPS21xMzxHIYiJwxoYr6HsYl9luJU4Xw==",
+              "actual_url": "https://suipiens.com/blog/enhancing-security-measures-when-developing-on-sui-blockchain/"
+            }
+          ],
+          "start_index": 6030,
+          "end_index": 6171
+        },
+        {
+          "text": "*   **Avoid Object IDs for Randomness**: Object IDs are not suitable sources of randomness or entropy for applications like lotteries or cryptography",
+          "links": [
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDorpAwNGBQRTtF54MVn4k0BAWVydmrcLTrul_-7_IZf8XE_cgj92eN0EZTj8rcaoCTBJ-HtDfooFODoUzBjAWTK1EpfUdmHQuOqcJWpO62YJVpwDBaaqZaFnhuTlAwJoJNGTbjfo=",
+              "actual_url": "https://blog.sui.io/security-best-practices/"
+            },
+            {
+              "title": "suipiens.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5DMc_DGPCp365noy7ytOHUcHlpGU1K0rpQ0jN4pWXwJFN_-NMzGpkiCt2J7RoCYV2F4-CNV_mVjz8LZz33uSOqJqR4QCyi9Msy5o3egOhXPCsVMEMlbRaZl-Qu_Is6upDosA15Qqq7pOopUMED1_1Ju3Ndi8dTIZRssVPS21xMzxHIYiJwxoYr6HsYl9luJU4Xw==",
+              "actual_url": "https://suipiens.com/blog/enhancing-security-measures-when-developing-on-sui-blockchain/"
+            }
+          ],
+          "start_index": 6173,
+          "end_index": 6322
+        },
+        {
+          "text": "*   **Oracle Price Manipulation**: For contracts using oracles, mitigate price manipulation risks by incorporating multiple data sources, consensus mechanisms, and time-weighted average prices",
+          "links": [
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLMc7_NcbjwMdsNRk3PGuoDVHGWNj-ijQoSNZRNwkvmlXsjUHZRleN5CRR2VuUKlaQESYnh09jgsSTW4djYpSNiMsroG34OGDBjmy65lC0UCN7C8oCVrJpmELhNAEN29GKHn7rscCQ06Jw2gEmXaMIcWeiih6TODHG5Nyc25Ny9S-kHPVO05zhitxLKhl31I2wtXfjOnoAcqKUfgtgEQUhmPVdYs26Ed4x1y0XRQ==",
+              "actual_url": "https://slowmist.medium.com/exploring-sui-the-technology-behind-high-performance-and-contract-security-9ef60c5a2c11"
+            }
+          ],
+          "start_index": 6324,
+          "end_index": 6516
+        },
+        {
+          "text": "*   **Governance and Arbitrage Attacks**: Carefully design governance token voting rights and review DeFi contract logic to prevent potential governance and arbitrage attacks",
+          "links": [
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLMc7_NcbjwMdsNRk3PGuoDVHGWNj-ijQoSNZRNwkvmlXsjUHZRleN5CRR2VuUKlaQESYnh09jgsSTW4djYpSNiMsroG34OGDBjmy65lC0UCN7C8oCVrJpmELhNAEN29GKHn7rscCQ06Jw2gEmXaMIcWeiih6TODHG5Nyc25Ny9S-kHPVO05zhitxLKhl31I2wtXfjOnoAcqKUfgtgEQUhmPVdYs26Ed4x1y0XRQ==",
+              "actual_url": "https://slowmist.medium.com/exploring-sui-the-technology-behind-high-performance-and-contract-security-9ef60c5a2c11"
+            }
+          ],
+          "start_index": 6518,
+          "end_index": 6692
+        },
+        {
+          "text": "*   **Security Audits**: Regular security audits by specialized firms like MoveBit are essential, as Move, while secure, does not eliminate all risks of developer errors",
+          "links": [
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLMc7_NcbjwMdsNRk3PGuoDVHGWNj-ijQoSNZRNwkvmlXsjUHZRleN5CRR2VuUKlaQESYnh09jgsSTW4djYpSNiMsroG34OGDBjmy65lC0UCN7C8oCVrJpmELhNAEN29GKHn7rscCQ06Jw2gEmXaMIcWeiih6TODHG5Nyc25Ny9S-kHPVO05zhitxLKhl31I2wtXfjOnoAcqKUfgtgEQUhmPVdYs26Ed4x1y0XRQ==",
+              "actual_url": "https://slowmist.medium.com/exploring-sui-the-technology-behind-high-performance-and-contract-security-9ef60c5a2c11"
+            },
+            {
+              "title": "movebit.xyz",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWAvjAZdMnNZ7caN1DnyipOG5e8AhBjOBfg5qelhs_pmSQZQfCpG8_oSw3QIX_4MedzFH0L0w7EqhWKMGwaEC0aMoOACMcWzM74mTt_Iln_m-FyVlW_qS3xchPZIR_44fskA2ycnhjFdhaO-_Y-tFKdmP5wMQLp8p-KGoUzlScPiM3SniLEWG1-KTUCpU7Vbreyus=",
+              "actual_url": "https://www.movebit.xyz/blog/post/Sui-Objects-Security-Principles-and-Best-Practices.html"
+            },
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8IGTdcsVKtIqPEf82BfaRh9Pw2o3zBcMsTra8C9siIOdgm3X56i0Z_SoDcQKFaQ8_pxfq-a3qI_8LnqrmC5iEinYmyO37c0e9Wdd_6MwSh6bE-LAw8UR9e6KuF5n8EnyyvmHUQTzdEU_WddhaMAy2DvK44I9eEK4ohecVVrmG2_L5k5oDiF8xK8Hb0ERYNChZNuI8hQCs",
+              "actual_url": "https://slowmist.medium.com/slowmist-introduction-to-auditing-sui-move-contracts-da005149f6bc"
+            }
+          ],
+          "start_index": 6694,
+          "end_index": 6863
+        },
+        {
+          "text": "Sui offers a range of tools and SDKs to facilitate development:\n*   **Sui CLI**: Command-line interface for publishing smart contracts and data retrieval",
+          "links": [
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRtKez02jR2-v-jvghW6NgcS4cbDhX7tkTGWC_3YeB-jGWwXZv1eyrjkBleH9oTbfaBuEDJRisNBg2LaTCXQ1qdIZ3O39sz-BY1vY-f3m7PC2sLV_-rYqSY7okH26oRoRk",
+              "actual_url": "https://docs.sui.io/references/sui-move"
+            }
+          ],
+          "start_index": 6898,
+          "end_index": 7051
+        },
+        {
+          "text": "*   **Sui SDK**: A software development kit offering tools and libraries for various tasks, supporting different languages and frameworks",
+          "links": [
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUPaGIO_cWX1BT412a8Oo_FooerUF3nUX_1qSUF7IwzUlqwjuoPEfErhveN2tA-boOXtYLE_nRqj3e8yFQ-37vGMVUmAs0-B_P_NKvACMypz8vRm2go0Hh2jviUZU690DSLIxh1lu6mm1rrs_4RA==",
+              "actual_url": "https://docs.sui.io/guides/developer/getting-started"
+            }
+          ],
+          "start_index": 7053,
+          "end_index": 7190
+        },
+        {
+          "text": "*   **Sui VSCode Extension**: A Visual Studio Code extension for editing, debugging, compiling, running, and testing Move code",
+          "links": [
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            }
+          ],
+          "start_index": 7192,
+          "end_index": 7318
+        },
+        {
+          "text": "*   **Sui JS SDK**: A JavaScript library for interacting with the Sui network and smart contracts from web or mobile applications",
+          "links": [
+            {
+              "title": "peera.ai",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGE-tbb-3ZM4QzqSAI9H3fxZw8u5PqRct6lf0DlLziMBiJVJXcmK_JkZGzGzqH5OJTNf0Hj_USSqjXA4GmyJR9s4fL7jOPcQiXlYLYe6HBlZ8hZN7u301tKVAhMNW34fTtFbzwyMpL22UpgQhP7iTHW8VkAeUmoB17SzpOS6znZ_-xusCHHagQ_mggPzkEpoKt4ufdvIqvetC71AN49MxZsEa0i_V5YAvMpSf7LpKFjVAShGutFeU2mz51Lr33wLwNPkWZGB3wmFxDLUHh__lTvibXEKZT8yI_xvbRlxnRd5VEA31WOLxbT",
+              "actual_url": "https://move.peera.ai/experts/3-0xda9a690acc13d2c182953db40acd819b1a343a40a4b7f1a4489b325e752a05e4/mastering-move-on-sui-network-the-complete-guide-for-beginners-and-builders"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRtKez02jR2-v-jvghW6NgcS4cbDhX7tkTGWC_3YeB-jGWwXZv1eyrjkBleH9oTbfaBuEDJRisNBg2LaTCXQ1qdIZ3O39sz-BY1vY-f3m7PC2sLV_-rYqSY7okH26oRoRk",
+              "actual_url": "https://docs.sui.io/references/sui-move"
+            }
+          ],
+          "start_index": 7320,
+          "end_index": 7449
+        },
+        {
+          "text": "*   **Sui Rust SDK**: A Rust JSON-RPC wrapper and crypto utilities",
+          "links": [
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUPaGIO_cWX1BT412a8Oo_FooerUF3nUX_1qSUF7IwzUlqwjuoPEfErhveN2tA-boOXtYLE_nRqj3e8yFQ-37vGMVUmAs0-B_P_NKvACMypz8vRm2go0Hh2jviUZU690DSLIxh1lu6mm1rrs_4RA==",
+              "actual_url": "https://docs.sui.io/guides/developer/getting-started"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRtKez02jR2-v-jvghW6NgcS4cbDhX7tkTGWC_3YeB-jGWwXZv1eyrjkBleH9oTbfaBuEDJRisNBg2LaTCXQ1qdIZ3O39sz-BY1vY-f3m7PC2sLV_-rYqSY7okH26oRoRk",
+              "actual_url": "https://docs.sui.io/references/sui-move"
+            }
+          ],
+          "start_index": 7451,
+          "end_index": 7517
+        },
+        {
+          "text": "*   **SuiKit**: A Swift SDK for iOS development",
+          "links": [
+            {
+              "title": "suipiens.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5DMc_DGPCp365noy7ytOHUcHlpGU1K0rpQ0jN4pWXwJFN_-NMzGpkiCt2J7RoCYV2F4-CNV_mVjz8LZz33uSOqJqR4QCyi9Msy5o3egOhXPCsVMEMlbRaZl-Qu_Is6upDosA15Qqq7pOopUMED1_1Ju3Ndi8dTIZRssVPS21xMzxHIYiJwxoYr6HsYl9luJU4Xw==",
+              "actual_url": "https://suipiens.com/blog/enhancing-security-measures-when-developing-on-sui-blockchain/"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRtKez02jR2-v-jvghW6NgcS4cbDhX7tkTGWC_3YeB-jGWwXZv1eyrjkBleH9oTbfaBuEDJRisNBg2LaTCXQ1qdIZ3O39sz-BY1vY-f3m7PC2sLV_-rYqSY7okH26oRoRk",
+              "actual_url": "https://docs.sui.io/references/sui-move"
+            }
+          ],
+          "start_index": 7519,
+          "end_index": 7566
+        },
+        {
+          "text": "*   **Dart SDK**: Enables developers to build Sui applications for web, mobile, and desktop",
+          "links": [
+            {
+              "title": "suipiens.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5DMc_DGPCp365noy7ytOHUcHlpGU1K0rpQ0jN4pWXwJFN_-NMzGpkiCt2J7RoCYV2F4-CNV_mVjz8LZz33uSOqJqR4QCyi9Msy5o3egOhXPCsVMEMlbRaZl-Qu_Is6upDosA15Qqq7pOopUMED1_1Ju3Ndi8dTIZRssVPS21xMzxHIYiJwxoYr6HsYl9luJU4Xw==",
+              "actual_url": "https://suipiens.com/blog/enhancing-security-measures-when-developing-on-sui-blockchain/"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRtKez02jR2-v-jvghW6NgcS4cbDhX7tkTGWC_3YeB-jGWwXZv1eyrjkBleH9oTbfaBuEDJRisNBg2LaTCXQ1qdIZ3O39sz-BY1vY-f3m7PC2sLV_-rYqSY7okH26oRoRk",
+              "actual_url": "https://docs.sui.io/references/sui-move"
+            }
+          ],
+          "start_index": 7568,
+          "end_index": 7659
+        },
+        {
+          "text": "*   **BitsLab IDE**: An online Move code editor with syntax highlighting and Sui interaction support",
+          "links": [
+            {
+              "title": "suipiens.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5DMc_DGPCp365noy7ytOHUcHlpGU1K0rpQ0jN4pWXwJFN_-NMzGpkiCt2J7RoCYV2F4-CNV_mVjz8LZz33uSOqJqR4QCyi9Msy5o3egOhXPCsVMEMlbRaZl-Qu_Is6upDosA15Qqq7pOopUMED1_1Ju3Ndi8dTIZRssVPS21xMzxHIYiJwxoYr6HsYl9luJU4Xw==",
+              "actual_url": "https://suipiens.com/blog/enhancing-security-measures-when-developing-on-sui-blockchain/"
+            },
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRtKez02jR2-v-jvghW6NgcS4cbDhX7tkTGWC_3YeB-jGWwXZv1eyrjkBleH9oTbfaBuEDJRisNBg2LaTCXQ1qdIZ3O39sz-BY1vY-f3m7PC2sLV_-rYqSY7okH26oRoRk",
+              "actual_url": "https://docs.sui.io/references/sui-move"
+            }
+          ],
+          "start_index": 7661,
+          "end_index": 7761
+        },
+        {
+          "text": "*   **Sui Explorer**: A tool to view objects and transactions on the Sui network",
+          "links": [
+            {
+              "title": "medium.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpJUBPOjUXQVThD6dwLKE0wjV4PAmBuwoJ5le2dPo0s9y9TiFQdc6SuWnssxgd71JyEFIHUUHA6lBt-UzuiMtrQH5JrOFsLHH5PzeZFdo3l52_LJn2OP3tsY5UBU5Xrt6KeYGVCm626YUnRBRyvbWcV6ePOuFW8biJJ_j9rBFKrMCJP_KsA1zcVSDwMuJF0N96h4qMfTTD_Q==",
+              "actual_url": "https://medium.com/@andreidev/publish-a-hello-world-smart-contract-on-sui-network-414bb1bac245"
+            },
+            {
+              "title": "cleeviox.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUg2OOJZctxsd0j7r_zRZ12ymrnnXJRMSyowBQUl3rAlf0A4Xejl70Kgisn4G5Me5M2UGyXAJFhzLIiw2B9nTquQjvWhxCxRsbg0puXnZrpJHVBq2q3fRnIG_OOhfvxfCbhPyc39DVf1WDMZU5xa61vVIwy6ueQkSeT3rn2bUdoqYExLIcOgjzg6BiU_YTKHkX",
+              "actual_url": "https://www.cleeviox.com/blog/how-to-deploy-an-nft-smart-contract-on-the-sui-blockchain"
+            },
+            {
+              "title": "sui-book.com",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS9zDiK8OirHOo910hpN4uNFX_Hb96Mt-DAXwPPV1cYvsEhpnXUn_SfDSbuPqEof57NvGxmcABhgpjfsh3paSaWuedJ8g4TPr1tWDmqXtBdN67QRgsOlzzqlCAWKekQXEFf6-VYo3l3M6ygQEA9_bK8lfcUY2OSjwlLl83XJ4z4w==",
+              "actual_url": "https://intro.sui-book.com/unit-one/lessons/5_contract_deployment.html"
+            }
+          ],
+          "start_index": 7763,
+          "end_index": 7843
+        },
+        {
+          "text": "*   **Move Analyzer and Move Trace Debugger**: Tools for code analysis and debugging",
+          "links": [
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRtKez02jR2-v-jvghW6NgcS4cbDhX7tkTGWC_3YeB-jGWwXZv1eyrjkBleH9oTbfaBuEDJRisNBg2LaTCXQ1qdIZ3O39sz-BY1vY-f3m7PC2sLV_-rYqSY7okH26oRoRk",
+              "actual_url": "https://docs.sui.io/references/sui-move"
+            }
+          ],
+          "start_index": 7845,
+          "end_index": 7929
+        },
+        {
+          "text": "Sui aims to be an accessible smart contract platform, providing developers with a robust ecosystem to build innovative dApps in Web3",
+          "links": [
+            {
+              "title": "sui.io",
+              "redirect_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUPaGIO_cWX1BT412a8Oo_FooerUF3nUX_1qSUF7IwzUlqwjuoPEfErhveN2tA-boOXtYLE_nRqj3e8yFQ-37vGMVUmAs0-B_P_NKvACMypz8vRm2go0Hh2jviUZU690DSLIxh1lu6mm1rrs_4RA==",
+              "actual_url": "https://docs.sui.io/guides/developer/getting-started"
+            }
+          ],
+          "start_index": 7932,
+          "end_index": 8064
         }
       ],
       "has_grounding": true
