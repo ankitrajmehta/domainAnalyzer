@@ -20,6 +20,7 @@ class QueryResponse(BaseModel):
 # Configuration
 DEFAULT_URL = "https://ibriz.ai/" #content is extracted and queries are generated based on this
 NUM_OF_QUERIES = 3
+DIRECT_QUERIES_PERCENTAGE = 0.2  # % of queries should be direct
 
 async def crawl_website(url: str) -> Optional[dict]:
     """
@@ -44,21 +45,26 @@ async def crawl_website(url: str) -> Optional[dict]:
         print(f"Error: Crawling failed - {e}")
         return None
 
-def get_prompt(clean_text: str, num_queries: int = NUM_OF_QUERIES) -> str:
+def get_prompt(clean_text: str, num_queries: int = NUM_OF_QUERIES, direct_queries_percentage: float = 0.2) -> str:
     """
     Generate a prompt for structured query generation with type classification.
     
     Args:
         clean_text: The cleaned text content from the website
         num_queries: Number of queries to generate
+        direct_queries_percentage: Percentage of queries that should be Direct (0.0 to 1.0)
         
     Returns:
         The formatted prompt string
     """
     
+    # Calculate the number of direct and generic queries based on percentage
+    direct_count = max(1, round(num_queries * direct_queries_percentage))
+    generic_count = num_queries - direct_count
+    
     prompt = f"""You are an expert query generator specializing in creating diverse, realistic search queries with type classification.
 
-Your task is to analyze the provided website content and generate relevant queries that real users might search for when looking for information related to this content.
+Your task is to analyze the provided website content and generate relevant queries that real users might ask an LLM or chatbot when looking for information related to this content.
 
 CONTENT TO ANALYZE:
 ```
@@ -66,17 +72,23 @@ CONTENT TO ANALYZE:
 ```
 
 QUERY GENERATION REQUIREMENTS:
-1. Generate {num_queries} diverse queries covering different aspects of the content
-2. Include queries about:
+1. Generate EXACTLY {num_queries} diverse queries covering different aspects of the content
+2. QUERY DISTRIBUTION REQUIREMENT:
+   - Generate EXACTLY {direct_count} "Direct" queries (approximately {direct_queries_percentage*100:.0f}% of total)
+   - Generate EXACTLY {generic_count} "Generic" queries (approximately {(1-direct_queries_percentage)*100:.0f}% of total)
+   
+3. Include queries about:
    - Main topics and themes mentioned
    - Specific services, products, or offerings
    - Industry trends and related concepts
+   - Generic queries related to the content
+   - Questions about specific features, technologies, science, or methodologies mentioned
    - Company/brand name variations (if applicable)
    - Problem-solving queries users might have
    - Comparison queries with competitors
    - How-to and informational queries
 
-3. For each query, classify it as either:
+4. For each query, classify it as either:
    - "Direct": Query explicitly mentions the SPECIFIC company/brand name that OWNS this website (the entity whose website you're analyzing)
    - "Generic": Query discusses general concepts, technologies, industry topics, or even specific products WITHOUT mentioning the website owner's company/brand name
 
@@ -84,7 +96,9 @@ CRITICAL CLASSIFICATION RULES:
 - "Direct" queries MUST mention the actual company/brand that owns this website
 - Just mentioning a product category, technology, or service is NOT Direct - it's Generic
 - Only queries that include the website owner's specific company/brand name are Direct
+- Queries mentioning competitors or alternative solutions are Generic, unless the query specifically mentions the company/brand that owns this website, in which case its Direct
 - When in doubt, classify as Generic
+- IMPORTANT: You must generate EXACTLY {direct_count} Direct queries and {generic_count} Generic queries
 
 EXAMPLES:
 - If analyzing the iBriz.ai website:
@@ -95,8 +109,8 @@ EXAMPLES:
   * "OpenAI GPT models" → Generic (mentions different company, not the website owner)
   * "Enterprise AI solutions" → Generic (general product category)
 
-4. Make queries natural and varied in length (2-8 words typically)
-5. Use different question formats (what, how, why, where, best, etc.)
+5. Make queries natural, like what a user may ask an AI chatbot (like Gemini or Chatgpt), and varied in length (5-25 words typically)
+6. Use different question formats (what, how, why, where, best, etc.)
 
 CRITICAL OUTPUT FORMAT:
 Return ONLY a valid JSON object in this exact structure:
@@ -136,13 +150,14 @@ def get_fallback_queries(num_queries: int = 3) -> List[Dict[str, Any]]:
     # Return the requested number of queries (up to available)
     return fallback_queries[:min(num_queries, len(fallback_queries))]
 
-async def generate_queries_from_url(url: str, num_queries: int = NUM_OF_QUERIES) -> List[Dict[str, Any]]:
+async def generate_queries_from_url(url: str, num_queries: int = NUM_OF_QUERIES, direct_queries_percentage: float = 0.1) -> List[Dict[str, Any]]:
     """
     Main function to crawl a URL and generate structured queries from its content.
     
     Args:
         url: The URL to crawl and analyze
         num_queries: Number of queries to generate
+        direct_queries_percentage: Percentage of queries that should be Direct (0.0 to 1.0)
         
     Returns:
         List of query dictionaries with 'query' and 'type' fields
@@ -160,7 +175,7 @@ async def generate_queries_from_url(url: str, num_queries: int = NUM_OF_QUERIES)
         print(f"Error: Failed to initialize Gemini client - {e}")
         return []
     
-    prompt = get_prompt(crawled_data["clean_text"], num_queries)
+    prompt = get_prompt(crawled_data["clean_text"], num_queries, direct_queries_percentage)
     
     # Try structured output generation with retries
     max_retries = 3
@@ -452,7 +467,7 @@ if __name__ == "__main__":
     
     # Run query generation
     try:
-        queries = asyncio.run(generate_queries_from_url(url))
+        queries = asyncio.run(generate_queries_from_url(url, NUM_OF_QUERIES, DIRECT_QUERIES_PERCENTAGE))
         print(f"\nGenerated {len(queries)} queries:")
         for i, query_obj in enumerate(queries, 1):
             print(f"{i}. [{query_obj['type']}] {query_obj['query']}")

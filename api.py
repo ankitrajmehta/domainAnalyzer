@@ -133,6 +133,13 @@ def get_aggregate_results():
         "status": "complete",
         "url": "analyzed_url",
         "queries": ["query1", "query2", ...],
+        "queries_structured": [
+            {
+                "query": "query text",
+                "type": "Direct" | "Generic"
+            },
+            ...
+        ],
         "query_types": {
             "total": 8,
             "direct": 3,
@@ -157,14 +164,18 @@ def get_aggregate_results():
         
         percentage_data = analyzer.get_percentage_analysis()
         queries = analyzer.get_all_queries()
+        queries_structured = analyzer.get_all_queries_structured()
         query_types = analyzer.get_query_types_summary()
+        domain_breakdown = analyzer.get_domain_breakdown_by_type()
         
         return jsonify({
             'status': 'complete',
             'url': analyzer.url,
             'queries': queries,
+            'queries_structured': queries_structured,
             'query_types': query_types,  
             'domain_percentages': percentage_data['domainPercentages'],
+            'domain_breakdown': domain_breakdown,
             'num_queries': percentage_data['numOfQueries']
         }), 200
         
