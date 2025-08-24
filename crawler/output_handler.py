@@ -14,7 +14,7 @@ class OutputHandler:
     def __init__(self):
         pass
     
-    def create_output_data(self, crawl_info, http_info, content_data, parsed_data, normalized_data, links, images, dom_diff, content_stats):
+    def create_output_data(self, crawl_info, http_info, content_data, parsed_data, normalized_data, links, images, dom_diff, content_stats, llm_txt_data=None):
         """Create the final output data structure"""
         return {
             "crawl_info": crawl_info,
@@ -37,7 +37,9 @@ class OutputHandler:
             "links": links[:100],  # Limit to first 100 links
             "images": images[:50],  # Limit to first 50 images
             # Content analysis stats
-            "content_stats": content_stats
+            "content_stats": content_stats,
+            # LLM.txt data for GEO optimization
+            "llm_txt": llm_txt_data or {}
         }
     
     def save_output(self, output_data, url):
@@ -58,7 +60,7 @@ class OutputHandler:
         }
     
     def print_extraction_summary(self, crawl_info, http_info, structured_data, normalized_data, 
-                                links, images, language_info, meta_data, content_data, dom_diff):
+                                links, images, language_info, meta_data, content_data, dom_diff, llm_txt_data=None):
         """Print a summary of the extraction results"""
         extraction_time = crawl_info["extraction_time_seconds"]
         js_executed = crawl_info["javascript_executed"]
@@ -72,6 +74,15 @@ class OutputHandler:
         print(f"HTTP Status: {http_info.get('status_code', 'Unknown')}")
         print(f" Schema.org: {len(structured_data['schema_org'])} items found")
         print(f"Normalized: {len([k for k, v in normalized_data.items() if v])} GEO fields")
+        
+        # LLM.txt information for GEO
+        if llm_txt_data and llm_txt_data.get('llm_txt_found'):
+            print(f" LLM.txt: Found at {llm_txt_data['llm_txt_url']}")
+            print(f" LLM.txt Size: {llm_txt_data['llm_txt_size_bytes']} bytes")
+            print(f" GEO Relevance: {llm_txt_data['geo_relevance_score']}/100")
+        else:
+            print(f" LLM.txt: Not found")
+        
         print(f"Links: {len(links)} total")
         print(f"Images: {len(images)} found")
         print(f"Language: {language_info.get('html_lang', 'Not specified')}")

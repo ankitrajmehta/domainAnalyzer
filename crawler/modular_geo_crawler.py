@@ -15,7 +15,11 @@ import asyncio
 import sys
 from urllib.parse import urlparse
 
-from crawler import GEOCrawler, HTMLParser, DataNormalizer, OutputHandler
+from .core_crawler import GEOCrawler
+from .html_parser import HTMLParser
+from .data_normalizer import DataNormalizer
+from .output_handler import OutputHandler
+from .llm_txt_extractor import LLMTxtExtractor
 
 
 class GEOCrawlerOrchestrator:
@@ -26,6 +30,7 @@ class GEOCrawlerOrchestrator:
         self.parser = HTMLParser()
         self.normalizer = DataNormalizer()
         self.output_handler = OutputHandler()
+        self.llm_txt_extractor = LLMTxtExtractor()
     
     async def crawl_url(self, url):
         """Main crawling workflow - coordinates all modules"""
@@ -36,7 +41,7 @@ class GEOCrawlerOrchestrator:
         
         try:
             # Step 1: Get HTTP metadata
-            print("🌐 Gathering HTTP metadata...")
+            print(" Gathering HTTP metadata...")
             http_info = await self.crawler.get_http_metadata(url)
             
             # Step 2: Fetch and render page content
@@ -71,12 +76,16 @@ class GEOCrawlerOrchestrator:
             print(" Analyzing DOM changes...")
             dom_diff = self.parser.calculate_dom_diff(content_data["original_html"], content_data["rendered_html"])
             
-            # Step 6: Normalize data for GEO analysis
+            # Step 6: Extract llm.txt for GEO optimization
+            print(" Searching for llm.txt content...")
+            llm_txt_data = await self.llm_txt_extractor.extract_llm_txt_data(url, content_data["rendered_html"])
+            
+            # Step 7: Normalize data for GEO analysis
             print(" Normalizing GEO-relevant data...")
             normalized_data = self.normalizer.normalize_structured_data(structured_data)
             content_stats = self.normalizer.calculate_content_stats(content_data["clean_text"], links, images)
             
-            # Step 7: Create crawl info
+            # Step 8: Create crawl info
             crawl_info = self.crawler.create_crawl_info(
                 url=url,
                 final_url=http_info["final_url"],
@@ -104,7 +113,8 @@ class GEOCrawlerOrchestrator:
                 links=links,
                 images=images,
                 dom_diff=dom_diff,
-                content_stats=content_stats
+                content_stats=content_stats,
+                llm_txt_data=llm_txt_data
             )
             
             # # Step 9: Print summary and save results
@@ -179,7 +189,7 @@ async def main():
             # Add https:// if no protocol specified
             if not url.startswith(('http://', 'https://')):
                 url = 'https://' + url
-                print(f"🔧 Corrected to: {url}")
+                print(f" Corrected to: {url}")
             
             # Basic URL validation
             try:

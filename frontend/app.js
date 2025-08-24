@@ -586,14 +586,6 @@ class FrontendAPP {
         const h1Count = headings.distribution?.h1 || 0;
         const h2Count = headings.distribution?.h2 || 0;
         
-        // AI Citation Readiness Score
-        const aiReadiness = Math.round(
-            (wordCount >= 500 ? 25 : (wordCount / 500) * 25) +  // Content depth
-            (h1Count === 1 ? 25 : 0) +                           // Clear topic identification
-            (h2Count >= 2 ? 25 : (h2Count / 2) * 25) +          // Content structure
-            (meta.critical_completeness * 25)                    // Metadata completeness
-        );
-        
         // Check for schema markup using structure analyzer results
         const schemaData = analysis.schema_markup || {};
         const hasSchema = schemaData.has_structured_data || false;
@@ -616,12 +608,6 @@ class FrontendAPP {
                 <h4>Structure Quality</h4>
                 <div class="metric">${headingCount}</div>
                 <div class="label">H1: ${h1Count} | H2: ${h2Count}</div>
-            </div>
-            
-            <div class="overview-card">
-                <h4>AI Citation Score</h4>
-                <div class="metric">${aiReadiness}%</div>
-                <div class="label">${aiReadiness >= 80 ? 'Excellent' : aiReadiness >= 60 ? 'Good' : aiReadiness >= 40 ? 'Fair' : 'Needs Work'}</div>
             </div>
             
             <div class="overview-card">

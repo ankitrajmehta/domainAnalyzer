@@ -7,6 +7,7 @@ from .core_crawler import GEOCrawler
 from .html_parser import HTMLParser
 from .data_normalizer import DataNormalizer
 from .output_handler import OutputHandler
+from .llm_txt_extractor import LLMTxtExtractor
 from .utils import create_output_filename, ensure_output_directory
 
 __version__ = "1.0.0"
