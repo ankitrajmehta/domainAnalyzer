@@ -266,33 +266,39 @@ class FrontendAPP {
         // Update URL display
         document.getElementById('analyzedUrl').textContent = results.url;
 
-        // Display queries list
-        this.displayQueriesList(results.queries);
+        // Display queries list with structured data
+        this.displayQueriesList(results.queries_structured || results.queries);
 
-        // Create aggregate chart
-        this.createAggregateChart(results.domain_percentages);
+        // Create aggregate chart with breakdown data
+        this.createAggregateChart(results.domain_breakdown || results.domain_percentages);
     }
 
     displayQueriesList(queries) {
         const queriesList = document.getElementById('queriesList');
         queriesList.innerHTML = '';
 
-        queries.forEach((query, index) => {
+        queries.forEach((queryData, index) => {
+            // Handle both structured and simple query formats
+            const queryText = typeof queryData === 'string' ? queryData : queryData.query;
+            const queryType = typeof queryData === 'string' ? 'Generic' : (queryData.type || 'Generic');
+            
             const queryItem = document.createElement('div');
-            queryItem.className = 'query-item';
+            const queryTypeClass = queryType.toLowerCase(); // Convert 'Direct' to 'direct', 'Generic' to 'generic'
+            queryItem.className = `query-item ${queryTypeClass}`;
             queryItem.innerHTML = `
-                <div class="query-text">${query}</div>
+                <div class="query-text">${queryText}</div>
+                <span class="query-type-badge ${queryTypeClass}">${queryType}</span>
             `;
             
             queryItem.addEventListener('click', () => {
-                this.selectQuery(query, queryItem);
+                this.selectQuery(queryText, queryItem);
             });
 
             queriesList.appendChild(queryItem);
         });
     }
 
-    createAggregateChart(domainPercentages) {
+    createAggregateChart(domainData) {
         const ctx = document.getElementById('aggregateChart').getContext('2d');
         
         // Destroy existing chart if it exists
@@ -300,84 +306,205 @@ class FrontendAPP {
             this.aggregateChart.destroy();
         }
 
-        // Prepare data - show top 10 domains
-        const topDomains = domainPercentages.slice(0, 10);
-        const labels = topDomains.map(d => d.domain);
-        const data = topDomains.map(d => d.percentage);
+        // Check if we have breakdown data or legacy percentage data
+        const isBreakdownData = domainData.length > 0 && domainData[0].hasOwnProperty('direct_percentage');
+        
+        if (isBreakdownData) {
+            // Use new breakdown data for stacked chart
+            const topDomains = domainData.slice(0, 10);
+            const labels = topDomains.map(d => d.domain);
+            const directData = topDomains.map(d => d.direct_percentage);
+            const genericData = topDomains.map(d => d.generic_percentage);
 
-        this.aggregateChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: labels,
-                datasets: [{
-                    label: 'Percentage of Queries',
-                    data: data,
-                    backgroundColor: 'rgba(15, 23, 42, 0.8)',
-                    borderColor: 'rgba(15, 23, 42, 1)',
-                    borderWidth: 1,
-                    borderRadius: 6,
-                    borderSkipped: false,
-                }]
-            },
-            options: {
-                indexAxis: 'y', // Horizontal bar chart
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    tooltip: {
-                        backgroundColor: 'rgba(15, 23, 42, 0.9)',
-                        titleColor: 'white',
-                        bodyColor: 'white',
-                        borderColor: 'rgba(15, 23, 42, 1)',
-                        borderWidth: 1,
-                        cornerRadius: 8,
-                        callbacks: {
-                            label: function(context) {
-                                const domain = topDomains[context.dataIndex];
-                                return `${domain.percentage}% (${domain.query_count} queries)`;
-                            }
+            this.aggregateChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'Direct Queries',
+                            data: directData,
+                            backgroundColor: 'rgba(34, 197, 94, 0.8)', // Green for direct
+                            borderColor: 'rgba(22, 163, 74, 1)',
+                            borderWidth: 1,
+                            borderRadius: 6,
+                            borderSkipped: false,
+                        },
+                        {
+                            label: 'Generic Queries',
+                            data: genericData,
+                            backgroundColor: 'rgba(71, 85, 105, 0.8)', // Grayish-blue for generic
+                            borderColor: 'rgba(51, 65, 85, 1)',
+                            borderWidth: 1,
+                            borderRadius: 6,
+                            borderSkipped: false,
                         }
-                    }
+                    ]
                 },
-                scales: {
-                    x: {
-                        beginAtZero: true,
-                        max: 100,
-                        grid: {
-                            color: 'rgba(226, 232, 240, 0.5)',
-                            borderColor: 'rgba(226, 232, 240, 0.8)',
-                        },
-                        ticks: {
-                            color: '#64748b',
-                            font: {
-                                family: 'Inter',
-                                size: 11,
-                                weight: '500'
+                options: {
+                    indexAxis: 'y', // Horizontal bar chart
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            stacked: true,
+                            beginAtZero: true,
+                            max: 100,
+                            grid: {
+                                color: 'rgba(226, 232, 240, 0.5)',
+                                borderColor: 'rgba(226, 232, 240, 0.8)',
                             },
-                            callback: function(value) {
-                                return value + '%';
+                            ticks: {
+                                color: '#64748b',
+                                font: {
+                                    family: 'Inter',
+                                    size: 11,
+                                    weight: '500'
+                                },
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        },
+                        y: {
+                            stacked: true,
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                color: '#0f172a',
+                                font: {
+                                    family: 'Inter',
+                                    size: 11,
+                                    weight: '600'
+                                }
                             }
                         }
                     },
-                    y: {
-                        grid: {
-                            display: false
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                color: '#0f172a',
+                                font: {
+                                    family: 'Inter',
+                                    size: 12,
+                                    weight: '600'
+                                },
+                                usePointStyle: true,
+                                pointStyle: 'rect',
+                                padding: 20
+                            }
                         },
-                        ticks: {
-                            color: '#0f172a',
-                            font: {
-                                family: 'Inter',
-                                size: 11,
-                                weight: '600'
+                        tooltip: {
+                            backgroundColor: 'rgba(15, 23, 42, 0.9)',
+                            titleColor: 'white',
+                            bodyColor: 'white',
+                            borderColor: 'rgba(15, 23, 42, 1)',
+                            borderWidth: 1,
+                            cornerRadius: 8,
+                            callbacks: {
+                                label: function(context) {
+                                    const domain = topDomains[context.dataIndex];
+                                    const datasetLabel = context.dataset.label;
+                                    const value = context.parsed.x;
+                                    
+                                    if (datasetLabel === 'Direct Queries') {
+                                        return `Direct: ${value.toFixed(1)}% (${domain.direct_count} queries)`;
+                                    } else {
+                                        return `Generic: ${value.toFixed(1)}% (${domain.generic_count} queries)`;
+                                    }
+                                },
+                                footer: function(tooltipItems) {
+                                    const domain = topDomains[tooltipItems[0].dataIndex];
+                                    return `Total: ${domain.total_percentage}% (${domain.total_count} queries)`;
+                                }
                             }
                         }
                     }
                 }
-            }
-        });
+            });
+        } else {
+            // Fallback to legacy single-bar chart for backward compatibility
+            const topDomains = domainData.slice(0, 10);
+            const labels = topDomains.map(d => d.domain);
+            const data = topDomains.map(d => d.percentage);
+
+            this.aggregateChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Percentage of Queries',
+                        data: data,
+                        backgroundColor: 'rgba(15, 23, 42, 0.8)',
+                        borderColor: 'rgba(15, 23, 42, 1)',
+                        borderWidth: 1,
+                        borderRadius: 6,
+                        borderSkipped: false,
+                    }]
+                },
+                options: {
+                    indexAxis: 'y', // Horizontal bar chart
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(15, 23, 42, 0.9)',
+                            titleColor: 'white',
+                            bodyColor: 'white',
+                            borderColor: 'rgba(15, 23, 42, 1)',
+                            borderWidth: 1,
+                            cornerRadius: 8,
+                            callbacks: {
+                                label: function(context) {
+                                    const domain = topDomains[context.dataIndex];
+                                    return `${domain.percentage}% (${domain.query_count} queries)`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            max: 100,
+                            grid: {
+                                color: 'rgba(226, 232, 240, 0.5)',
+                                borderColor: 'rgba(226, 232, 240, 0.8)',
+                            },
+                            ticks: {
+                                color: '#64748b',
+                                font: {
+                                    family: 'Inter',
+                                    size: 11,
+                                    weight: '500'
+                                },
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        },
+                        y: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                color: '#0f172a',
+                                font: {
+                                    family: 'Inter',
+                                    size: 11,
+                                    weight: '600'
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
     }
 
     // Page 4: Query Details

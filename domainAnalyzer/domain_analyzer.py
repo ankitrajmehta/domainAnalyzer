@@ -164,12 +164,12 @@ class DomainAnalyzer:
         
         return [{"domain": domain, "count": count} for domain, count in sorted_domains]
     
-    def analyze_queries(self, queries: List[str], resolve_urls: bool = True) -> List[Dict[str, Any]]:
+    def analyze_queries(self, queries: List[Dict[str, Any]], resolve_urls: bool = True) -> List[Dict[str, Any]]:
         """
         Analyze multiple queries and generate domain frequency statistics.
-        
+
         Args:
-            queries: List of query strings to analyze
+            queries: List of query dictionaries with 'query' and 'type' fields
             resolve_urls: Whether to resolve actual URLs
             
         Returns:
@@ -177,20 +177,25 @@ class DomainAnalyzer:
         """
         results = []
         
-        print(f"Analyzing {len(queries)} queries...")
+        print(f"Analyzing {len(queries)} structured queries...")
         
-        for i, query in enumerate(queries, 1):
-            print(f"\nProcessing query {i}/{len(queries)}: {query[:50]}...")
+        for i, query_obj in enumerate(queries, 1):
+            
+            query_text = query_obj.get('query', '') if isinstance(query_obj, dict) else str(query_obj)
+            query_type = query_obj.get('type', 'Generic') if isinstance(query_obj, dict) else 'Generic'
+            
+            print(f"\nProcessing query {i}/{len(queries)} [{query_type}]: {query_text[:50]}...")
             
             try:
-                response_data = self.client.process_query(query, resolve_urls=resolve_urls)
+                response_data = self.client.process_query(query_text, resolve_urls=resolve_urls)
                 
                 domains = self.extract_domains_from_response(response_data)
                 
                 domain_stats = self.count_domains(domains)
                 
                 results.append({
-                    "query": query,
+                    "query": query_text,
+                    "query_type": query_type,  # Store the query type for future use
                     "links": domain_stats,
                     "complete_result": response_data
                 })
@@ -198,9 +203,10 @@ class DomainAnalyzer:
                 print(f"Found {len(domains)} total domain references, {len(domain_stats)} unique domains")
                 
             except Exception as e:
-                print(f"Error processing query '{query}': {e}")
+                print(f"Error processing query '{query_text}': {e}")
                 results.append({
-                    "query": query,
+                    "query": query_text,
+                    "query_type": query_type,
                     "links": [],
                     "complete_result": None
                 })
@@ -221,11 +227,11 @@ def main():
     """
     Main function with example queries for domain analysis.
     """
-    # Example queries
+    # Example structured queries
     queries = [
-        "What companies are leading in bridging AI and blockchain technology",
-        "Tell me about iBriz.ai",
-        "What kind of markets does iBriz.ai operate in?"
+        {"query": "What companies are leading in bridging AI and blockchain technology", "type": "Generic"},
+        {"query": "Tell me about iBriz.ai", "type": "Direct"},
+        {"query": "What kind of markets does iBriz.ai operate in?", "type": "Direct"}
     ]
     
     analyzer = DomainAnalyzer()
