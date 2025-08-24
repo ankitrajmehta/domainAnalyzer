@@ -284,18 +284,24 @@ class LLMTxtExtractor:
                     if response.status == 200:
                         content_type = response.headers.get('content-type', '').lower()
                         
-                        # Check if it's likely a text file
-                        if 'text' in content_type or content_type == 'application/octet-stream':
-                            content = await response.text(encoding='utf-8')
-                            
-                            # Basic validation - should look like llm.txt format
-                            if self._validate_llm_txt_content(content):
-                                return {
-                                    "success": True,
-                                    "content": content,
-                                    "content_type": content_type,
-                                    "status_code": response.status
-                                }
+                        # Get content first to validate
+                        content = await response.text(encoding='utf-8')
+                        
+                        # Check if it's likely a text file based on content-type OR if it passes LLM.txt validation
+                        # Many servers misconfigure MIME types for .txt files, so we rely more on content validation
+                        is_text_type = ('text' in content_type or 
+                                      content_type == 'application/octet-stream' or
+                                      'xml' in content_type or  # Some servers return application/rss+xml for .txt
+                                      'html' in content_type)   # Some servers return text/html for .txt
+                        
+                        # If content validates as LLM.txt, accept it regardless of content-type
+                        if self._validate_llm_txt_content(content):
+                            return {
+                                "success": True,
+                                "content": content,
+                                "content_type": content_type,
+                                "status_code": response.status
+                            }
                     
                     return {
                         "success": False,
