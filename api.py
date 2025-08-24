@@ -342,176 +342,234 @@ async def perform_structure_analysis(url: str) -> Dict[str, Any]:
     except Exception as e:
         return {'error': f'Structure analysis failed: {str(e)}'}
 
+def get_smart_priority(issue_type: str, context: dict) -> str:
+    """
+    Intelligent priority assignment based on issue severity and context.
+    
+    High Priority: Critical GEO/accessibility issues that significantly impact user experience or search rankings
+    Medium Priority: Important optimizations that improve performance but aren't critical
+    Low Priority: Nice-to-have enhancements for advanced optimization
+    """
+    
+    # Extract context
+    h1_count = context.get('h1_count', 0)
+    h2_count = context.get('h2_count', 0)
+    hierarchy_quality = context.get('hierarchy_quality', 'poor')
+    meta_complete = context.get('meta_complete', True)
+    total_headings = context.get('total_headings', 0)
+    
+    # Critical issues (High Priority)
+    if issue_type == 'missing_meta' and not meta_complete:
+        return "High"
+    elif issue_type == 'no_h1' and h1_count == 0:
+        return "High"
+    elif issue_type == 'multiple_h1' and h1_count > 1:
+        return "High"
+    elif issue_type == 'broken_hierarchy' and hierarchy_quality == 'poor' and h1_count > 0 and h2_count == 0:
+        return "High"
+    elif issue_type == 'poor_structure' and hierarchy_quality == 'poor':
+        return "High"
+    
+    # Important optimizations (Medium Priority)
+    elif issue_type == 'llm_txt':
+        return "Medium"
+    elif issue_type == 'schema':
+        return "Medium"
+    elif issue_type == 'semantic':
+        return "Medium"
+    elif issue_type == 'heading_improvement' and hierarchy_quality in ['fair', 'poor'] and h1_count == 1:
+        return "Medium"
+    
+    # Nice-to-have enhancements (Low Priority)
+    else:
+        return "Low"
+
 def generate_fallback_recommendations(structure_analysis: dict) -> list:
     """
-    Generate simple, direct GEO recommendations.
+    Generate simple, direct GEO recommendations with smart priority assignment.
     """
     recommendations = []
     
+    # Extract all needed data
     missing_meta = structure_analysis.get('meta_completeness', {}).get('missing_critical', [])
     headings = structure_analysis.get('heading_structure', {})
-    word_count = structure_analysis.get('content_metrics', {}).get('word_count', 0)
     h1_count = headings.get('distribution', {}).get('h1', 0)
     h2_count = headings.get('distribution', {}).get('h2', 0)
     total_headings = headings.get('total', 0)
     missing_elements = structure_analysis.get('semantic_elements', {}).get('missing_elements', [])
     faq_data = structure_analysis.get('faq_structure', {})
     schema_data = structure_analysis.get('schema_markup', {})
+    hierarchy_quality = headings.get('hierarchy_quality', 'poor')
+    meta_complete = len(missing_meta) == 0
     
-    # 1. LLM.txt for Generative Engine Optimization (GEO) - HIGH PRIORITY
-    llm_txt_analysis = structure_analysis.get('llm_txt_analysis', {})
-    if not llm_txt_analysis.get('has_llm_txt', False):
-        recommendations.append({
-            "title": "Add LLM.txt File",
-            "description": "Create an LLM.txt file with structured instructions for AI systems to improve generative engine optimization and AI citations.",
-            "priority": "High"
-        })
+    # Context for smart priority assignment (removed word_count dependency)
+    context = {
+        'h1_count': h1_count,
+        'h2_count': h2_count,
+        'hierarchy_quality': hierarchy_quality,
+        'meta_complete': meta_complete,
+        'total_headings': total_headings
+    }
     
-    # 2. Meta tags
+    # 1. Critical GEO Issues First
+    
+    # Missing meta tags (Critical for GEO)
     if missing_meta:
+        priority = get_smart_priority('missing_meta', context)
         recommendations.append({
             "title": "Add Missing Meta Tags",
-            "description": f"Add these missing meta tags: {', '.join(missing_meta)}. Include title, description, and Open Graph tags.",
-            "priority": "High"
+            "description": f"Add these missing meta tags: {', '.join(missing_meta)}. Title and description are essential for search rankings.",
+            "priority": priority
         })
     
-    # 3. Heading structure
+    # No H1 tag (Critical for content structure)
     if h1_count == 0:
+        priority = get_smart_priority('no_h1', context)
         recommendations.append({
             "title": "Add H1 Heading",
-            "description": "Add one clear H1 heading that describes your main topic.",
-            "priority": "High"
+            "description": "Add one clear H1 heading that describes your main topic. This is essential for SEO and accessibility.",
+            "priority": priority
         })
+    
+    # Multiple H1 tags (GEO issue)
     elif h1_count > 1:
+        priority = get_smart_priority('multiple_h1', context)
         recommendations.append({
             "title": "Fix Multiple H1 Tags",
-            "description": f"Use only one H1 tag. Convert the other {h1_count-1} H1 tags to H2 or H3.",
-            "priority": "High"
-        })
-    elif total_headings < 3:
-        recommendations.append({
-            "title": "Add More Headings",
-            "description": f"Add more H2 and H3 headings to organize your content better (currently {total_headings}).",
-            "priority": "Medium"
+            "description": f"Use only one H1 tag per page. Convert the other {h1_count-1} H1 tags to H2 or H3 for proper hierarchy.",
+            "priority": priority
         })
     
-    # 3. Content length
-    if word_count < 300:
+    # Very poor heading hierarchy
+    elif hierarchy_quality == 'poor' and h1_count > 0 and h2_count == 0:
+        priority = get_smart_priority('broken_hierarchy', context)
         recommendations.append({
-            "title": "Expand Content",
-            "description": f"Increase content from {word_count} to at least 300-500 words for better authority.",
-            "priority": "Medium"
+            "title": "Fix Heading Hierarchy",
+            "description": "Add H2 headings to create proper content structure. This helps both users and search engines understand your content.",
+            "priority": priority
         })
     
-    # 4. Semantic structure
-    if 'article' in missing_elements or 'section' in missing_elements:
+    # 2. Important Optimizations
+    
+    # LLM.txt for AI optimization
+    llm_txt_analysis = structure_analysis.get('llm_txt_analysis', {})
+    if not llm_txt_analysis.get('has_llm_txt', False):
+        priority = get_smart_priority('llm_txt', context)
         recommendations.append({
-            "title": "Add Semantic HTML",
-            "description": "Use semantic HTML5 tags like <article>, <section>, <header>, and <main>.",
-            "priority": "Medium"
+            "title": "Add LLM.txt File",
+            "description": "Create an LLM.txt file with structured instructions for AI systems to improve citations in AI-generated content.",
+            "priority": priority
         })
     
-    # 5. Schema markup - prioritize JSON-LD for AI systems
+    # Schema markup
     json_ld_count = schema_data.get('types', {}).get('json_ld', 0)
     if json_ld_count == 0:
+        priority = get_smart_priority('schema', context)
         recommendations.append({
             "title": "Add JSON-LD Schema",
-            "description": "Implement JSON-LD structured data markup for optimal AI understanding and citation.",
-            "priority": "High"
+            "description": "Implement JSON-LD structured data to help search engines understand your content better and enable rich snippets.",
+            "priority": priority
         })
     
-    # 6. FAQ structure
-    if not faq_data.get('has_faq', False) and word_count > 500:
+    # Semantic HTML
+    if 'article' in missing_elements or 'section' in missing_elements:
+        priority = get_smart_priority('semantic', context)
         recommendations.append({
-            "title": "Add FAQ Section",
-            "description": "Create a FAQ section with structured Q&A format for common questions.",
-            "priority": "Low"
+            "title": "Add Semantic HTML",
+            "description": "Use semantic HTML5 tags like <article>, <section>, <header>, and <main> for better accessibility.",
+            "priority": priority
         })
     
-    # Fill to exactly 4 recommendations
-    while len(recommendations) < 4:
-        if len(recommendations) == 0:
-            recommendations.append({
-                "title": "Add Meta Description",
-                "description": "Create a 150-160 character meta description for this page.",
-                "priority": "High"
-            })
-        elif len(recommendations) == 1:
-            recommendations.append({
-                "title": "Improve Page Structure",
-                "description": "Organize content with proper headings and semantic HTML elements.",
-                "priority": "Medium"
-            })
-        elif len(recommendations) == 2:
-            recommendations.append({
-                "title": "Add Schema Markup",
-                "description": "Implement JSON-LD structured data for AI citation optimization.",
-                "priority": "Medium"
-            })
-        else:
-            recommendations.append({
-                "title": "Enhance Content Structure",
-                "description": "Add FAQ sections and improve content organization for better AI understanding.",
-                "priority": "Low"
-            })
+    # Heading structure improvements
+    if hierarchy_quality == 'fair' and total_headings < 5:
+        priority = get_smart_priority('heading_improvement', context)
+        recommendations.append({
+            "title": "Enhance Heading Structure", 
+            "description": f"Add more H2 and H3 headings to create clearer content sections (currently {total_headings} headings).",
+            "priority": priority
+        })
     
-    return recommendations[:4]
+    # 3. Enhancement Opportunities
+    
+    # FAQ section (Only for substantial content without existing FAQ)
+    has_faq = faq_data.get('has_faq', False)
+    question_patterns = faq_data.get('question_patterns', 0)
+    text_faq_indicators = faq_data.get('text_faq_indicators', 0)
+    
+    if (not has_faq and question_patterns == 0 and text_faq_indicators == 0 and 
+        hierarchy_quality in ['good', 'excellent']):  # Only suggest for well-structured content
+        priority = get_smart_priority('faq', context)
+        recommendations.append({
+            "title": "Consider Adding FAQ Section",
+            "description": "Create a FAQ section with common questions to improve user experience and provide more content for AI citations.",
+            "priority": priority
+        })
+    
+    # Ensure we have at least 3 recommendations, but don't force unnecessary ones
+    if len(recommendations) == 0:
+        # If no specific issues found, suggest meta optimization
+        recommendations.append({
+            "title": "Optimize Meta Description", 
+            "description": "Create or improve the meta description to be 150-160 characters and compelling for users.",
+            "priority": "Medium"
+        })
+    
+    return recommendations[:5]  # Cap at 5 recommendations
 
 def get_structure_recommendations_prompt(structure_analysis: dict, crawled_data: dict) -> str:
     """
     Generate a simple, direct prompt for GEO() recommendations.
     """
-    # Get key issues
+    # Get key metrics
     missing_meta = structure_analysis.get('meta_completeness', {}).get('missing_critical', [])
     word_count = structure_analysis.get('content_metrics', {}).get('word_count', 0)
     headings = structure_analysis.get('heading_structure', {})
     h1_count = headings.get('distribution', {}).get('h1', 0)
     h2_count = headings.get('distribution', {}).get('h2', 0)
     total_headings = headings.get('total', 0)
+    hierarchy_quality = headings.get('hierarchy_quality', 'unknown')
     missing_elements = structure_analysis.get('semantic_elements', {}).get('missing_elements', [])
     faq_data = structure_analysis.get('faq_structure', {})
     schema_data = structure_analysis.get('schema_markup', {})
     llm_txt_data = structure_analysis.get('llm_txt_analysis', {})
     
+    # Build current status summary
+    has_title = 'title' not in missing_meta
+    has_description = 'description' not in missing_meta
+    has_faq = faq_data.get('has_faq', False)
+    has_schema = schema_data.get('has_structured_data', False)
+    has_llm_txt = llm_txt_data.get('has_llm_txt', False)
+    
     prompt = f"""Analyze this website for GEO (Generative Engine Optimization) and give 4 direct recommendations.
 
-GEO is about optimizing content for AI systems like Gemini that cite and reference web content. Not about geographic or local SEO.
+GEO is about optimizing content for AI systems like Gemini that cite and reference web content. Not about geographic and  general SEO practices.
 
-ISSUES FOUND:
-- Missing meta tags: {missing_meta}
-- Word count: {word_count}
-- H1 tags: {h1_count}
-- Total headings: {total_headings}
-- Missing elements: {missing_elements}
-- FAQ structure: {faq_data.get('has_faq', False)}
-- Schema markup: {schema_data.get('has_structured_data', False)}
-- LLM.txt file: {llm_txt_data.get('has_llm_txt', False)}
+CURRENT WEBSITE STATUS:
+Title tag: {'Present' if has_title else 'MISSING'}
+Meta description: {'Present' if has_description else 'MISSING'}
+Heading structure: {hierarchy_quality.title()} quality ({h1_count} H1, {h2_count} H2, {total_headings} total)
+FAQ section: {'Present' if has_faq else 'Missing'}
+Schema markup: {'Present' if has_schema else 'Missing'}
+LLM.txt file: {'Present' if has_llm_txt else 'MISSING'}
+Content length: {word_count} words
 
-Give 4 short, direct recommendations for AI citation optimization. Focus on what AI systems need to understand and cite your content.
+IMPORTANT RULES:
+1. DO NOT recommend adding meta description if it already exists (Present)
+2. DO NOT recommend improving heading hierarchy if quality is "Good" or "Excellent"
+3. DO NOT recommend adding FAQ if it's already Present
+4. DO NOT recommend adding schema if it's already Present
+5. ALWAYS recommend LLM.txt if it's MISSING (this is critical for GEO)
 
-IMPORTANT: If the site is missing an LLM.txt file (has_llm_txt: False), include a recommendation to add it for better generative engine optimization.
+Focus on actual gaps and improvements, not things that already exist.
 
-Format:
+Give 4 short, actionable recommendations for areas that need improvement.Focus what llm needs to understand and site the content .
+
+Format as JSON array:
 [
   {{
-    "title": "Add Meta Description",
-    "description": "Create a 150-160 character meta description for this page.",
-    "priority": "High"
-  }},
-  {{
-    "title": "Fix Heading Structure", 
-    "description": "Add proper H1 tag and organize content with H2/H3 headings.",
-    "priority": "High"
-  }},
-  {{
-    "title": "Add Schema Markup",
-    "description": "Implement JSON-LD structured data for better content understanding.",
-    "priority": "Medium"
-  }},
-  {{
-    "title": "Improve Content Structure",
-    "description": "Use semantic HTML tags like article, section, and header.",
-    "priority": "Medium"
+    "title": "Recommendation Title",
+    "description": "Specific actionable description",
+    "priority": "High|Medium|Low"
   }}
 ]
 
