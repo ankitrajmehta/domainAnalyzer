@@ -21,7 +21,21 @@ class LLMTxtExtractor:
             '/.well-known/llm.txt',  # Alternative well-known
             '/ai.txt',
             '/robots/llm.txt',
-            '/public/llm.txt'
+            '/public/llm.txt',
+            '/docs/llms.txt',      # Documentation subdirectory
+            '/docs/llm.txt'        # Documentation subdirectory alternative
+        ]
+        
+        # Common subdomains where LLM.txt files are often hosted
+        self.common_subdomains = [
+            'docs',         # docs.example.com
+            'developer',    # developer.example.com  
+            'developers',   # developers.example.com
+            'platform',     # platform.example.com
+            'api',          # api.example.com
+            'support',      # support.example.com
+            'help',         # help.example.com
+            'www'           # www.example.com (fallback)
         ]
     
     async def extract_llm_txt_data(self, base_url: str, html_content: str = None) -> Dict:
@@ -92,31 +106,50 @@ class LLMTxtExtractor:
             base_url = 'https://' + base_url
         
         parsed_url = urlparse(base_url)
-        base_domain = f"{parsed_url.scheme}://{parsed_url.netloc}"
+        domain_parts = parsed_url.netloc.split('.')
         
-        # Try each common path
-        for path in self.common_llm_txt_paths:
-            llm_txt_url = urljoin(base_domain, path)
-            attempt_result = await self._fetch_llm_txt(llm_txt_url)
-            
-            result["attempts"].append({
-                "url": llm_txt_url,
-                "success": attempt_result["success"],
-                "status_code": attempt_result.get("status_code"),
-                "error": attempt_result.get("error")
-            })
-            
-            if attempt_result["success"]:
-                result.update({
-                    "found": True,
-                    "llm_txt_found": True,
-                    "llm_txt_url": llm_txt_url,
-                    "llm_txt_content": attempt_result["content"],
-                    "llm_txt_size_bytes": len(attempt_result["content"].encode('utf-8')),
-                    "extraction_method": f"direct_fetch_{path}"
+        # Extract root domain (e.g., "example.com" from "www.example.com")
+        if len(domain_parts) >= 2:
+            root_domain = '.'.join(domain_parts[-2:])  # Get last 2 parts (domain.tld)
+        else:
+            root_domain = parsed_url.netloc
+        
+        # Build list of domains to check (main domain + subdomains)
+        domains_to_check = [
+            f"{parsed_url.scheme}://{parsed_url.netloc}",  # Original domain
+        ]
+        
+        # Add subdomain variations if we're not already on a subdomain
+        if not any(sub in parsed_url.netloc for sub in self.common_subdomains):
+            for subdomain in self.common_subdomains:
+                subdomain_url = f"{parsed_url.scheme}://{subdomain}.{root_domain}"
+                if subdomain_url not in domains_to_check:
+                    domains_to_check.append(subdomain_url)
+        
+        # Try each domain + path combination
+        for domain in domains_to_check:
+            for path in self.common_llm_txt_paths:
+                llm_txt_url = urljoin(domain, path)
+                attempt_result = await self._fetch_llm_txt(llm_txt_url)
+                
+                result["attempts"].append({
+                    "url": llm_txt_url,
+                    "success": attempt_result["success"],
+                    "status_code": attempt_result.get("status_code"),
+                    "error": attempt_result.get("error")
                 })
-                print(f"Found llm.txt at: {llm_txt_url}")
-                break
+                
+                if attempt_result["success"]:
+                    result.update({
+                        "found": True,
+                        "llm_txt_found": True,
+                        "llm_txt_url": llm_txt_url,
+                        "llm_txt_content": attempt_result["content"],
+                        "llm_txt_size_bytes": len(attempt_result["content"].encode('utf-8')),
+                        "extraction_method": f"direct_fetch_{path.replace('/', '_')}_on_{domain.split('//')[1]}"
+                    })
+                    print(f"Found llm.txt at: {llm_txt_url}")
+                    return result
         
         if not result["found"]:
             print("No llm.txt file found at common locations")
@@ -295,41 +328,66 @@ class LLMTxtExtractor:
             if any(indicator in content_lower for indicator in json_indicators):
                 return False
         
-        # Only accept content with very explicit LLM.txt indicators
-        explicit_llm_indicators = [
+        # Check for LLM.txt file format indicators (more inclusive)
+        llm_file_indicators = [
+            # Header patterns
+            'llms.txt', 'llm.txt', '# llms.txt', '# llm.txt',
+            # Explicit AI/LLM content
             'ai:', 'llm:', 'model:', 'assistant:', 'chatgpt:', 'gpt:',
             'for ai systems', 'for llm', 'for language models', 'for ai models',
             'ai instructions', 'llm instructions', 'model instructions',
-            'when citing this site', 'when summarizing this site', 'ai guidelines'
+            'when citing this site', 'when summarizing this site', 'ai guidelines',
+            # Bot access policies
+            'user-agent:', 'allow-training:', 'allow-retrieval:', 'bot access',
+            # Common LLM.txt sections
+            'sitemap:', 'main navigation:', 'languages supported:',
+            # Domain-specific headers
+            '.com llms.txt', '.org llms.txt', '.net llms.txt', '.ai llms.txt',
+            # Standard LLM.txt content patterns
+            '## docs', '## web', '## api', '## documentation',
+            '- [', ']('  # Markdown link pattern common in LLM.txt files
         ]
         
-        # Must have at least one explicit indicator
-        has_explicit_indicator = any(indicator in content_lower for indicator in explicit_llm_indicators)
+        # Check if it has LLM.txt format indicators
+        has_llm_indicator = any(indicator in content_lower for indicator in llm_file_indicators)
         
-        if not has_explicit_indicator:
+        # Additional check: if it starts with a domain header followed by llms.txt
+        lines = content.strip().split('\n')
+        if lines and ('llms.txt' in lines[0].lower() or 'llm.txt' in lines[0].lower()):
+            has_llm_indicator = True
+        
+        # Check for standard LLM.txt format: starts with # CompanyName
+        if lines and lines[0].strip().startswith('#') and not lines[0].lower().endswith('.txt'):
+            # Check if it has typical LLM.txt structure (markdown links to documentation)
+            link_count = content.count('](')
+            if link_count >= 5:  # Has multiple documentation links
+                has_llm_indicator = True
+        
+        # Check for served from /llms.txt or /llm.txt URL pattern
+        # This is inferred from the URL context if available
+        if not has_llm_indicator:
+            # If content has structured documentation links, likely an LLM.txt file
+            if ('](http' in content or '](/') and content.count('\n') > 10:
+                has_llm_indicator = True
+        
+        if not has_llm_indicator:
             return False
         
         # Additional verification - content should not be just regular website text
-        # Reject if it's likely just page content
+        # But be more lenient for legitimate LLM.txt files
         website_content_indicators = [
             'copyright', '©', 'all rights reserved', 'privacy policy', 'terms of service',
-            'home', 'about us', 'contact us', 'services', 'products', 'buy now',
+            'home', 'about us', 'contact us', 'buy now',
             'subscribe', 'newsletter', 'follow us', 'social media'
         ]
         
         website_content_count = sum(1 for indicator in website_content_indicators if indicator in content_lower)
         
-        # If it has too many website-like terms, it's probably not LLM.txt
-        if website_content_count > 2:
+        # If it has too many website-like terms AND no clear LLM.txt structure, reject it
+        if website_content_count > 3 and not any(term in content_lower for term in ['sitemap:', 'user-agent:', 'allow-training:']):
             return False
         
-        # Content should be instructional in nature
-        has_instructional_language = any(word in content_lower for word in [
-            'please', 'should', 'must', 'always', 'never', 'ensure', 'remember',
-            'note that', 'important:', 'focus on', 'when', 'if', 'prioritize'
-        ])
-        
-        return has_explicit_indicator and has_instructional_language
+        return True
     
     def _parse_llm_txt_content(self, content: str) -> Dict:
         """Parse llm.txt content into structured sections for GEO analysis"""
