@@ -358,7 +358,16 @@ def generate_fallback_recommendations(structure_analysis: dict) -> list:
     faq_data = structure_analysis.get('faq_structure', {})
     schema_data = structure_analysis.get('schema_markup', {})
     
-    # 1. Meta tags
+    # 1. LLM.txt for Generative Engine Optimization (GEO) - HIGH PRIORITY
+    llm_txt_analysis = structure_analysis.get('llm_txt_analysis', {})
+    if not llm_txt_analysis.get('has_llm_txt', False):
+        recommendations.append({
+            "title": "Add LLM.txt File",
+            "description": "Create an LLM.txt file with structured instructions for AI systems to improve generative engine optimization and AI citations.",
+            "priority": "High"
+        })
+    
+    # 2. Meta tags
     if missing_meta:
         recommendations.append({
             "title": "Add Missing Meta Tags",
@@ -366,7 +375,7 @@ def generate_fallback_recommendations(structure_analysis: dict) -> list:
             "priority": "High"
         })
     
-    # 2. Heading structure
+    # 3. Heading structure
     if h1_count == 0:
         recommendations.append({
             "title": "Add H1 Heading",
@@ -462,10 +471,11 @@ def get_structure_recommendations_prompt(structure_analysis: dict, crawled_data:
     missing_elements = structure_analysis.get('semantic_elements', {}).get('missing_elements', [])
     faq_data = structure_analysis.get('faq_structure', {})
     schema_data = structure_analysis.get('schema_markup', {})
+    llm_txt_data = structure_analysis.get('llm_txt_analysis', {})
     
     prompt = f"""Analyze this website for GEO (Generative Engine Optimization) and give 4 direct recommendations.
 
-GEO is about optimizing content for AI systems Gemini that cite and reference web content. Not about geographic or local SEO.
+GEO is about optimizing content for AI systems like Gemini that cite and reference web content. Not about geographic or local SEO.
 
 ISSUES FOUND:
 - Missing meta tags: {missing_meta}
@@ -475,8 +485,11 @@ ISSUES FOUND:
 - Missing elements: {missing_elements}
 - FAQ structure: {faq_data.get('has_faq', False)}
 - Schema markup: {schema_data.get('has_structured_data', False)}
+- LLM.txt file: {llm_txt_data.get('has_llm_txt', False)}
 
 Give 4 short, direct recommendations for AI citation optimization. Focus on what AI systems need to understand and cite your content.
+
+IMPORTANT: If the site is missing an LLM.txt file (has_llm_txt: False), include a recommendation to add it for better generative engine optimization.
 
 Format:
 [

@@ -721,6 +721,10 @@ class FrontendAPP {
         const faqData = analysis.faq_structure || {};
         const hasFAQ = faqData.has_faq || false;
         
+        // Check for LLM.txt using structure analyzer results
+        const llmTxtData = analysis.llm_txt_analysis || {};
+        const hasLLMTxt = llmTxtData.has_llm_txt || false;
+        
         // Semantic structure score for AI understanding
         const semanticScore = Math.round(semantic.semantic_score * 100);
         
@@ -747,6 +751,12 @@ class FrontendAPP {
                 <h4>FAQ Section</h4>
                 <div class="metric">${hasFAQ ? '✓' : '✗'}</div>
                 <div class="label">${hasFAQ ? 'Present' : 'Missing'}</div>
+            </div>
+            
+            <div class="overview-card">
+                <h4>LLM.txt File</h4>
+                <div class="metric">${hasLLMTxt ? '✓' : '✗'}</div>
+                <div class="label">${hasLLMTxt ? 'Detected' : 'Missing'}</div>
             </div>
         `;
     }

@@ -39,6 +39,7 @@ class StructureAnalyzer:
             "meta_completeness": self._analyze_meta_tags(meta_data),
             "faq_structure": self._analyze_faq(rendered_html),
             "schema_markup": self._analyze_schema(rendered_html),
+            "llm_txt_analysis": self._analyze_llm_txt(crawled_data),
             "structural_issues": self._identify_issues(rendered_html, meta_data, clean_text)
         }
         
@@ -188,3 +189,18 @@ class StructureAnalyzer:
             issues.append("missing_schema_markup")
         
         return issues
+    
+    def _analyze_llm_txt(self, crawled_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Analyze LLM.txt presence and content for GEO optimization."""
+        llm_txt_data = crawled_data.get("llm_txt", {})
+        
+        analysis = {
+            "has_llm_txt": llm_txt_data.get("llm_txt_found", False),
+            "llm_txt_url": llm_txt_data.get("llm_txt_url"),
+            "extraction_method": llm_txt_data.get("extraction_method"),
+            "content_size": llm_txt_data.get("llm_txt_size_bytes", 0),
+            "sources_found": len(llm_txt_data.get("embedded_content", {}).get("sources", [])),
+            "attempts_made": len(llm_txt_data.get("attempts", []))
+        }
+        
+        return analysis

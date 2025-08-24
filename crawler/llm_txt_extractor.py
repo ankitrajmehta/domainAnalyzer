@@ -15,8 +15,10 @@ class LLMTxtExtractor:
     def __init__(self):
         self.timeout = aiohttp.ClientTimeout(total=30)
         self.common_llm_txt_paths = [
-            '/llm.txt',
-            '/.well-known/llm.txt',
+            '/llms.txt',           # Standard LLMs.txt path
+            '/llm.txt',            # Alternative path
+            '/.well-known/llms.txt', # Well-known location for llms.txt
+            '/.well-known/llm.txt',  # Alternative well-known
             '/ai.txt',
             '/robots/llm.txt',
             '/public/llm.txt'
@@ -189,8 +191,10 @@ class LLMTxtExtractor:
                         # Check if JSON contains AI/LLM related fields
                         json_str = json.dumps(data).lower()
                         if any(keyword in json_str for keyword in ['llm', 'ai', 'assistant', 'model', 'gpt']):
-                            extracted_content.append(script.string.strip())
-                            sources.append("json_ld")
+                            # Validate the content before accepting it as LLM.txt
+                            if self._validate_llm_txt_content(script.string.strip()):
+                                extracted_content.append(script.string.strip())
+                                sources.append("json_ld")
                 except:
                     continue
             
@@ -223,10 +227,15 @@ class LLMTxtExtractor:
             
             # Combine all found content
             if extracted_content:
-                result["found"] = True
-                result["content"] = "\n\n".join(extracted_content)
-                result["method"] = f"html_embedded_{len(extracted_content)}_sources"
-                result["sources"] = sources
+                combined_content = "\n\n".join(extracted_content)
+                #  Validate the final combined content to ensure it's actually LLM.txt
+                if self._validate_llm_txt_content(combined_content):
+                    result["found"] = True
+                    result["content"] = combined_content
+                    result["method"] = f"html_embedded_{len(extracted_content)}_sources"
+                    result["sources"] = sources
+                else:
+                    result["found"] = False
                 
         except Exception as e:
             # Silent fail - this is a fallback method
@@ -269,26 +278,58 @@ class LLMTxtExtractor:
             return {"success": False, "error": f"Unexpected error: {str(e)}"}
     
     def _validate_llm_txt_content(self, content: str) -> bool:
-        """Basic validation to check if content looks like a valid llm.txt file"""
-        if not content or len(content.strip()) == 0:
+        """validation to check if content has a valid llm.txt file"""
+        if not content or len(content.strip()) < 30:
             return False
         
-        # Be more lenient for embedded content
-        content_lower = content.lower()
+        content_lower = content.lower().strip()
         
-        # Look for common llm.txt patterns (relaxed)
-        llm_txt_indicators = [
-            'ai:', 'llm:', 'model:', 'assistant:', 'gpt:', 'instructions:',
-            'ai ', 'llm ', 'model ', 'assistant ', 'gpt ', 'instructions ',
-            'focus on', 'when analyzing', 'prioritize', 'treatment', 'recovery',
-            'optimization', 'context', 'guidelines', 'rules'
+        # Reject Schema.org JSON-LD content (this is NOT LLM.txt!)
+        if '"@context"' in content_lower and 'schema.org' in content_lower:
+            return False
+        
+        # Reject other structured data formats that are not LLM.txt
+        if content_lower.strip().startswith('{') and content_lower.strip().endswith('}'):
+            # If it looks like JSON, check if it's actually LLM.txt JSON or just regular JSON
+            json_indicators = ['"@type":', '"@context":', '"name":', '"url":', '"logo":', '"contactpoint":']
+            if any(indicator in content_lower for indicator in json_indicators):
+                return False
+        
+        # Only accept content with very explicit LLM.txt indicators
+        explicit_llm_indicators = [
+            'ai:', 'llm:', 'model:', 'assistant:', 'chatgpt:', 'gpt:',
+            'for ai systems', 'for llm', 'for language models', 'for ai models',
+            'ai instructions', 'llm instructions', 'model instructions',
+            'when citing this site', 'when summarizing this site', 'ai guidelines'
         ]
         
-        indicator_count = sum(1 for indicator in llm_txt_indicators if indicator in content_lower)
+        # Must have at least one explicit indicator
+        has_explicit_indicator = any(indicator in content_lower for indicator in explicit_llm_indicators)
         
-        # More lenient criteria for embedded content
-        return (indicator_count >= 1 and len(content.strip()) > 10) or \
-               any(strong_indicator in content_lower for strong_indicator in ['ai:', 'llm:', 'model:', 'assistant:'])
+        if not has_explicit_indicator:
+            return False
+        
+        # Additional verification - content should not be just regular website text
+        # Reject if it's likely just page content
+        website_content_indicators = [
+            'copyright', '©', 'all rights reserved', 'privacy policy', 'terms of service',
+            'home', 'about us', 'contact us', 'services', 'products', 'buy now',
+            'subscribe', 'newsletter', 'follow us', 'social media'
+        ]
+        
+        website_content_count = sum(1 for indicator in website_content_indicators if indicator in content_lower)
+        
+        # If it has too many website-like terms, it's probably not LLM.txt
+        if website_content_count > 2:
+            return False
+        
+        # Content should be instructional in nature
+        has_instructional_language = any(word in content_lower for word in [
+            'please', 'should', 'must', 'always', 'never', 'ensure', 'remember',
+            'note that', 'important:', 'focus on', 'when', 'if', 'prioritize'
+        ])
+        
+        return has_explicit_indicator and has_instructional_language
     
     def _parse_llm_txt_content(self, content: str) -> Dict:
         """Parse llm.txt content into structured sections for GEO analysis"""
