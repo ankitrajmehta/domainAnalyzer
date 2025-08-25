@@ -5,7 +5,9 @@
 from typing import List, Dict, Any, Optional
 from collections import defaultdict
 import asyncio
-
+import time
+import json
+import os
 import queryGenerator
 from geminiClient.gemini import GeminiGroundedClient
 from domainAnalyzer.domain_analyzer import DomainAnalyzer
@@ -16,16 +18,17 @@ class Analyzer:
     Connects all modules, orchestrating the flow of data and control.
     """
 
-    def __init__(self):
+    def __init__(self, demo_mode: bool = False):
         self.domain_analyzer = DomainAnalyzer()
         self.gemini_client = GeminiGroundedClient()
         self.generate_queries = queryGenerator.generate_queries_from_url
         self.url: str = queryGenerator.DEFAULT_URL
         self.queriesToRun: int = queryGenerator.NUM_OF_QUERIES
         self.generated_queries: List[Dict[str, Any]] = []
-        self.saveFileName: str = r'analysisReports\domain_analysis_prompted.json'
         self.analysis_results: List[Dict[str, Any]] = []
         self.analysis_status: str = "idle"  # idle, analyzing, complete, error
+        self.demo_mode: bool = demo_mode  
+        self.demo_save_file: str = r'analysisReports\demo_analysis_data.json'
 
     def run_analysis(self, url: Optional[str] = None, saveResults: bool = False, queriesToRun: int = None) -> List[Dict[str, Any]]:
         """
@@ -41,7 +44,19 @@ class Analyzer:
         try:
             self.analysis_status = "analyzing"
             
+            # Demo mode: Load saved data instead of running full analysis
+            if self.demo_mode:
+                print("Demo mode enabled - loading saved analysis data...")
+                if self._load_demo_data(url, queriesToRun):
+                    self.analysis_status = "complete"
+                    return self.analysis_results
+                else:
+                    print("No demo data found, running actual analysis...")
+                    # Fall back to actual analysis if demo data not available
+            
             # generate queries
+
+
             if url is None:
                 url = self.url
             self.url = url
@@ -59,6 +74,7 @@ class Analyzer:
             # save results
             if saveResults:
                 self.domain_analyzer.save_analysis(self.analysis_results)
+                self._save_demo_data(url, queriesToRun)
 
             self.analysis_status = "complete"
             return self.analysis_results
@@ -287,4 +303,72 @@ class Analyzer:
             'numOfQueries': len(self.analysis_results),
             'totalLinkCounts': total_link_counts
         }
+
+
+    def _save_demo_data(self, url: str, queries_to_run: int):
+        """
+        Save current analysis data as demo data for future quick loading.
+        
+        Args:
+            url (str): The URL that was analyzed
+            queries_to_run (int): Number of queries that were run
+        """
+        try:
+            
+            demo_data = {
+                'url': url,
+                'queries_to_run': queries_to_run,
+                'generated_queries': self.generated_queries,
+                'analysis_results': self.analysis_results,
+                'saved_at': time.strftime('%Y-%m-%d %H:%M:%S')
+            }
+
+            with open(self.demo_save_file, 'w', encoding='utf-8') as f:
+                json.dump(demo_data, f, indent=2, ensure_ascii=False)
+            
+            print(f"Demo data saved to {self.demo_save_file}")
+            
+        except Exception as e:
+            print(f"Failed to save demo data: {e}")
+
+    def _load_demo_data(self, url: Optional[str] = None, queries_to_run: Optional[int] = None) -> bool:
+        """
+        Load previously saved demo data.
+        
+        Args:
+            url (Optional[str]): URL to match (if None, loads any saved data)
+            queries_to_run (Optional[int]): Number of queries to match (if None, loads any saved data)
+            
+        Returns:
+            bool: True if demo data was loaded successfully, False otherwise
+        """
+        try:
+
+            
+            if not os.path.exists(self.demo_save_file):
+                print("No demo data file found")
+                return False
+            
+            with open(self.demo_save_file, 'r', encoding='utf-8') as f:
+                demo_data = json.load(f)
+            
+            # Simulate some processing time for realism 
+            print("Loading demo data...")
+            time.sleep(2)  
+            
+            # Load the data
+            self.url = demo_data.get('url', self.url)
+            self.queriesToRun = queries_to_run if queries_to_run else demo_data.get('queries_to_run', self.queriesToRun)
+            self.generated_queries = demo_data.get('generated_queries', [])
+            self.analysis_results = demo_data.get('analysis_results', [])
+            
+            saved_at = demo_data.get('saved_at', 'unknown time')
+            print(f"Demo data loaded successfully (saved at {saved_at})")
+            print(f"Loaded {len(self.generated_queries)} queries and {len(self.analysis_results)} results")
+            
+            return True
+            
+        except Exception as e:
+            print(f"Failed to load demo data: {e}")
+            return False
         
