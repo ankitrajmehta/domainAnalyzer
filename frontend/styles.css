@@ -519,6 +519,150 @@ body {
     background: linear-gradient(135deg, #94a3b8 0%, #64748b 100%);
 }
 
+/* Info Icon and Tooltip Styles */
+.info-icon {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-size: 0.875rem;
+    cursor: help;
+    color: #64748b;
+    transition: all 0.3s ease;
+    position: relative;
+    opacity: 0.7;
+}
+
+.info-icon:hover {
+    opacity: 1;
+    color: #0f172a;
+    transform: scale(1.1);
+}
+
+/* Tooltip Styles */
+.info-icon::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(15, 23, 42, 0.95);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.4;
+    white-space: normal;
+    width: 280px;
+    max-width: 90vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 99999;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Tooltip Arrow */
+.info-icon::before {
+    content: '';
+    position: absolute;
+    bottom: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: rgba(15, 23, 42, 0.95);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 100000;
+}
+
+.info-icon:hover::after,
+.info-icon:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive tooltip positioning */
+@media (max-width: 768px) {
+    .info-icon::after {
+        width: 240px;
+        font-size: 0.7rem;
+        padding: 0.625rem 0.875rem;
+    }
+}
+
+/* Special positioning for recommendations section */
+.structure-recommendations h3 .info-icon::after {
+    bottom: 125%;
+    top: auto;
+    z-index: 999999;
+}
+
+.structure-recommendations h3 .info-icon::before {
+    bottom: 115%;
+    top: auto;
+    border-top-color: rgba(15, 23, 42, 0.95);
+    border-bottom-color: transparent;
+    z-index: 1000000;
+}
+
+/* Work in Progress Specific Styles */
+.overview-card:has(.metric:contains("🚧")) {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-color: #f59e0b;
+    position: relative;
+    overflow: hidden;
+}
+
+.overview-card:has(.metric:contains("🚧"))::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #f59e0b, #d97706, #f59e0b);
+    background-size: 200% 200%;
+    animation: shimmer 2s ease-in-out infinite;
+    z-index: -1;
+    border-radius: inherit;
+}
+
+@keyframes shimmer {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Fallback for older browsers that don't support :has() */
+.overview-card.work-in-progress {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-color: #f59e0b;
+    position: relative;
+    overflow: hidden;
+}
+
+.overview-card.work-in-progress::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #f59e0b, #d97706, #f59e0b);
+    background-size: 200% 200%;
+    animation: shimmer 2s ease-in-out infinite;
+    z-index: -1;
+    border-radius: inherit;
+}
+
 /* Professional Enhancements */
 .page {
     animation: fadeIn 0.5s ease-in-out;

@@ -1,0 +1,109 @@
+{
+  "structure_analysis": {
+    "content_metrics": {
+      "word_count": 737,
+      "paragraph_count": 2,
+      "content_length": 11430
+    },
+    "heading_structure": {
+      "distribution": {
+        "h1": 0,
+        "h2": 13,
+        "h3": 24,
+        "h4": 0,
+        "h5": 4,
+        "h6": 0
+      },
+      "total": 41,
+      "issues": [
+        "missing_h1"
+      ]
+    },
+    "semantic_elements": {
+      "elements": {
+        "article": 1,
+        "section": 1,
+        "nav": 0,
+        "header": 0,
+        "footer": 3,
+        "main": 0
+      },
+      "semantic_score": 0.5,
+      "missing_elements": [
+        "nav",
+        "header",
+        "main"
+      ]
+    },
+    "meta_completeness": {
+      "critical_completeness": 0.0,
+      "social_completeness": 0.0,
+      "missing_critical": [
+        "title",
+        "description"
+      ],
+      "missing_social": [
+        "og:title",
+        "og:description",
+        "og:image"
+      ]
+    },
+    "faq_structure": {
+      "faq_sections": 0,
+      "question_patterns": 0,
+      "qa_indicators": 5,
+      "has_faq": false
+    },
+    "schema_markup": {
+      "types": {
+        "json_ld": 0,
+        "microdata": 0,
+        "rdfa": 4,
+        "faq_schema": 0,
+        "article_schema": 0,
+        "organization_schema": 0,
+        "breadcrumb_schema": 0
+      },
+      "total_markup": 4,
+      "specific_schemas": 0,
+      "has_structured_data": false
+    },
+    "llm_txt_analysis": {
+      "has_llm_txt": false,
+      "llm_txt_url": null,
+      "extraction_method": null,
+      "content_size": 0,
+      "sources_found": 0,
+      "attempts_made": 81
+    },
+    "structural_issues": [
+      "missing_title",
+      "missing_description",
+      "missing_main_tag",
+      "missing_faq_structure",
+      "missing_schema_markup"
+    ]
+  },
+  "structure_recommendations": [
+    {
+      "title": "Add Meta Description",
+      "description": "Create a concise, keyword-rich meta description (150-160 characters) to help AI understand and summarize the page's content for search results.",
+      "priority": "High"
+    },
+    {
+      "title": "Fix Heading Structure",
+      "description": "Implement a single H1 tag for the main topic and organize content hierarchically using H2 and H3 tags to clearly signal content sections to AI models.",
+      "priority": "High"
+    },
+    {
+      "title": "Add LLM.txt File",
+      "description": "Create an LLM.txt file at the root of your domain to guide AI models on how to interact with and cite your content, similar to robots.txt.",
+      "priority": "High"
+    },
+    {
+      "title": "Implement Schema Markup",
+      "description": "Add JSON-LD schema markup (e.g., Article, FAQPage, or WebPage) to explicitly define content types and key entities, enabling AI to better interpret and cite structured information.",
+      "priority": "Medium"
+    }
+  ]
+}

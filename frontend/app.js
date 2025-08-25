@@ -729,32 +729,47 @@ class FrontendAPP {
         const semanticScore = Math.round(semantic.semantic_score * 100);
         
         overviewDiv.innerHTML = `
-            <div class="overview-card">
-                <h4>Content Depth</h4>
-                <div class="metric">${wordCount.toLocaleString()}</div>
-                <div class="label">${wordCount >= 500 ? 'AI-Friendly' : wordCount >= 200 ? 'Basic' : 'Too Thin'}</div>
+            <div class="overview-card work-in-progress">
+                <h4>
+                    Work in Progress
+                </h4>
+                <div class="metric">🚧</div>
+                <div class="label">Coming Soon</div>
             </div>
             
             <div class="overview-card">
-                <h4>Structure Quality</h4>
+                <h4>
+                    Structure Quality
+                    <span class="info-icon" data-tooltip="Analyzes heading hierarchy (H1, H2, etc.) and overall page structure to ensure optimal SEO and readability for both users and AI systems.
+                    Placeholder representation for now. Actual metric is work in progress">ℹ️</span>
+                </h4>
                 <div class="metric">${headingCount}</div>
                 <div class="label">H1: ${h1Count} | H2: ${h2Count}</div>
             </div>
             
             <div class="overview-card">
-                <h4>Schema Markup</h4>
+                <h4>
+                    Schema Markup
+                    <span class="info-icon" data-tooltip="Checks for structured data markup (JSON-LD, Microdata) that helps search engines and AI understand your content better.">ℹ️</span>
+                </h4>
                 <div class="metric">${hasSchema ? '✓' : '✗'}</div>
                 <div class="label">${hasSchema ? 'Implemented' : 'Missing'}</div>
             </div>
             
             <div class="overview-card">
-                <h4>FAQ Section</h4>
+                <h4>
+                    FAQ Section
+                    <span class="info-icon" data-tooltip="Detects FAQ content on your page, which is crucial for appearing in AI-generated responses and voice search results.">ℹ️</span>
+                </h4>
                 <div class="metric">${hasFAQ ? '✓' : '✗'}</div>
                 <div class="label">${hasFAQ ? 'Present' : 'Missing'}</div>
             </div>
             
             <div class="overview-card">
-                <h4>LLM.txt File</h4>
+                <h4>
+                    LLM.txt File
+                    <span class="info-icon" data-tooltip="Looks for an LLM.txt file that provides AI systems with clear, structured information about your website and services.">ℹ️</span>
+                </h4>
                 <div class="metric">${hasLLMTxt ? '✓' : '✗'}</div>
                 <div class="label">${hasLLMTxt ? 'Detected' : 'Missing'}</div>
             </div>

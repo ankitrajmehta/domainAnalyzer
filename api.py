@@ -15,7 +15,11 @@ from flask_cors import CORS
 import threading
 import time
 import asyncio
+import json
 
+
+import os #imports for demo only
+import time #imports for demo only
 
 from analyzer import Analyzer
 
@@ -275,9 +279,21 @@ def analyze_structure():
         url = data['url'].strip()
         if not url:
             return jsonify({'error': 'URL cannot be empty'}), 400
-        
-        # Run the structure analysis
-        result = asyncio.run(structureAnalyzer.perform_structure_analysis(url))
+
+        structure_data_file = r'analysisReports\structure_data.json'
+
+        if DEMO_MODE == True:
+            if not os.path.exists(structure_data_file):
+                return jsonify({'error': 'Demo data file not found'}), 500
+            with open(structure_data_file, 'r', encoding='utf-8') as f:
+                time.sleep(1)  # Simulate processing delay
+                result = json.load(f)
+        else:   
+            # Run the structure analysis
+            result = asyncio.run(structureAnalyzer.perform_structure_analysis(url))
+            with open(structure_data_file, 'w', encoding='utf-8') as f:
+                json.dump(result, f, indent=2, ensure_ascii=False)
+            
         
         if result.get('error'):
             return jsonify({'error': result['error']}), 400

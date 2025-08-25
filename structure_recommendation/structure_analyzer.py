@@ -1,5 +1,5 @@
 """
-Simplified Structure Analyzer for GEO Optimization
+Structure Analyzer for GEO Optimization
 
 Analyzes website structure and prepares data for AI-powered recommendations.
 """

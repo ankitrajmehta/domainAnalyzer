@@ -30,7 +30,7 @@ class Analyzer:
         self.demo_mode: bool = demo_mode  
         self.demo_save_file: str = r'analysisReports\demo_analysis_data.json'
 
-    def run_analysis(self, url: Optional[str] = None, saveResults: bool = False, queriesToRun: int = None) -> List[Dict[str, Any]]:
+    def run_analysis(self, url: Optional[str] = None, saveResults: bool = True, queriesToRun: int = None) -> List[Dict[str, Any]]:
         """
         Runs the analysis pipeline.
 
